@@ -54,7 +54,7 @@ const Faq = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-4'>
-              <div className='card active'>
+              <div className='card '>
                 <div className='graphic'>
                   <img src={faq_col_1} alt='' />
                 </div>
@@ -110,7 +110,7 @@ const Faq = () => {
           </p>
 
           <div className='accordion mb-5 accordion-flush' id="faq_accordion_list">
-            <div className='accordion-item'>
+            <div className='accordion-item '>
               <h4 className='accordion-header'>
                 <button
                   className='accordion-button'
@@ -126,7 +126,8 @@ const Faq = () => {
                   a check-up at a sexual health clinic as soon as you can. Do
                   not have sex, including oral sex, without using a condom until
                   you've had a check-up. You can have an STI without knowing it
-                  and infect your partner during sex. STI symptoms:
+                  and infect your partner during sex.
+                  <p>STI symptoms:</p>
                   <ul>
                     <li>
                       an unusual discharge from the vagina, penis, or anus
@@ -144,10 +145,11 @@ const Faq = () => {
                       warts in your mouth or throat, but this is very rare
                     </li>
                   </ul>
+                  <p>It's Important to note that not everyone shows symptoms, thus getting tested for STIs are important for your health and of others. </p>
                 </div>
               </div>
             </div>
-            <div className='accordion-item'>
+            <div className='accordion-item all-faq'>
               <h4 className='accordion-header'>
                 <button
                   className='accordion-button collapsed'
@@ -161,7 +163,7 @@ const Faq = () => {
                 <div className='accordion-body'>Coming Soon</div>
               </div>
             </div>
-            <div className='accordion-item'>
+            <div className='accordion-item all-faq'>
               <h4 className='accordion-header'>
                 <button
                   className='accordion-button collapsed'
@@ -176,7 +178,7 @@ const Faq = () => {
                 <div className='accordion-body'>Coming Soon</div>
               </div>
             </div>
-            <div className='accordion-item'>
+            <div className='accordion-item all-faq'>
               <h4 className='accordion-header'>
                 <button
                   className='accordion-button collapsed'
@@ -190,7 +192,7 @@ const Faq = () => {
                 <div className='accordion-body'>Coming Soon</div>
               </div>
             </div>
-            <div className='accordion-item'>
+            <div className='accordion-item all-faq'>
               <h4 className='accordion-header'>
                 <button
                   className='accordion-button collapsed'
@@ -202,6 +204,94 @@ const Faq = () => {
               </h4>
               <div id='collapseFive' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
                 <div className='accordion-body'>Coming Soon</div>
+              </div>
+            </div>
+            <div className='accordion-item all-faq'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseSix'
+                >
+                  Does everyone who has STI have symptoms?
+                </button>
+              </h4>
+              <div id='collapseSix' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>Many STIs have no signs or symptoms. Some people have STIs without knowing but can carry the infection to others. The only way to know for sure is to get tested.
+                  However, it is also important to use protection.</div>
+              </div>
+            </div>
+            <div className='accordion-item all-faq'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseSeven'
+                >
+                  What’s the difference between a urine STI test and AVA?
+                </button>
+              </h4>
+              <div id='collapseSeven' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>AVA uses swab test which is recommended by the CDC for detecting sexually transmitted infections, especially for chlamydia, gonorrhea, and trichomoniasis. Urine samples can lead to false-negative results and untreated infections. </div>
+              </div>
+            </div>
+            <div className='accordion-item all-faq'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseEight'
+                >
+                  How do I tell my sexual partner to get STI tested without breaching trust?
+                </button>
+              </h4>
+              <div id='collapseEight' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>When discussing STI testing with your sexual partner, it's important to approach the conversation with empathy, understanding, and a focus on mutual health and well-being.
+                  Here are a few things to consider:
+                  <ul>
+                    <li>
+                      1. Choose the right time and place
+                    </li>
+                    <li>
+                      2. Be honest and open
+                    </li>
+                    <li>
+                      3. Educate and normalize
+                    </li>
+                    <li>
+                      4. Use “we” instead of “you”
+                    </li>
+                    <li>
+                      5. Share your own commitment
+                    </li>
+                    <li>
+                      6. Respect privacy and confidentiality
+                    </li>
+                    <li>
+                      7. Address concerns and fears
+                    </li>
+                    <li>
+                      8. Offer resources and options
+                    </li>
+                    <li>
+                      9. Maintain a non-judgmental attitude
+                    </li>
+                  </ul>
+                  Read our full blog on this topic on our knowledge page for more. </div>
+              </div>
+            </div>
+            <div className='accordion-item all-faq'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseNine'
+                >
+                  Do condoms protect from STIs?
+                </button>
+              </h4>
+              <div id='collapseNine' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>While condoms are an effective form of protection against sexually transmitted infections (STIs), it's important to note that they may not provide 100% protection. STIs can be contracted through skin-to-skin contact, which means that areas not covered by condoms, such as the genital area, can still be at risk. Engaging in foreplay, oral sex, or using sex toys can also pose risks of contracting STIs. </div>
               </div>
             </div>
           </div>
