@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Random Grotesque Standard';
+    src: url('RG-StandardBold.woff2') format('woff2'),
+        url('RG-StandardBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
