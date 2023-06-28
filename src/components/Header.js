@@ -36,6 +36,7 @@ const Header = () => {
 
   // const language = localStorage.getItem('language')
   // setLanguage(localStorage.getItem('language'))
+  localStorage.getItem('language') == '' ? setLanguage('EN') :setLanguage(localStorage.getItem('language'))
 
     document
       .querySelectorAll(".hambarger-menu-header")[0]

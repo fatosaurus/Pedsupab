@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../style.css";
@@ -9,11 +9,86 @@ import { Link } from "react-router-dom";
 import { Collapse } from "bootstrap";
 
 const Faq = () => {
-  const HpvConnection=(e)=>{
-    document.getElementById('hpv').classList.add("active")
-    document.querySelector("hpv").show()
-    document.querySelector("all-faq,sti,ava").hide()
 
+  useEffect(() => {
+    allFaQ()
+    
+    
+  });
+  const allFaQ = () => {
+    for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
+      document.querySelectorAll('.all-faq')[i].style.display = "block";
+    }
+    for(var i = 0; i < document.querySelectorAll('.sti').length; i++) {
+      document.querySelectorAll('.sti')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.ava').length; i++) {
+      document.querySelectorAll('.ava')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
+      document.querySelectorAll('.hpv')[i].style.display = "none";
+    }
+    
+  }
+  const HpvConnection=(e)=>{
+    console.log('clicked')
+    // e.currentTarget.classList.add('active');
+    // document.querySelector('#hpvcard')[0].add('className','active');
+    console.log(document.querySelectorAll('.all-faq').length)
+    for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
+      document.querySelectorAll('.all-faq')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.sti').length; i++) {
+      document.querySelectorAll('.sti')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.ava').length; i++) {
+      document.querySelectorAll('.ava')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
+      document.querySelectorAll('.hpv')[i].style.display = "block";
+    }
+    
+    
+    
+    // document.getElementById('hpvcard').classList.add("active")
+    // document.querySelector("hpv").show()
+    // document.querySelector("all-faq,sti,ava").hide()
+
+  }
+  const stiConnection=(e)=>{
+    console.log('clicked')
+    // document.querySelector('#hpvcard')[0].add('className','active');
+    console.log(document.querySelectorAll('.all-faq').length)
+    for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
+      document.querySelectorAll('.all-faq')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.sti').length; i++) {
+      document.querySelectorAll('.sti')[i].style.display = "block";
+    }
+    for(var i = 0; i < document.querySelectorAll('.ava').length; i++) {
+      document.querySelectorAll('.ava')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
+      document.querySelectorAll('.hpv')[i].style.display = "none";
+    }
+  
+  }
+  const shConnection=(e)=>{
+    console.log('clicked')
+    // document.querySelector('#hpvcard')[0].add('className','active');
+    console.log(document.querySelectorAll('.all-faq').length)
+    for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
+      document.querySelectorAll('.all-faq')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.sti').length; i++) {
+      document.querySelectorAll('.sti')[i].style.display = "none";
+    }
+    for(var i = 0; i < document.querySelectorAll('.ava').length; i++) {
+      document.querySelectorAll('.ava')[i].style.display = "block";
+    }
+    for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
+      document.querySelectorAll('.hpv')[i].style.display = "none";
+    }
   }
   return (
     <div className='site-wrap'>
@@ -61,15 +136,15 @@ const Faq = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-4'>
-              <div className='card '>
+              <div className='card ' id="hpvcard" onClick={(e)=>HpvConnection()}>
                 <div className='graphic'>
                   <img src={faq_col_1} alt='' />
                 </div>
-                <h4 className='card-title active'  id="hpv" onclick={(e)=>HpvConnection()}>HPV</h4>
+                <h4 className='card-title'  id="hpv" >HPV</h4>
               </div>
             </div>
             <div className='col-md-4'>
-              <div className='card'>
+              <div className='card' id="sticard" onClick={(e)=>stiConnection()}>
                 <div className='graphic'>
                   <img src={faq_col_2} alt='' />
                 </div>
@@ -77,7 +152,7 @@ const Faq = () => {
               </div>
             </div>
             <div className='col-md-4'>
-              <div className='card'>
+              <div className='card' id="shcard" onClick={(e)=>shConnection()}>
                 <div className='graphic'>
                   <img src={faq_col_3} alt='' />
                 </div>
@@ -117,7 +192,7 @@ const Faq = () => {
           </p>
 
           <div className='accordion mb-5 accordion-flush' id="faq_accordion_list">
-            <div className='accordion-item '>
+            <div className='accordion-item all-faq'>
               <h4 className='accordion-header'>
                 <button
                   className='accordion-button'

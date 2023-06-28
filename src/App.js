@@ -7,6 +7,7 @@ import AboutThai from "./components/AboutThai"
 import Affiliates from "./components/Affiliates"
 import AffiliatesThai from "./components/AffilatesThai"
 import MyCart from "./components/MyCart"
+import MyCartThai from "./components/MyCartThai"
 import SelfcollectKit from "./components/SelfcollectKit"
 import Faq from "./components/Faq";
 import FaqThai from "./components/FaqThai"
@@ -15,7 +16,9 @@ import SelfCollectKitsHPV from "./components/self_collect_kits/SelfCollectKitsHP
 import SelfCollectKitsSTIKit from "./components/self_collect_kits/SelfCollectKitsSTIKit";
 import SelfCollectKitsSTIOpen from "./components/self_collect_kits/SelfCollectKitsSTIOpen";
 import Knowledge from "./components/Knowledge";
+import KnowledgeThai from "./components/KnowledgeThai"
 import KnowledgeBlog from "./components/KnowledgeBlog";
+import KnowledgeBlogThai from "./components/KnowledgeBlogThai"
 
 function App() {
   const language = localStorage.getItem("language");
@@ -42,6 +45,9 @@ function App() {
           <Route path="/th/aboutus" element={<AboutThai />} />
           <Route path="/th/affiliates" element={<AffiliatesThai />} />
           <Route path="/th/faqs" element={<FaqThai />} />
+          <Route path="/th/knowledge" element={<KnowledgeThai />} />
+          <Route path="/th/knowledge/blog" element={<KnowledgeBlogThai />} />
+          <Route path="/th/mycart" element={<MyCartThai />} />
         </Routes>
       
 
