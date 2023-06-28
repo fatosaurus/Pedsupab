@@ -22,7 +22,6 @@ function App() {
 
     <BrowserRouter>
 
-      {language == 'EN'?
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<About />} />
@@ -36,14 +35,12 @@ function App() {
           <Route path="/selfcollectkit/hpv" element={<SelfCollectKitsHPV />} />
           <Route path="/selfcollectkit/sti/kit" element={<SelfCollectKitsSTIKit />} />
           <Route path="/selfcollectkit/sti_open" element={<SelfCollectKitsSTIOpen />} />
-        </Routes>
-        :
-        <Routes>
+      
           <Route path="/th" element={<Home />} />
-          <Route path="/aboutus-th" element={<AboutThai />} />
-          <Route path="/affiliates-th" element={<AffiliatesThai />} />
+          <Route path="/th/aboutus" element={<AboutThai />} />
+          <Route path="/th/affiliates" element={<AffiliatesThai />} />
         </Routes>
-      }
+      
 
     </BrowserRouter>
 

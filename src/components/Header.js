@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState} from "react";
 import "../style.css";
 import logo from "../assets/image/logo.png";
 import cart from "../assets/image/icons/cart.svg";
@@ -7,16 +7,17 @@ const Header = () => {
 
 
 
-
+  const [language, setLanguage] = useState('')
+  
   const handleMenuClose = () => {
     // e.preventDefault();
     document.body.classList.remove("menu_on");
   };
 
-  const handleLanguage = (e) => {
-    console.log(e.target.textContent);
-    localStorage.setItem("language", e.target.textContent);
-  }
+  // const handleLanguage = (e) => {
+  //   console.log(e.target.textContent);
+  //   localStorage.setItem("language", e.target.textContent);
+  // }
 
   useEffect(() => {
     const handleClick = (e) => {
@@ -24,7 +25,8 @@ const Header = () => {
       document.body.classList.toggle("menu_on");
     };
 
-  
+  // const language = localStorage.getItem('language')
+  setLanguage(localStorage.getItem('language'))
 
     document
       .querySelectorAll(".hambarger-menu-header")[0]
@@ -59,42 +61,42 @@ const Header = () => {
               <ul className='nav-menu'>
                 
                 <li>
-                  <NavLink to='/knowledge'  onClick={handleMenuClose}>
+                  <NavLink to={ language == 'TH' ? '/th/knowledge': '/knowledge'}  onClick={handleMenuClose}>
                  
                     KNOWLEDGE
                   </NavLink>
                 </li>
                 <li className="has_submenu">
-                  <NavLink to='/selfcollectkit' className="" onClick={handleMenuClose}>
+                  <NavLink to={ language == 'TH' ? '/th/selfcollectkit': '/selfcollectkit'} className="" onClick={handleMenuClose}>
                     SELF COLLECT KITS
                   </NavLink>
                   <ul>
-                    <li><NavLink to={'/selfcollectkit/hpv'} onClick={handleMenuClose}>HPV</NavLink></li>
-                    <li><NavLink to={'/selfcollectkit/sti_open'} onClick={handleMenuClose}>STI</NavLink></li>
+                    <li><NavLink to={language == 'TH' ? '/th/selfcollectkit/hpv':'/selfcollectkit/hpv'} onClick={handleMenuClose}>HPV</NavLink></li>
+                    <li><NavLink to={language == 'TH' ? '/th/selfcollectkit/sti_open':'/selfcollectkit/sti_open'} onClick={handleMenuClose}>STI</NavLink></li>
                   </ul>
                 </li>
                 <li >
-                  <NavLink to='/faqs' className="" onClick={handleMenuClose}>
+                  <NavLink to={language == 'TH' ? '/th/faqs':'/faqs'} className="" onClick={handleMenuClose}>
                     
                     FAQs
                   </NavLink>
                 </li>
                 <li >
-                  <NavLink to='/aboutus' className="" onClick={handleMenuClose}>
+                  <NavLink to={language == 'TH' ? '/th/aboutus':'/aboutus'} className="" onClick={handleMenuClose}>
                    
                     ABOUT US
                   </NavLink>
                 </li>
                 <li >
-                  <NavLink to='/affiliates' className="" onClick={handleMenuClose}>
+                  <NavLink to={language == 'TH' ? '/th/affiliates':'/affiliates'} className="" onClick={handleMenuClose}>
                  
                     AFFILIATES
                   </NavLink>
                 </li>
                 <li>
                   
-                    <NavLink to={'/'} className="" onClick={handleLanguage}>EN</NavLink> | 
-                    <NavLink to={'/th'} onClick={handleLanguage}> TH </NavLink>
+                    <NavLink to={'/'} className="" onClick={localStorage.setItem("language", 'EN')}>EN</NavLink> | 
+                    <NavLink to={'/th'} onClick={localStorage.setItem("language", 'TH')}> TH </NavLink>
                   
                 </li>
               </ul>
