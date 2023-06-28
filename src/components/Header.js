@@ -15,7 +15,7 @@ const Header = () => {
 
   const handleLanguage = (e) => {
     console.log(e.target.textContent);
-    localStorage.setItem("language", e.target.lang);
+    localStorage.setItem("language", e.target.textContent);
   }
 
   useEffect(() => {

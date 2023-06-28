@@ -135,7 +135,7 @@ const Home = () => {
           </h2>
           <div className='iframe-embade'>
             <img src={new_text} alt='' className='floated-img mb-2' />
-            <div class="embed-responsive embed-responsive-container"><iframe class="responsive-iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe></div>
+            <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe></div>
           </div>
         </div>
       </div>
