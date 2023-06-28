@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./components/Home"
+import HomeThai from "./components/HomeThai"
 import About from "./components/About"
 import AboutThai from "./components/AboutThai"
 import Affiliates from "./components/Affiliates"
@@ -36,7 +37,7 @@ function App() {
           <Route path="/selfcollectkit/sti/kit" element={<SelfCollectKitsSTIKit />} />
           <Route path="/selfcollectkit/sti_open" element={<SelfCollectKitsSTIOpen />} />
       
-          <Route path="/th" element={<Home />} />
+          <Route path="/th" element={<HomeThai />} />
           <Route path="/th/aboutus" element={<AboutThai />} />
           <Route path="/th/affiliates" element={<AffiliatesThai />} />
         </Routes>

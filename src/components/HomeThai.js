@@ -28,7 +28,7 @@ import { Link } from "react-router-dom";
 
 import HomeTitleUnderline from "../iconComponents/HomeTitleUnderline.js";
 
-const Home = () => {
+const HomeThai = () => {
   const [bannerData, setBannerData] = useState([
     { "img": "images/banner_1.jpg", "link": "#" },
     { "img": "images/banner_1.jpg", "link": "#" },
@@ -98,7 +98,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม
               </h3>
               </Link>
             </div>
@@ -109,7 +109,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม
               </h3>
               </Link>
             </div>
@@ -120,7 +120,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม
               </h3>
               </Link>
             </div>
@@ -177,7 +177,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม
               </h3>
               </Link>
             </div>
@@ -188,7 +188,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม
               </h3>
               </Link>
             </div>
@@ -198,7 +198,7 @@ const Home = () => {
                 <img src={blog_thumb__4} alt='' />
               </div>
               <h3 className='blog-title'>
-              Sex is a beautiful thing. But b is not always{" "}
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่bก็ไม่เสมอไป{" "}
               </h3>
               </Link>
             </div>
@@ -208,7 +208,7 @@ const Home = () => {
                 <img src={blog_thumb__5} alt='' />
               </div>
               <h3 className='blog-title'>
-              Sex is a beautiful thing, but
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่
               </h3>
               </Link>
             </div>
@@ -219,7 +219,7 @@ const Home = () => {
       <div className='home-static-content'>
         <h3 className='trinary-title text-center'>
 
-          Did you know?
+        เธอรู้รึเปล่า?
         </h3>
         <div className='container'>
           <div className='flex-img-card'>
@@ -250,12 +250,12 @@ const Home = () => {
               <div className='meta-date'>Sarisa Gajaseni 20 Mar 2023</div>
               <h3 className='card-title big'>
               <Link to="/knowledge">
-              Sex is beautiful, but it's not always.{" "}
+                เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่ ก็ไม่เสมอไป{" "}
                 </Link>
               </h3>
               <p className='card-text big'>
 
-              Understand SEX and safety in this article.
+                เข้าใจ SEX กับความปลอดภัยในบทความนี้
               </p>
               <div className='action btn-groups'>
                 <Link to='/knowledge/blog' className='pill pill-outline'>
@@ -275,4 +275,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeThai;

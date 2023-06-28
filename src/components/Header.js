@@ -13,6 +13,7 @@ const Header = () => {
     // e.preventDefault();
     console.log('as'+lang);
     localStorage.setItem('language',lang)
+    setLanguage(lang)
     // lang == 'TH' ? history.push('/th') : history.push('/')
 
   }
