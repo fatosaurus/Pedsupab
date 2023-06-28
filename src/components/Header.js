@@ -2,12 +2,20 @@ import React, { useEffect, useState} from "react";
 import "../style.css";
 import logo from "../assets/image/logo.png";
 import cart from "../assets/image/icons/cart.svg";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, redirect,  } from "react-router-dom";
 const Header = () => {
 
 
 
-  const [language, setLanguage] = useState('')
+  const [language, setLanguage] = useState('EN')
+
+  const changeLanguage = (e,lang) => {
+    // e.preventDefault();
+    console.log('as'+lang);
+    localStorage.setItem('language',lang)
+    // lang == 'TH' ? history.push('/th') : history.push('/')
+
+  }
   
   const handleMenuClose = () => {
     // e.preventDefault();
@@ -26,7 +34,7 @@ const Header = () => {
     };
 
   // const language = localStorage.getItem('language')
-  setLanguage(localStorage.getItem('language'))
+  // setLanguage(localStorage.getItem('language'))
 
     document
       .querySelectorAll(".hambarger-menu-header")[0]
@@ -95,8 +103,8 @@ const Header = () => {
                 </li>
                 <li>
                   
-                    <NavLink to={'/'} className="" onClick={localStorage.setItem("language", 'EN')}>EN</NavLink> | 
-                    <NavLink to={'/th'} onClick={localStorage.setItem("language", 'TH')}> TH </NavLink>
+                    <NavLink to='/' className="" onClick={(e) => changeLanguage(e,'EN')}>EN</NavLink> | 
+                    <NavLink to='/th' onClick={(e) => changeLanguage(e,'TH')}> TH </NavLink>
                   
                 </li>
               </ul>
