@@ -8,6 +8,7 @@ import AffiliatesThai from "./components/AffilatesThai"
 import MyCart from "./components/MyCart"
 import SelfcollectKit from "./components/SelfcollectKit"
 import Faq from "./components/Faq";
+import FaqThai from "./components/FaqThai"
 import SelfCollectKitsHPVProduct from "./components/self_collect_kits/SelfCollectKitsHPVProduct";
 import SelfCollectKitsHPV from "./components/self_collect_kits/SelfCollectKitsHPV";
 import SelfCollectKitsSTIKit from "./components/self_collect_kits/SelfCollectKitsSTIKit";
@@ -39,6 +40,7 @@ function App() {
           <Route path="/th" element={<Home />} />
           <Route path="/th/aboutus" element={<AboutThai />} />
           <Route path="/th/affiliates" element={<AffiliatesThai />} />
+          <Route path="/th/faqs" element={<FaqThai />} />
         </Routes>
       
 

@@ -6,8 +6,15 @@ import faq_col_1 from "../assets/image/faq-col-1.jpg";
 import faq_col_2 from "../assets/image/faq-col-2.png";
 import faq_col_3 from "../assets/image/faq-col-3.png";
 import { Link } from "react-router-dom";
+import { Collapse } from "bootstrap";
 
 const Faq = () => {
+  const HpvConnection=(e)=>{
+    document.getElementById('hpv').classList.add("active")
+    document.querySelector("hpv").show()
+    document.querySelector("all-faq,sti,ava").hide()
+
+  }
   return (
     <div className='site-wrap'>
       <Header />
@@ -58,7 +65,7 @@ const Faq = () => {
                 <div className='graphic'>
                   <img src={faq_col_1} alt='' />
                 </div>
-                <h4 className='card-title'>HPV</h4>
+                <h4 className='card-title active'  id="hpv" onclick={(e)=>HpvConnection()}>HPV</h4>
               </div>
             </div>
             <div className='col-md-4'>
@@ -292,6 +299,216 @@ const Faq = () => {
               </h4>
               <div id='collapseNine' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
                 <div className='accordion-body'>While condoms are an effective form of protection against sexually transmitted infections (STIs), it's important to note that they may not provide 100% protection. STIs can be contracted through skin-to-skin contact, which means that areas not covered by condoms, such as the genital area, can still be at risk. Engaging in foreplay, oral sex, or using sex toys can also pose risks of contracting STIs. </div>
+              </div>
+            </div>
+            <div className='accordion-item hpv'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapOne'
+                >
+                 What is the difference between Pap smear, ThinPrep, and HPV screening?
+                </button>
+              </h4>
+              <div id='collapOne' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>A pap smear or pap test looks for cell changes on a glass slide. In the ThinPrep pap test, cell samples are collected by a special brush then filters out the cells before depositing them in a thin monolayer on a glass slide. On the other hand, HPV screening it to look for the virus, Human papillomavirus that causes cervical cancer.</div>
+              </div>
+            </div>
+            <div className='accordion-item hpv'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseTwo'
+                >
+                Are the results as accurate as going to hospitals or clinics?
+                </button>
+              </h4>
+              <div id='collapseTwo' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>The accuracy of a test depends on collection performance. However, we provide simple-to-follow steps to make sure you’re on the right track!</div>
+              </div>
+            </div>
+            <div className='accordion-item hpv'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseThree'
+                >
+                 What are the symptoms of HPV infections?
+                </button>
+              </h4>
+              <div id='collapseThree' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>Most people who contract HPV do not show any symptoms so it’s important to get HPV primary screening once you have experienced intercourse. Primary screening can detect HPV types and looks at how High-Risk types (16 and 18) can develop into something more concerning such as cervical cancer. </div>
+              </div>
+            </div>
+            <div className='accordion-item hpv'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseFour'
+                >
+                 How is HPV transmitted?
+                </button>
+              </h4>
+              <div id='collapseFour' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>HPV is transmitted through sexual intercourse. It can be from male to female or vice versa. That’s why everyone should take HPV primary screening..</div>
+              </div>
+            </div>
+            <div className='accordion-item hpv'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseFive'
+                >
+                 Does HPV lead to cervical cancer?
+                </button>
+              </h4>
+              <div id='collapseFive' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>There are over 100 types of HPV, and not all of them lead to cancer. In fact, there are only 2 main HPV types that lead to cancer which are 16 and 18.</div>
+              </div>
+            </div>
+            <div className='accordion-item hpv'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseSix'
+                >
+                 Is cervical cancer from genetics?
+                </button>
+              </h4>
+              <div id='collapseSix' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>Cervical cancer does not come from genetics, it is considered a sexually transmitted disease. However, if members of your family tree have had cancer, your body might be more inclined to cancer, thus making it easier for HPV (if you’ve contracted it) to become cancer.</div>
+              </div>
+            </div>
+            <div className='accordion-item hpv'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseSeven'
+                >
+                If I test positive for HPV, do I have cancer?
+                </button>
+              </h4>
+              <div id='collapseSeven' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>No, you don’t. HPV is not cancer. HPV is only the infection that has the potential to lead to cancer. Thus, it depends on which type of HPV you contracted and if your body can eliminate the virus. It can take up to 10 years for HPV to develop into cancer, and you can do so much to prevent that with the right healthcare.  </div>
+              </div>
+            </div>
+            <div className='accordion-item sti'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseone'
+                >
+                What’s the difference between STI and STD?
+                </button>
+              </h4>
+              <div id='collapseOne' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>STD stands for “sexually transmitted disease,” and STI stands for “sexually transmitted infections.” Simply put, they are both the same: infections that get passed from one person to another during intercourse.</div>
+              </div>
+            </div> 
+            <div className='accordion-item sti'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseTwo'
+                >
+                How often should I get tested for STI?
+                </button>
+              </h4>
+              <div id='collapseTwo' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>The frequency of getting tested for STI depends on the person and their relationships. For someone who has more than one partner and is sexually active, we would recommend getting tested once every three months. However, getting tested and being safe cannot hurt anyone! So even if you’re in a long-term relationship, it’s good to get you and your partner tested. Getting tested before starting a serious relationship or ending one could also be a good measure. </div>
+              </div>
+            </div> 
+            <div className='accordion-item ava'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseOne'
+                >
+                 Can I test for HPV and STI together? 
+                </button>
+              </h4>
+              <div id='collapseOne' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>Yes, you can. Buy AVA green box for HPV and on our registration website you can add STIs to your cart and our lab will test your sample for both HPV and STIs. You can also decide to test for STIs later, even after you’ve received your HPV results. Our lab will collect your sample for 30 days once they’ve tested your HPV test.</div>
+              </div>
+            </div>
+             <div className='accordion-item ava'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseTwo'
+                >
+                 How fast do I need to send my sample to Winmed Lab?
+                </button>
+              </h4>
+              <div id='collapseTwo' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>Preferably as soon as possible but within 30 days after collection is best.</div>
+              </div>
+            </div>
+             <div className='accordion-item ava'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseThree'
+                >
+                 Are the results as accurate as going to hospitals or clinics?
+                </button>
+              </h4>
+              <div id='collapseThree' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>The accuracy of a test depends on collection performance. However, we provide simple-to-follow steps to make sure you’re on the right track!</div>
+              </div>
+            </div> 
+            <div className='accordion-item ava'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseFour'
+                >
+                 What if I don’t collect my sample correctly?
+                </button>
+              </h4>
+              <div id='collapseFour' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>We have simple directions for you to follow, there’s no need to worry.</div>
+              </div>
+            </div> 
+            <div className='accordion-item ava'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseFive'
+                >
+                 When will I receive my results?
+                </button>
+              </h4>
+              <div id='collapseFive' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>Within 7 days after the sample arrives at Winmed Lab.</div>
+              </div>
+            </div>
+            <div className='accordion-item ava'>
+              <h4 className='accordion-header'>
+                <button
+                  className='accordion-button collapsed'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#collapseSix'
+                >
+                What’s the difference between a urine STI test and AVA?
+                </button>
+              </h4>
+              <div id='collapseSix' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
+                <div className='accordion-body'>AVA uses swab test which is recommended by the CDC for detecting sexually transmitted infections, especially for chlamydia, gonorrhea, and trichomoniasis. Urine samples can lead to false-negative results and untreated infections.</div>
               </div>
             </div>
           </div>
