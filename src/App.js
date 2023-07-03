@@ -9,12 +9,16 @@ import AffiliatesThai from "./components/AffilatesThai"
 import MyCart from "./components/MyCart"
 import MyCartThai from "./components/MyCartThai"
 import SelfcollectKit from "./components/SelfcollectKit"
+import SelfcollectKitThai from "./components/SelfcollectKitThai"
 import Faq from "./components/Faq";
 import FaqThai from "./components/FaqThai"
 import SelfCollectKitsHPVProduct from "./components/self_collect_kits/SelfCollectKitsHPVProduct";
 import SelfCollectKitsHPV from "./components/self_collect_kits/SelfCollectKitsHPV";
+import SelfCollectKitsHPVThai from "./components/self_collect_kits/SelfCollectKitsHPVThai"
 import SelfCollectKitsSTIKit from "./components/self_collect_kits/SelfCollectKitsSTIKit";
+import SelfCollectKitsSTIKitThai from "./components/self_collect_kits/SelfCollectKitsSTIKitThai"
 import SelfCollectKitsSTIOpen from "./components/self_collect_kits/SelfCollectKitsSTIOpen";
+import SelfCollectKitsSTIOpenThai from "./components/self_collect_kits/SelfCollectKitsSTIOpenThai"
 import Knowledge from "./components/Knowledge";
 import KnowledgeThai from "./components/KnowledgeThai"
 import KnowledgeBlog from "./components/KnowledgeBlog";
@@ -48,6 +52,10 @@ function App() {
           <Route path="/th/knowledge" element={<KnowledgeThai />} />
           <Route path="/th/knowledge/blog" element={<KnowledgeBlogThai />} />
           <Route path="/th/mycart" element={<MyCartThai />} />
+          <Route path="/th/selfcollectkit" element={<SelfcollectKitThai />} />
+          <Route path="/th/selfcollectkit/hpv" element={<SelfCollectKitsHPVThai />} />
+          <Route path="/th/selfcollectkit/sti/kit" element={<SelfCollectKitsSTIKitThai />} />
+          <Route path="/th/selfcollectkit/sti_open" element={<SelfCollectKitsSTIOpenThai />} />
         </Routes>
       
 

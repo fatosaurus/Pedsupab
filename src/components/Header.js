@@ -1,23 +1,55 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "../style.css";
+
+
 import logo from "../assets/image/logo.png";
 import cart from "../assets/image/icons/cart.svg";
-import { Link, NavLink, redirect,  } from "react-router-dom";
-const Header = () => {
+import { Link, NavLink, redirect, useLocation, useNavigate } from "react-router-dom";
+import { Navigate } from 'react-router-dom';
+
+function Header(){
 
 
 
-  const [language, setLanguage] = useState('EN')
+  const [language, setLanguage] = useState('EN');
+  // const history = useHistory();
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const changeLanguage = (e,lang) => {
+  const currentUrl = `${location.pathname}${location.search}${location.hash}`;
+  const [url, setUrl] = useState(currentUrl);
+  const [randonKey, setRandonKey] = useState(0);
+
+  console.log(currentUrl);
+
+
+
+  const changeLanguage = (e, lang) => {
     // e.preventDefault();
-    console.log('as'+lang);
-    localStorage.setItem('language',lang)
+    
+    console.log('as' + lang);
+    localStorage.setItem('language', lang)
     setLanguage(lang)
+    // const url = currentUrl;
+    // const url = currentUrl;
+    console.log(lang === 'EN', '++++', currentUrl)
+    // const regex = /\/th/;
+    // const isSubstringExist = regex.test(currentUrl);
+    // console.log(isSubstringExist);
+    // let url = isSubstringExist && lang === 'EN' ? currentUrl.replace('/th', '') : '/th' + currentUrl
+    // console.log(url);
+    // setUrl(url)
+    // console.log(navigate(`${url}`));
+    // return navigate(url);
+
+    // return <Navigate to={url} replace={true} />
+    // return <Navigate to={'/faq'} replace />
+    // history.push(url)
+    // return;
     // lang == 'TH' ? history.push('/th') : history.push('/')
 
   }
-  
+
   const handleMenuClose = () => {
     // e.preventDefault();
     document.body.classList.remove("menu_on");
@@ -33,10 +65,19 @@ const Header = () => {
       e.preventDefault();
       document.body.classList.toggle("menu_on");
     };
+    localStorage.getItem('language') == '' ? setLanguage('EN') : setLanguage(localStorage.getItem('language'))
 
-  // const language = localStorage.getItem('language')
-  // setLanguage(localStorage.getItem('language'))
-  localStorage.getItem('language') == '' ? setLanguage('EN') :setLanguage(localStorage.getItem('language'))
+    setRandonKey(Math.random());
+    // const lang = localStorage.getItem('language')
+    // const regex = /\/th/;
+    // const isSubstringExist = regex.test(currentUrl);
+    // console.log(isSubstringExist);
+    // let url = isSubstringExist && lang === 'EN' ? currentUrl.replace('/th', '') : '/th' + currentUrl
+    console.log(currentUrl);
+    setUrl(url)
+    // const language = localStorage.getItem('language')
+    // setLanguage(localStorage.getItem('language'))
+    
 
     document
       .querySelectorAll(".hambarger-menu-header")[0]
@@ -55,7 +96,13 @@ const Header = () => {
         .querySelectorAll(".menu-close-btn")[0]
         .removeEventListener("click", handleMenuClose);
     };
-  }, []);
+  }, [setUrl]);
+  // useEffect(() => {
+  //   setRandonKey(Math.random());
+  //   return () => {
+  //     // url
+  //   }
+  // }, [setUrl])
 
   return (
     <header className='site-header'>
@@ -69,46 +116,47 @@ const Header = () => {
           <div className='col-lg-9 col-8 header-right-column'>
             <nav className='main-nav-menu'>
               <ul className='nav-menu'>
-                
+
                 <li>
-                  <NavLink to={ language == 'TH' ? '/th/knowledge': '/knowledge'}  onClick={handleMenuClose}>
-                 
+                  <NavLink to={language == 'TH' ? '/th/knowledge' : '/knowledge'} onClick={handleMenuClose}>
+
                     KNOWLEDGE
                   </NavLink>
                 </li>
                 <li className="has_submenu">
-                  <NavLink to={ language == 'TH' ? '/th/selfcollectkit': '/selfcollectkit'} className="" onClick={handleMenuClose}>
+                  <NavLink to={language == 'TH' ? '/th/selfcollectkit' : '/selfcollectkit'} className="" onClick={handleMenuClose}>
                     SELF COLLECT KITS
                   </NavLink>
                   <ul>
-                    <li><NavLink to={language == 'TH' ? '/th/selfcollectkit/hpv':'/selfcollectkit/hpv'} onClick={handleMenuClose}>HPV</NavLink></li>
-                    <li><NavLink to={language == 'TH' ? '/th/selfcollectkit/sti_open':'/selfcollectkit/sti_open'} onClick={handleMenuClose}>STI</NavLink></li>
+                    <li><NavLink to={language == 'TH' ? '/th/selfcollectkit/hpv' : '/selfcollectkit/hpv'} onClick={handleMenuClose}>HPV</NavLink></li>
+                    <li><NavLink to={language == 'TH' ? '/th/selfcollectkit/sti_open' : '/selfcollectkit/sti_open'} onClick={handleMenuClose}>STI</NavLink></li>
                   </ul>
                 </li>
                 <li >
-                  <NavLink to={language == 'TH' ? '/th/faqs':'/faqs'} className="" onClick={handleMenuClose}>
-                    
+                  <NavLink to={language == 'TH' ? '/th/faqs' : '/faqs'} className="" onClick={handleMenuClose}>
+
                     FAQs
                   </NavLink>
                 </li>
                 <li >
-                  <NavLink to={language == 'TH' ? '/th/aboutus':'/aboutus'} className="" onClick={handleMenuClose}>
-                   
+                  <NavLink to={language == 'TH' ? '/th/aboutus' : '/aboutus'} className="" onClick={handleMenuClose}>
+
                     ABOUT US
                   </NavLink>
                 </li>
                 <li >
-                  <NavLink to={language == 'TH' ? '/th/affiliates':'/affiliates'} className="" onClick={handleMenuClose}>
-                 
+                  <NavLink to={language == 'TH' ? '/th/affiliates' : '/affiliates'} className="" onClick={handleMenuClose}>
+
                     AFFILIATES
                   </NavLink>
                 </li>
-                <li>
-                  
-                    <NavLink to='/' className="" onClick={(e) => changeLanguage(e,'EN')}>EN</NavLink> | 
-                    <NavLink to='/th' onClick={(e) => changeLanguage(e,'TH')}> TH </NavLink>
-                  
+                <li key={randonKey}>
+
+                  <NavLink to={language == 'TH' ? currentUrl.replace('/th/', '') : `/${currentUrl}` } className="" onClick={(e) => changeLanguage(e, 'EN')}>EN</NavLink> |
+                  <NavLink to={language == 'EN' ? `/th${currentUrl}` : currentUrl.replace('/th/', '')} onClick={(e) => changeLanguage(e, 'TH')}> TH </NavLink>
+
                 </li>
+                {url}
               </ul>
               <Link to='' className='menu-close-btn'>
                 &times;
@@ -127,7 +175,7 @@ const Header = () => {
                 <img src={cart} alt='' />
               </Link>
             </div>
-           
+
           </div>
         </div>
       </div>

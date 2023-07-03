@@ -30,7 +30,7 @@ const About = () => {
             <Link to='/aboutus' className='active'>
               EN
             </Link>
-            <Link to='/aboutus-th'>TH</Link>
+            <Link to='/th/aboutus'>TH</Link>
           </div>
         </div>
 

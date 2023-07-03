@@ -19,10 +19,9 @@ import add2 from "../../assets/image/add2a.png";
 import sep1 from "../../assets/image/sep1.png";
 import misc from "../../assets/image/misc.png";
 
-const SelfCollectKitsSTIOpen = () => {
+const SelfCollectKitsSTIOpenThai = () => {
   const [activeOption, setActiveOption] = useState(null);
   const language = localStorage.getItem('language');
-
   const handleOptionClick = (index) => {
     if (activeOption === index) {
       setActiveOption(null);
@@ -47,14 +46,12 @@ const SelfCollectKitsSTIOpen = () => {
         <div class='row'>
           <div class='col-lg-12'>
             <div class='inner_head_des'>
-              <h2>What are STIs? </h2>
+              <h2>อะไรคือโรคติดต่อทางเพศสัมพันธ์? </h2>
               <p>
-                Sexually Transmitted Infections are contracted through sexual
-                intercourse. There are different types of STIs from bacteria to
-                virus{" "}
+              เอสทีไอ เกิดขึ้นจากการติดเชื้อระกว่างมีเพศสัมพันธ์ซึ่งมีทั้ง เชื้อแบคทีเรีย เชื้อไวรัส เชื้อรา และปรสิต โรคติดต่อทางเพศสัมพันธ์สามารถพบได้ในทุกเพศ ทุกวัย สื่งที่ควรตระหนักคือบางคนอาจติดเชื้อ มีระยะฝักตัวของเชื้อแล้วแสดงอาการเลย เช่น ตุ่มน้ำหนองขึ้นบนร่างกาย, แผลตามอวัยวะเพศหรือช่องทางปาก, ตกขาวผิดปกติในเพศหญิง, คันบริเวณที่ติดเชื้อ แต่บางคนอาจได้รับเชื้อและไม่แสดงอาการอะไรเลย ซึ่งสามารถติดผู้อื่นได้เช่นกับคนที่มีอาการของโรค การตรวจจึงเป็นเรื่องสำคัญ{" "}
               </p>
               <div class='def_btn_opt'>
-                <Link to={language == 'TH' ? '/th/selfcollectkit/sti/kit' :'/selfcollectkit/sti/kit'}>Get Tested </Link>
+                <Link to={language == 'TH' ? '/th/selfcollectkit/sti/kit' :'/selfcollectkit/sti/kit'}>ตรวจด้วยตัวเอง</Link>
                 {/* <Link to=''>Get Tested </Link> */}
               </div>
             </div>
@@ -71,17 +68,16 @@ const SelfCollectKitsSTIOpen = () => {
             <div class='row'>
               <div class='col-lg-12'>
                 <div class='kit_hpv_des_info'>
-                  <h2 class='sec-title'>Which STIs do our kits test?</h2>
+                  <h2 class='sec-title'>ชุดตรวจค้นหาโรคอะไรได้บ้าง </h2>
                   <p>
-                    We can test for 14 STIs from one swipe, covering all common
-                    STIs in Thailand.
+                  เราสามารถทดสอบการติดเชื้อโรคติดต่อทางเพศสัมพันธ์ 14 ชนิดจากการตรวจหนึ่งครั้ง ซึ่งครอบคลุมโรคติดเชื้อทางเพศที่พบบ่อยในประเทศไทยทั้งหมด
                   </p>
                 </div>
                 <div class='kit_hpv_des_add modf_prod'>
                   <div class={`kit_hpv_pic_opt ${activeOption === 0 ? 'activeprod' : ''}`} onClick={() => handleOptionClick(0)}>
                     <div class='prod_view_des'>
                       <div class='prod_add'>
-                        <h3>BACTERIAS</h3>
+                        <h3>เชื้อแบคทีเรีย</h3>
                         <img src={prod_pic1} alt='' />
                       </div>
                     </div>
@@ -89,7 +85,7 @@ const SelfCollectKitsSTIOpen = () => {
                   <div class='kit_hpv_pic_opt'>
                     <div class={`kit_hpv_pic_opt ${activeOption === 1 ? 'activeprod' : ''}`} onClick={() => handleOptionClick(1)}>
                       <div class='prod_add'>
-                        <h3>FUNGUS </h3>
+                        <h3>เชื้อรา </h3>
                         <img src={prod_pic2} alt='' />
                       </div>
                     </div>
@@ -97,7 +93,7 @@ const SelfCollectKitsSTIOpen = () => {
                   <div class={`kit_hpv_pic_opt ${activeOption === 2 ? 'activeprod' : ''}`} onClick={() => handleOptionClick(2)}>
                     <div class='prod_view_des'>
                       <div class='prod_add'>
-                        <h3>VIRUS</h3>
+                        <h3>เชื้อไวรัส</h3>
                         <img src={prod_pic3} alt='' />
                       </div>
                     </div>
@@ -105,7 +101,7 @@ const SelfCollectKitsSTIOpen = () => {
                   <div class={`kit_hpv_pic_opt ${activeOption === 3 ? 'activeprod' : ''}`} onClick={() => handleOptionClick(3)}>
                     <div class='prod_view_des'>
                       <div class='prod_add'>
-                        <h3>PARASITE </h3>
+                        <h3>ปรสิต </h3>
                         <img src={prod_pic4} alt='' />
                       </div>
                     </div>
@@ -301,14 +297,14 @@ const SelfCollectKitsSTIOpen = () => {
                         <span>
                           <img src={star3} alt='' />
                         </span>{" "}
-                        When & Who Should Get Tested?{" "}
+                        ตรวจเมื่อไหร่ดี?{" "}
                       </h2>
                       <div class='add_opt_text_des'>
                         <ul>
-                          <li>You and/or your partner want to be safe </li>
-                          <li>You have unprotected sex  </li>
-                          <li>Begining a new relationship and/or ending a relationship </li>
-                          <li>Test every three months if you are sexually active with more than one partner </li>
+                          <li>คุณหรือคู่ของคุณ อยากตรวจเช็คเพื่อความปลอดภัยและสะบายใจ</li>
+                          <li>มีเพศสัมพันธ์เเบบไม่ได้ป้องกัน</li>
+                          <li>เมื่อเริ่มมีความสัมพันธ์ครั้งใหม่ หรือจบความสัมพันธ์ครั้งเก่า </li>
+                          <li>ตรวจทุกสามเดือนหากมีคู่นอนหลายคน</li>
                         </ul>
                       </div>
                     </div>
@@ -330,7 +326,7 @@ const SelfCollectKitsSTIOpen = () => {
                     <img src={new_text} alt='' />
                   </div>
                   <h2>
-                    <span></span> What’s In The AVA Kit?{" "}
+                    <span></span> มีอะไรในกล่องเอวาบ้าง {" "}
                   </h2>
                   <div class='avaKit_opt_text'>
                     <img src={add2} alt='' />
@@ -342,7 +338,7 @@ const SelfCollectKitsSTIOpen = () => {
         </div>
 
         <div class='order_ket_opt order_ket_opt2'>
-          <Link to='/selfcollectkit/sti/kit'>ORDER A KIT</Link>
+          <Link to='/selfcollectkit/sti/kit'>สั่งซื้อชุดตรวจ</Link>
         </div>
       </div>
 
@@ -354,7 +350,7 @@ const SelfCollectKitsSTIOpen = () => {
               <div class='howitowrk_info'>
                 <div class='howitowrk_info_left'>
                   <h2>
-                    HOW IT <span>WORKS</span>
+                  ชุดตรวจทำอย่างไร<span></span>
                   </h2>
                   <div class='howitowrk_leftimg'>
                     <img src={sep1} alt='' />
@@ -364,34 +360,34 @@ const SelfCollectKitsSTIOpen = () => {
                   <ul>
                     <li>
                       <span>1</span>
-                      <strong>REGISTER</strong>
-                      Once you have received the AVA testing kit, please register through QR code provided on the box.
+                      <strong>ลงทะเบียนชุดตรวจ</strong>
+                      เมื่อได้รับชุดตรวจหาเชื้อ AVA แล้ว ลงทะเบียนผ่าน website
+                      บนกล่อง
                     </li>
                     <li>
                       <span>2</span>
-                      <strong>COLLECT</strong>
-                      Please follow the instructions in the specimen collection manual to properly collect the sample for testing.
+                      <strong>เก็บสิ่งส่งตรวจ</strong>
+                      เก็บสิ่งตรวจตามขั้นตอนในคู่มือการเก็บสิ่งตรวจ
                     </li>
                     <li>
                       <span>3</span>
-                      <strong>FREE DELIVERY</strong>
-                      Once you have completed the specimen collection, please send the testing kit back to the laboratory using the provided postage-paid return envelope. You will not incur any charges for the return shipment.
+                      <strong>ส่งไปรศณีย์ไทยฟรี</strong>
+                      เมื่อเก็บเสร็จแล้ว ส่งชุดตรวจกลับไปที่ห้อง lab
+                      ผ่านทางไปรษณีย์โดยไม่เสียค่าใช้จ่าย
                     </li>
                     <li>
                       <span>4</span>
-                      <strong>RESULTS</strong>
-                      After the laboratory receives the testing kit, you can expect to receive the test results within 7 days.
+                      <strong>ผลตรวจ</strong>
+                      หลังจากห้อง lab ได้รับสิ่งส่งตรวจ จะแจ้งผลลัพธ์ภายใน 7 วัน
                     </li>
                   </ul>
                 </div>
               </div>
 
               <div class='positive_info'>
-                <h2>What if I test positive? </h2>
+                <h2>ทำอย่างไร หากผล 'บวก' </h2>
                 <p>
-                  Don’t worry - we got you covered. Explore a list of partner
-                  medical facilities and clinics near you or call us for a
-                  consultation.{" "}
+                ไม่ต้องกังวล - เรามีคำแนะนำที่ครอบคลุมทุกสิ่งที่คุณต้องรู้ ติดต่อเราเพื่อรับการปรึกษาและสำรวจรายชื่อสถานบริการทางการแพทย์และคลินิกพาร์ทเนอร์ใกล้คุณ.{" "}
                   <span>
                     <img src={misc} alt='' />
                   </span>
@@ -399,7 +395,7 @@ const SelfCollectKitsSTIOpen = () => {
 
                 <div class='def_btnopt2'>
                   <Link to='#' class='learn_more_btn'>
-                    Learn More{" "}
+                  เรียนรู้เพิ่ม{" "}
                   </Link>
                 </div>
               </div>
@@ -415,4 +411,4 @@ const SelfCollectKitsSTIOpen = () => {
   );
 };
 
-export default SelfCollectKitsSTIOpen;
+export default SelfCollectKitsSTIOpenThai;

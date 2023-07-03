@@ -18,7 +18,7 @@ import sep1 from "../../assets/image/sep1.png";
 import misc from "../../assets/image/misc.png";
 import { Link } from "react-router-dom";
 
-const SelfCollectKitsHPV = () => {
+const SelfCollectKitsHPVThai = () => {
   return (
     <div class='site-wrap'>
       <Header />
@@ -34,16 +34,12 @@ const SelfCollectKitsHPV = () => {
         <div class='row'>
           <div class='col-lg-12'>
             <div class='inner_head_des'>
-              <h2>What is HPV?</h2>
+              <h2>เอชพีวีคืออะไร </h2>
               <p>
-                HPV, or Human Papillomavirus, is a common sexually transmitted
-                infection that affects both males and females. It is the most
-                common sexually transmitted infection worldwide. HPV can be
-                transmitted through vaginal, anal, or oral sex, as well as
-                through close skin-to-skin contact.
+              เอชพีวี หรือว่าเชื้อไวรัสแปปิโลมา เป็นเชื้อโรคติดต่อทางเพศสัมพันธ์ที่พบเจอบ่อยในทั้งชายและหญิง เชื้อจะแพร่ผ่านการสัมพัสผิวหนังและเยื้อบุ ซึ่งไวรัสสามารถติดต่อได้จากช่องคลอด ถวารหนัก ออรัลเซ็กซ์ หรือแม้แต่การสัมผัสบริเวณต่าง ๆ ซึ่งกันและกัน นอกจากนี้การป้องกันและรู้ทันเชื้อไวรัสเอชพีวีก็สำคัญในการดูแลรักษาสุขภาพ ทุกเพศควรฉีดวัคซีนป้องกัน นอกจากนี้การตรวจคัดกรองไวรัสก็จะทำให้รู้ทันและได้รับการรักษาได้ก่อน
               </p>
               <div class='def_btn_opt'>
-                <Link to='/selfcollectkit/hpv/product'>Get Tested </Link>
+                <Link to='/selfcollectkit/hpv/product'>สั่งชุดตรวจ  </Link>
                 {/* <Link to=''>Get Tested </Link> */}
               </div>
             </div>
@@ -64,13 +60,10 @@ const SelfCollectKitsHPV = () => {
                     <span>
                       <img src={starpic1} alt='' class='img-fluid' />
                     </span>{" "}
-                    When is the right time to get tested?{" "}
+                    ควรตรวจเมื่อไหร่ {" "}
                   </h2>
                   <p>
-                    Without testing, it’s impossible to tell you have HPV
-                    because most women don’t experience symptoms. Depending on
-                    the HPV type, our bodies can eliminate the virus immediately
-                    - or have it develop in our bodies for years.
+                  เชื้อเอชพีวี เป็นเชื้อไวรัสที่ไม่แสดงการ ดังนั้นหากไม่ได้ตรวจหาเชื้อก็ไม่อาจทราบว่ามีเชื้อ ในเอชพีวีบางชนิดร่างกายของเราสามารถกำจัดเชื้อได้ด้วยตัวเอง แต่หากติดเชื้อบางชนิดก็เสี่ยงการนำไปสู่มะเร็งหรือผลเสียต่าง ๆ ต่อร่างกายในระยะยาวได้ ดังนั้นการตรวจป้องกันไว้ก่อนดีกว่าเสมอ 
                   </p>
                   <div class='qus1_pic'>
                     <img src={qus1} alt='' class='img-fluid' />
@@ -115,7 +108,7 @@ const SelfCollectKitsHPV = () => {
                     <img src={newv_text} alt='' />
                   </div>
                   <h2>
-                    <span></span> What’s In The AVA Kit?{" "}
+                    <span></span> อุปกรณ์ในชุดตรวจ {" "}
                   </h2>
                   <div class='avaKit_opt_text'>
                     <img src={add2} alt='' />
@@ -127,7 +120,7 @@ const SelfCollectKitsHPV = () => {
         </div>
 
         <div class='order_ket_opt'>
-          <Link to='/selfcollectkit/hpv/product'>ORDER A KIT</Link>
+          <Link to='/selfcollectkit/hpv/product'>สั่งซื้อชุดตรวจ</Link>
         </div>
       </div>
 
@@ -139,7 +132,7 @@ const SelfCollectKitsHPV = () => {
               <div class='howitowrk_info'>
                 <div class='howitowrk_info_left'>
                   <h2>
-                    HOW IT <span>WORKS</span>
+                  วิธีการใช้ชุดตรวจ<span></span>
                   </h2>
                   <div class='howitowrk_leftimg'>
                     <img src={sep1} alt='' />
@@ -149,34 +142,34 @@ const SelfCollectKitsHPV = () => {
                   <ul>
                     <li>
                       <span>1</span>
-                      <strong>REGISTER</strong>
-                      Once you have received the AVA testing kit, please register through QR code provided in the box.
+                      <strong>ลงทะเบียนชุดตรวจ</strong>
+                      เมื่อได้รับชุดตรวจหาเชื้อ AVA แล้ว ลงทะเบียนผ่าน website
+                      บนกล่อง
                     </li>
                     <li>
                       <span>2</span>
-                      <strong>COLLECT</strong>
-                      Please follow the instructions in the specimen collection manual to properly collect the sample for testing.
+                      <strong>เก็บสิ่งส่งตรวจ</strong>
+                      เก็บสิ่งตรวจตามขั้นตอนในคู่มือการเก็บสิ่งตรวจ
                     </li>
                     <li>
                       <span>3</span>
-                      <strong>FREE DELIVERY</strong>
-                      Once you have completed the specimen collection, please send the testing kit back to the laboratory using the provided postage-paid return envelope. You will not incur any charges for the return shipment.
+                      <strong>ส่งไปรษณีย์ไทยฟรี</strong>
+                      เมื่อเก็บเสร็จแล้ว ส่งชุดตรวจกลับไปที่ห้อง lab
+                      ผ่านทางไปรษณีย์โดยไม่เสียค่าใช้จ่าย
                     </li>
                     <li>
                       <span>4</span>
-                      <strong>RESULTS</strong>
-                      After the laboratory receives the testing kit, you can expect to receive the test results within 7 days.
+                      <strong>ผลตรวจ</strong>
+                      หลังจากห้อง lab ได้รับสิ่งส่งตรวจ จะแจ้งผลลัพธ์ภายใน 7 วัน
                     </li>
                   </ul>
                 </div>
               </div>
 
               <div class='positive_info'>
-                <h2>What if I test positive? </h2>
+                <h2>ทำอย่างไร หากผล 'บวก'?</h2>
                 <p>
-                  Don’t worry - we got you covered. Explore a list of partner
-                  medical facilities and clinics near you or call us for a
-                  consultation.{" "}
+                ไม่ต้องกังวล - เราคอยให้บริการครอบคลุมทุกเรื่องที่คุณต้องรู้ เรามีคำแนะที่ครอบคลุมทุกสิ่งที่คุณต้องรู้ ติดต่อเราเพื่อปรึกษาและสำรวจรายชื่อสถานบริการทางการแพทย์ใกล้คุณและคลินิกพาร์ทเนอร์ใกล้คุณ{" "}
                   <span>
                     <img src={misc} alt='' />
                   </span>
@@ -184,7 +177,7 @@ const SelfCollectKitsHPV = () => {
 
                 <div class='def_btnopt2'>
                   <Link to='#' class='learn_more_btn'>
-                    Learn More{" "}
+                  เรียนรู้เพิ่ม{" "}
                   </Link>
                 </div>
               </div>
@@ -200,4 +193,4 @@ const SelfCollectKitsHPV = () => {
   );
 };
 
-export default SelfCollectKitsHPV;
+export default SelfCollectKitsHPVThai;

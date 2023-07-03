@@ -8,7 +8,7 @@ import ava_sti from "../assets/image/ava_sti.jpg";
 import about_lab_img from "../assets/image/about-lab-img.png";
 import { Link } from "react-router-dom";
 
-const SelfcollectKit = () => {
+const SelfcollectKitThai = () => {
 
   return (
     <div class='site-wrap'>
@@ -20,60 +20,60 @@ const SelfcollectKit = () => {
       </div>
       <div class='container our-kit-sec'>
         <h3 class='secondary-title-light'>
-        
-          OURKITS
+
+          ชุดตรวจของเรา
         </h3>
         <div class='row'>
           <div class='col-lg-6 d-flex justify-content-center'>
             <div class='kit-card'>
               <Link to='/selfcollectkit/hpv'>
-             
+
                 <img src={ava_hpv} alt='' />
               </Link>
-              {/* <h3 class='title'>AVA HPV</h3> */}
+              {/* <h3 class='title'>เอวา เอชพีวี</h3> */}
             </div>
           </div>
           <div class='col-lg-6 d-flex justify-content-center'>
             <div class='kit-card'>
               <Link to='/selfcollectkit/sti_open'>
-       
+
                 <img src={ava_sti} alt='' />
               </Link>
-              {/* <h3 class='title'>AVA STI</h3> */}
+              {/* <h3 class='title'>เอวา โรคติดต่อทางเพศสัมพันธ์</h3> */}
             </div>
           </div>
         </div>
 
         <h3 class='secondary-title-light text-center mb-5'>
-        
-          WHY WE CHOOSE AVA
+
+          ทำไมต้อง 'เอวา'
         </h3>
         <div class='row mb-5'>
           <div class='col-lg-6 bg-blue-light ms-auto'>
             <div class='choose-ava-list'>
               <ul>
                 <li>
-                
-                Reliable results, mRNA test with 97.6% sensitivity and 90.2% specificity 
+
+                ผลน่าเชื่อถือด้วยการตรวจแบบ mRNA ที่มีความไวต่อตรวจพบ 97.6% และจำเพาะสูงถึง 90.2% 
                 </li>
                 <li>
-                
-                System ensures complete anonymity, safeguarding the confidentiality of your results
+
+                ระบบของเรามีการรักษาความเป็นส่วนตัวอย่างสมบูรณ์ ไม่ระบุชื่อ เพื่อให้มั่นใจได้ว่าข้อมูลของคุณจะถูกเก็บรักษาอย่างปลอกภัย 
                 </li>
                 <li>
-                
-                User-friendly, follow a few steps to collect sample yourself.
+
+                สามารถปฏิบัติตามเพียงไม่กี่ขั้นเพื่อเก็บตัวอย่างด้วยตนเองได้อย่างง่ายดาย
                 </li>
                 <li>
-                
-                Convenient, without any long waiting time. 
+
+                สะดวกสบาย โดยไม่ต้องรอนาน 
                 </li>
               </ul>
               <p class='action'>
                 <Link to='/selfcollectkit/sti/kit' class='btn btn-pink'>
-                {/* <Link to='' class='btn btn-pink'> */}
-                 
-                  PURCHASE
+                  {/* <Link to='' class='btn btn-pink'> */}
+
+                  ซื้อชุดตรวจ
                 </Link>
               </p>
             </div>
@@ -81,8 +81,8 @@ const SelfcollectKit = () => {
         </div>
 
         <h3 class='trinary-title-pink pt-5 text-center'>
-      
-          Why Our Customers Love AVA
+
+        ทำไมหลายคน รัก เอวา
         </h3>
         <div class='row mb-5'>
           <div class='col-lg-4 icon-card'>
@@ -91,7 +91,7 @@ const SelfcollectKit = () => {
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
             <p>
-            The packaging is really good. I was pleasantly surprised by the quality of the packaging. At first, I was a little unsure about doing the inspection myself, but it turned out to be perfectly fine. It was not difficult at all. I really liked it. From now on, I would like to purchase this.
+            แพ็คมาดีมาก ตกใจในความแพ็คมาอย่างดี ตอนแรกแอบไม่แน่ใจว่าตรวจเองมันจะโอเคมั้ย แต่จริงๆ โอเคมากๆ ไม่ลำบากเลย ชอบ ต่อไปนี้อยากตรวจจะซื้ออันนี้
             </p>
           </div>
           <div class='col-lg-4 icon-card'>
@@ -100,7 +100,7 @@ const SelfcollectKit = () => {
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
             <p>
-            The testing kit is easy to use, and it comes with clear instructions to ensure completeness. It saves time from having to go to the hospital, as I can simply wait for the results at home.
+            ชุดตรวจใช้ง่าย มีวิธีทำให้ครบเลย ไม่ต้องเสียเวลาไปโรงพยาบาล อยู่บ้านรอผลได้เลย
             </p>
           </div>
           <div class='col-lg-4 icon-card'>
@@ -109,13 +109,13 @@ const SelfcollectKit = () => {
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
             <p>
-            It's great! It's a self-testing kit for cervical cancer, and it's convenient that you can perform the test yourself. It's also reassuring that the kit respects your personal privacy by not requiring personal identification. Once you collect the sample, you can easily send it for testing and wait for the results conveniently. Wonderful!y
+            ดีค่ะเป็นชุดตรวจมะเร็งปากมดลูกด้วยตัวเองและก็ไม่รู้ชื่อนามสกุลเป็นความรับส่วนบุคคลดีค่ะเก็บสิ่งส่งตรวจเสร็จก็ส่งตรวจได้เลยค่ะแล้วรอรับผลสะดวกมากๆค่ะ
             </p>
           </div>
         </div>
         <h3 class='trinary-title-pink text-center'>
-         
-          How AVA works
+
+        ขั้นตอนการใช้ เอวา 
         </h3>
         <div class='embed-responsive embed-responsive-16by9 video-block'>
           <iframe
@@ -127,8 +127,8 @@ const SelfcollectKit = () => {
 
         <p class='actions text-center pt-5'>
           <Link to='' class='btn btn-pink-custom-bg'>
-         
-            Register Your Kit
+
+          ลงทะเบียนชุดตรวจ
           </Link>
         </p>
       </div>
@@ -137,8 +137,8 @@ const SelfcollectKit = () => {
           <div class='row'>
             <div class='col-lg-4 left-sec'>
               <h3 class='section-title'>
-            
-              Things to Know Before Getting Tested
+
+              เตรียมตัวก่อนตรวจ
               </h3>
             </div>
             <div class='col-lg-8'>
@@ -162,8 +162,8 @@ const SelfcollectKit = () => {
                       />
                     </svg>
                   </span>
-                 
-                  Refrain from collecting sample if you have engaged in sexual intercourse within the past 24 hours.
+
+                  ไม่ควรเก็บสิ่งส่งตรวจหากมีเพศสัมพันธ์ 24 ชั่วโมง ก่อนตรวจ 
                 </li>
                 <li>
                   <span class='icon'>
@@ -184,7 +184,7 @@ const SelfcollectKit = () => {
                       />
                     </svg>
                   </span>{" "}
-                  Avoid intentionally cleaning the collection area before performing the swab.
+                  ไม่ควรเช็ดล้างหรือสวนบริเวณที่เก็บสิ่งส่งตรวจก่อน
                 </li>
 
                 <li>
@@ -206,8 +206,8 @@ const SelfcollectKit = () => {
                       />
                     </svg>
                   </span>{" "}
-                  
-                  Do not use any conterception pill preferbly 24 - 36 hours before collecting sample 
+
+                  ห้ามใช้ยาสอด 24 - 36 ชั่วโมงก่อนเก็บสิ่งส่งตรวจ 
                 </li>
 
                 <li>
@@ -229,8 +229,8 @@ const SelfcollectKit = () => {
                       />
                     </svg>
                   </span>{" "}
-                 
-                  Do not collect sample if have had physical examination within the past 24 hours 
+
+                  ไม่ควรเก็บสิ่งส่งตรวจหากพึ่งได้รับการตรวจภายในมาไม่ถึง 24 ชั่วโมง 
                 </li>
 
                 <li>
@@ -253,7 +253,7 @@ const SelfcollectKit = () => {
                       />
                     </svg>
                   </span>{" "}
-                  Collect sample at least 5-7 days after period ends 
+                  กรุณาเก็บตัวอย่างน้อย 5-7 วันหลังจากสิ้นสุดรอบประจำเดือน
                 </li>
               </ul>
             </div>
@@ -266,16 +266,16 @@ const SelfcollectKit = () => {
           <div class='row'>
             <div class='col-lg-6'>
               <h2 class='sec-title'>
-                
+
                 About Our Lab
-                </h2>
+              </h2>
               <p>
-              
+
                 Through the use of such products and services, we also believe that our health and environments should not be harmed - so that we can contribute to make this world better and safer for our children and their children. Therefore, we proactively seek to source externally or create internally such products and services in order to provide the best value added solution for our clients.
-                </p>
+              </p>
             </div>
-            </div>
-            <div class='row'>
+          </div>
+          <div class='row'>
             <div class='col-lg-6'></div>
             <div class='col-lg-6'>
               <img src={about_lab_img} alt='' />
@@ -293,4 +293,4 @@ const SelfcollectKit = () => {
   );
 };
 
-export default SelfcollectKit;
+export default SelfcollectKitThai;
