@@ -10,44 +10,44 @@ import blog_img from "../assets/image/blog-img.png";
 const Knowledge = () => {
 
   return (
-    <div class='site-wrap blog-page'>
+    <div className='site-wrap blog-page'>
       <Header />
 
-      <div class='knoledge-big-banner'>
-        <h1 class='text-center'>
+      <div className='knoledge-big-banner'>
+        <h1 className='text-center'>
           <img src={knowlage_title} alt='' />
         </h1>
-        <p class='page-sub-title text-center'>
+        <p className='page-sub-title text-center'>
           พื้นที่แบ่งปันเรื่องที่ควรรู้ เพราะความรู้จะมีค่าเมื่อเกิดการบอกต่อ
        
         </p>
-        <div class='text-center mb-5'>
-          <p class=' lead'>
+        <div className='text-center mb-5'>
+          <p className=' lead'>
             From our team
           
           </p>
         </div>
-        <div class='quick-knoledge-sec'>
-          <div class='container'>
-            <div class='cover-card mb-0'>
-              <img src={Blog_Highlight} alt='' class='card-img' />
-              <div class='floted-caption pos-bot'>
-                <div class='meta-date'>Sarisa Gajaseni 20 Mar 2023</div>
-                <h3 class='card-title big'>
+        <div className='quick-knoledge-sec'>
+          <div className='container'>
+            <div className='cover-card mb-0'>
+              <img src={Blog_Highlight} alt='' className='card-img' />
+              <div className='floted-caption pos-bot'>
+                <div className='meta-date'>Sarisa Gajaseni 20 Mar 2023</div>
+                <h3 className='card-title big'>
                  
                   เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่ ก็ไม่เสมอไป{" "}
                 </h3>
-                <p class='card-text big'>
+                <p className='card-text big'>
                   เข้าใจ SEX กับความปลอดภัยในบทความนี้
                 
                 </p>
-                <div class='action btn-groups'>
-                  <Link to='/knowledge/blog' class='pill pill-outline'>
-                  {/* <Link to='' class='pill pill-outline'> */}
+                <div className='action btn-groups'>
+                  <Link to='/knowledge/blog' className='pill pill-outline'>
+                  {/* <Link to='' className='pill pill-outline'> */}
                     #SAFESEX
                   </Link>
-                  <Link to='/knowledge/blog' class='pill pill-outline'>
-                  {/* <Link to='' class='pill pill-outline'> */}
+                  <Link to='/knowledge/blog' className='pill pill-outline'>
+                  {/* <Link to='' className='pill pill-outline'> */}
                  
                     #STDPREVENTION
                   </Link>
@@ -60,67 +60,67 @@ const Knowledge = () => {
 
       {/* <!-- Banner ends --> */}
       {/* <!-- search start --> */}
-      <div class='bg-search-sec bg-yellow'>
-        <h2 class='primary-title text-center text-white'>
+      <div className='bg-search-sec bg-yellow'>
+        <h2 className='primary-title text-center text-white'>
           What’s on your mind?
          
         </h2>
-        <div class='search-wrap-block'>
-          <form action='' class='search-form-w'>
+        <div className='search-wrap-block'>
+          <form action='' className='search-form-w'>
             <input
               type='text'
               name=''
-              class='form-control'
+              className='form-control'
               placeholder='Search for anything'
             />
-            <input type='button' value='' class='btn-search' />
+            <input type='button' value='' className='btn-search' />
           </form>
         </div>
       </div>
       {/* <!-- search start Ends --> */}
 
       {/* <!-- blog lists --> */}
-      <div class='blog-lists'>
-        <div class='container'>
-          <div class='secondary-title'>
+      <div className='blog-lists'>
+        <div className='container'>
+          <div className='secondary-title'>
          
             Browse
           </div>
-          <div class='blog-filter'>
-            <Link to='' class='btn btn-pill-outline active'>
+          <div className='blog-filter'>
+            <Link to='' className='btn btn-pill-outline active'>
               #SAFESEX
             </Link>
-            <Link to='' class='btn btn-pill-outline '>
+            <Link to='' className='btn btn-pill-outline '>
             
               #STDPREVENTION
             </Link>
-            <Link to='' class='btn btn-pill-outline '>
+            <Link to='' className='btn btn-pill-outline '>
               #HPV
             </Link>
-            <Link to='' class='btn btn-pill-outline '>
+            <Link to='' className='btn btn-pill-outline '>
           
               #BIRTHCONTROL
             </Link>
-            <Link to='' class='btn btn-pill-outline '>
+            <Link to='' className='btn btn-pill-outline '>
              
               #RELATIONSHIPS
             </Link>
           </div>
 
           {/* <!-- posts --> */}
-          <div class='posts'>
-            <div class='post-article card'>
-              <div class='row'>
-                <div class='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' class='image-fluid' />
+          <div className='posts'>
+            <div className='post-article card'>
+              <div className='row'>
+                <div className='col-lg-7 graphic'>
+                  <img src={blog_img} alt='' className='image-fluid' />
                 </div>
-                <div class='col-lg-5 content'>
-                  <h2 class='post-title'>
+                <div className='col-lg-5 content'>
+                  <h2 className='post-title'>
                     เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่ก็ไม่เสมอไป เข้าใจ SEX
                     กับความปลอดภัยในบทความนี้
                  
                   </h2>
-                  <div class='post-meta'>Sarisa Gajaseni 20 Mar 2023</div>
+                  <div className='post-meta'>Sarisa Gajaseni 20 Mar 2023</div>
                   <p>
                 
                     Lorem ipsum dolor sit amet. Et eius galisum ut expedita
@@ -140,12 +140,12 @@ const Knowledge = () => {
                     temporibus aut nesciunt quasi ab quia quis. Id architecto
                     magni in voluptatem nesciunt eos quibusdam
                   </p>
-                  <div class='post-tag-meta'>
-                    <Link to='' class='btn btn-pill-outline '>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-pill-outline '>
                 
                       #BIRTHCONTROL
                     </Link>
-                    <Link to='' class='btn btn-pill-outline '>
+                    <Link to='' className='btn btn-pill-outline '>
                  
                       #RELATIONSHIPS
                     </Link>
@@ -154,18 +154,18 @@ const Knowledge = () => {
               </div>
             </div>
 
-            <div class='post-article card'>
-              <div class='row'>
-                <div class='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' class='image-fluid' />
+            <div className='post-article card'>
+              <div className='row'>
+                <div className='col-lg-7 graphic'>
+                  <img src={blog_img} alt='' className='image-fluid' />
                 </div>
-                <div class='col-lg-5 content'>
-                  <h2 class='post-title'>
+                <div className='col-lg-5 content'>
+                  <h2 className='post-title'>
                   
                     เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่ก็ไม่เสมอไป เข้าใจ SEX
                     กับความปลอดภัยในบทความนี้
                   </h2>
-                  <div class='post-meta'>Sarisa Gajaseni 20 Mar 2023</div>
+                  <div className='post-meta'>Sarisa Gajaseni 20 Mar 2023</div>
                   <p>
                   
                     Lorem ipsum dolor sit amet. Et eius galisum ut expedita
@@ -185,12 +185,12 @@ const Knowledge = () => {
                     temporibus aut nesciunt quasi ab quia quis. Id architecto
                     magni in voluptatem nesciunt eos quibusdam
                   </p>
-                  <div class='post-tag-meta'>
-                    <Link to='' class='btn btn-pill-outline '>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-pill-outline '>
                     
                       #BIRTHCONTROL
                     </Link>
-                    <Link to='' class='btn btn-pill-outline '>
+                    <Link to='' className='btn btn-pill-outline '>
                    
                       #BIRTHCONTROL
                     </Link>
@@ -200,20 +200,20 @@ const Knowledge = () => {
             </div>
           </div>
           {/* <!-- posts Ends --> */}
-          <div class='post-pagination'>
-            <ul class='pagination'>
-              <li class='page-item'>
-                <Link class='page-link active' to='#'>
+          <div className='post-pagination'>
+            <ul className='pagination'>
+              <li className='page-item'>
+                <Link className='page-link active' to='#'>
                   1
                 </Link>
               </li>
-              <li class='page-item'>
-                <Link class='page-link' to='#'>
+              <li className='page-item'>
+                <Link className='page-link' to='#'>
                   2
                 </Link>
               </li>
-              <li class='page-item'>
-                <Link class='page-link' to='#'>
+              <li className='page-item'>
+                <Link className='page-link' to='#'>
                   3
                 </Link>
               </li>

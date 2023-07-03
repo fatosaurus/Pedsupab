@@ -38,7 +38,7 @@ function Header(){
     // console.log(isSubstringExist);
     // let url = isSubstringExist && lang === 'EN' ? currentUrl.replace('/th', '') : '/th' + currentUrl
     // console.log(url);
-    // setUrl(url)
+    setUrl(url)
     // console.log(navigate(`${url}`));
     // return navigate(url);
 
@@ -152,8 +152,8 @@ function Header(){
                 </li>
                 <li key={randonKey}>
 
-                  <NavLink to={language == 'TH' ? currentUrl.replace('/th/', '') : `/${currentUrl}` } className="" onClick={(e) => changeLanguage(e, 'EN')}>EN</NavLink> |
-                  <NavLink to={language == 'EN' ? `/th${currentUrl}` : currentUrl.replace('/th/', '')} onClick={(e) => changeLanguage(e, 'TH')}> TH </NavLink>
+                  <NavLink to={language == 'TH' ? '/'+url.replace('/th/', ''): `` } className="" onClick={(e) => changeLanguage(e, 'EN')}>EN</NavLink> |
+                  <NavLink to={language == 'EN' ? `/th${url}` : ``} onClick={(e) => changeLanguage(e, 'TH')}> TH </NavLink>
 
                 </li>
                 {url}

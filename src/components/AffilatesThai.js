@@ -3,8 +3,23 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "../style.css";
 import affiliate_left_img from "../assets/image/affiliate-left-img.png";
+import { useFormik } from "formik";
+import * as yup from 'yup';
+import axios from 'axios';
+import { ToastContainer, toast } from "react-toastify";
 
-const AffiliatesThai = () => {
+
+
+const initialValues = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  confirmEmail:"",
+  socialMediaLinks:"",
+  reasonToJoin:""
+};
+
+const Affiliates = () => {
 
 
   const showCharacterLimit = (textarea, display_id) => {
@@ -29,120 +44,184 @@ const AffiliatesThai = () => {
     const displayId = "why-join-count";
     showCharacterLimit(textarea, displayId);
   }, []);
+
+ const affillateSchema = yup.object({
+  firstName :yup.string().required("firsName is required"),
+  lastName :yup.string().required("lastname is required"),
+  email :yup.string().email("Invalid email").required("email is required"),
+  confirmEmail: yup.string()
+  .oneOf([yup.ref('email'), null], 'Emails must match')
+  .required('Confirm Email is required'),
+  })
+ 
+  
+  const { values, errors, handleChange, handleSubmit, handleBlur,touched } = useFormik({
+    initialValues: initialValues,
+    validationSchema: affillateSchema,
+    onSubmit: (values) => {
+      console.log(values)
+
+      axios({
+        method: 'POST',
+        url: 'https://pedsupab-dev.azure-api.net/pedsupabapi/affiliates/register',
+        data: values
+      })
+        .then(function (res) {
+           console.log(res)
+           if(res.data.status==400){
+            toast.error(res.data.message)
+
+           }
+          //  alert(res.data.message);  
+           else{
+            toast.success("Sucessfully Registered")
+              // alert("Sucessfully Registered");  
+           }
+           
+        })
+        .catch(function (res) {
+           console.log(res)
+             
+      });
+    },
+  });
+ 
+  
   
   
   return (
-    <div class='site-wrap'>
+    <div className='site-wrap'>
       <Header />
-      <div class='affiliate-page-inner bg-gray'>
-        <div class='container-fluid'>
-          <div class='row'>
-            <div class='col-md-6 ps-0'>
-              <div class='card graphic'>
+      <div className='affiliate-page-inner bg-gray'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-md-6 ps-0'>
+              <div className='card graphic'>
                 <img src={affiliate_left_img} alt='Image' />
               </div>
             </div>
-            <div class='col-md-6 d-flex flex-wrap'>
-              <div class='card content-sec'>
-                <h5 class='card-title'>
-                {/* Join Our Affiliate Programme */}
+            <div className='col-md-6 d-flex flex-wrap'>
+              <div className='card content-sec'>
+                <h5 className='card-title'>
                 เข้าร่วมโปรแกรมพันธมิตรของเรา
                 
                   </h5>
-                <p class='card-text'>
-                  {/* Become part of the movement to create a sexually healthy
-                  society */}
-                  มาร่วมกันจะสร้างสังคมที่มีสุขภาพทางเพศที่ดีด้วยกัน
+                <p className='card-text'>
+                มาร่วมกันจะสร้างสังคมที่มีสุขภาพทางเพศที่ดีด้วยกัน
                 </p>
-                <form action='/join-affiliate-programme' method='post'>
-                  <div class='mb-3'>
-                    <label for='first-name' class='form-label'>
-                      {/* First Name */}
-                      ชื่อจริง
+                <form action='/join-affiliate-programme' method='post' onSubmit={handleSubmit}>
+                  <div className='mb-3'>
+                    <label htmlFor='first-name' className='form-label'>
+                    ชื่อจริง
                    
                     </label>
                     <input
                       type='text'
                       id='first-name'
-                      class='form-control'
-                      name='first_name'
+                      className='form-control'
+                       // name="first_Name"
+                      name='firstName'
+                      
+              
+                   value={values.firstName}
+                   onChange={handleChange}
+                   onBlur={handleBlur}
                     />
+                     {errors.firstName && touched.firstName ? (<p className="text-danger">{errors.firstName}</p>): null}
                   </div>
-                  <div class='mb-3'>
-                    <label for='last-name' class='form-label'>
-                      {/* Last Name */}
-                      นามสกุล
+                  <div className='mb-3'>
+                    <label htmlFor='last-name' className='form-label'>
+                    นามสกุล
                    
 
                     </label>
                     <input
                       type='text'
                       id='last-name'
-                      class='form-control'
-                      name='last_name'
+                      className='form-control'
+                      // name="last_Name"
+                      name='lastName'
+                      value={values.lastName}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                     />
+                      {errors.lastName && touched.lastName ?( <p className="text-danger">{errors.lastName}</p>):null}
                   </div>
-                  <div class='mb-3'>
-                    <label for='email' class='form-label'>
-                      {/* Email */}
-                      อีเมล์
+                  <div className='mb-3'>
+                    <label htmlFor='email' className='form-label'>
+                    อีเมล์
                      
                     </label>
                     <input
                       type='email'
                       id='email'
-                      class='form-control'
+                      className='form-control'
                       name='email'
+                      value={values.email}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                     />
+                     {errors.email && touched.email ?( <p className="text-danger">{errors.email}</p>): null}
                   </div>
-                  <div class='mb-3'>
-                    <label for='confirm-email' class='form-label'>
-                      {/* Confirm Email */}
-                      ยืนยันอีเมล์
+                  <div className='mb-3'>
+                    <label htmlFor='confirm-email' className='form-label'>
+                    ยืนยันอีเมล์
                   
                     </label>
                     <input
                       type='email'
                       id='confirm-email'
-                      class='form-control'
-                      name='confirm_email'
+                      className='form-control'
+                      // name='confirm_email'
+                      name='confirmEmail'
+                      value={values.confirmEmail}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                     />
+                    {errors.confirmEmail && touched.confirmEmail ?( <p className="text-danger">{errors.confirmEmail}</p>): null}
                   </div>
-                  <div class='mb-3'>
-                    <label for='social-media-links' class='form-label'>
-                      {/* Your Social Media Links */}
-                      โซเชีบลมีเดียของท่าน
+                  <div className='mb-3'>
+                    <label htmlFor='social-media-links' className='form-label'>
+                    โซเชีบลมีเดียของท่าน
                     </label>
                     <input
                       type='text'
                       id='social-media-links'
-                      class='form-control'
-                      name='social_media_links'
+                      className='form-control'
+                      // name='social_media_links'
+                      name='socialMediaLinks'
+                      value={values.socialMediaLinks}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                     />
                   </div>
-                  <div class='mb-3'>
-                    <label for='why-join' class='form-label'>
-                      {/* Why do you want to join our programme? */}
-                      ทำไมถึงอยากเข้าร่วม
+                  <div className='mb-3'>
+                    <label htmlFor='why-join' className='form-label'>
+                    ทำไมถึงอยากเข้าร่วม
+
                    
                     </label>
                     <textarea
                       id='why-join'
-                      class='form-control'
+                      className='form-control'
                       rows='3'
-                      name='why_join'
+                      // name='why_join'
+                      name='reasonToJoin'
+                      value={values.reasonToJoin}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+
                     ></textarea>
-                    <div class='text-right form-label'>
-                      <small class='form-text text-muted' id='why-join-count'>
+                    <div className='text-right form-label'>
+                      <small className='form-text text-muted' id='why-join-count'>
                         Limit 150 characters
-                        
+                       
                       </small>
                     </div>
                   </div>
-                  <div class='mb-3'>
-                    <button type='submit' class='btn btn-primary'>
-                      {/* Join */}
-                      สมัคร
+                  <div className='mb-3'>
+                    <button type='submit' className='btn btn-primary'>
+                    สมัคร
                      
                     </button>
                   </div>
@@ -159,4 +238,4 @@ const AffiliatesThai = () => {
   );
 };
 
-export default AffiliatesThai;
+export default Affiliates;

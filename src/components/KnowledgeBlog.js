@@ -13,41 +13,41 @@ import blog_pic3 from "../assets/image/blog_pic3.png";
 
 const KnowledgeBlog = () => {
   return (
-    <div class='site-wrap'>
+    <div className='site-wrap'>
       <Header />
 
-      <div class='inner-small-banner innerbanner'>
-        <div class='text-center'>
-          <img src={blogbanner} alt='' class='img-fluid' />
+      <div className='inner-small-banner innerbanner'>
+        <div className='text-center'>
+          <img src={blogbanner} alt='' className='img-fluid' />
         </div>
       </div>
-      <div class='blog_content_outer'>
-        <div class='inner_content_maincont'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-lg-12'>
-                <div class='inner_maincont'>
-                  <div class='inner_head_info'>
+      <div className='blog_content_outer'>
+        <div className='inner_content_maincont'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <div className='inner_maincont'>
+                  <div className='inner_head_info'>
                     <h2>#SAFESEX #STDPREVENTION</h2>
-                    <div class='caption_info'>
+                    <div className='caption_info'>
                       <h3>เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่ก็ไม่เสมอไป</h3>
                       <p>เข้าใจ SEX กับความปลอดภัยในบทความนี้</p>
-                      <div class='profile_add'>
-                        <div class='pref_pic'>
+                      <div className='profile_add'>
+                        <div className='pref_pic'>
                           <img
                             src={profilepic1}
                             alt=''
-                            class='img-fluid'
+                            className='img-fluid'
                           />
                         </div>
-                        <div class='pref_pic_text'>
+                        <div className='pref_pic_text'>
                           <h4>Sarisa Gajaseni</h4>
                           <p>20 Mar 2023</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class='inner_cont_des_view'>
+                  <div className='inner_cont_des_view'>
                     <p>
                       ก่อนอ่านบทความนี้
                       เราอยากชวนคุณนึกถึงเซ็กซ์ที่ผ่านมาของตัวเองดู
@@ -92,24 +92,24 @@ const KnowledgeBlog = () => {
             </div>
           </div>
         </div>
-        <div class='addinfo3'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-lg-12'>
-                <div class='addinfo3_pic'>
-                  <img src={banner_pic1} alt='' class='img-fluid' />
+        <div className='addinfo3'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <div className='addinfo3_pic'>
+                  <img src={banner_pic1} alt='' className='img-fluid' />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class='inner_content_maincont'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-lg-12'>
-                <div class='inner_maincont'>
-                  <div class='inner_cont_des_view'>
+        <div className='inner_content_maincont'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <div className='inner_maincont'>
+                  <div className='inner_cont_des_view'>
                     <h2>เซ็กซ์คือการเมือง</h2>
                     <p>
                       ปฏิเสธไม่ได้ว่าหนึ่งในปัจจัยที่ปลูกฝังค่านิยมนี้ให้หลายคนคือวิชาเพศศึกษา
@@ -146,15 +146,15 @@ const KnowledgeBlog = () => {
                       ขึ้นเป็นประธานาธิบดีก็กลับไปสนใจหลักสูตรที่เน้นไม่ให้มีเพศสัมพันธ์แบบเดิม
                     </p>
 
-                    <div class='inner_block_info2'>
-                      <div class='innerblog_add'>
+                    <div className='inner_block_info2'>
+                      <div className='innerblog_add'>
                         <img
                           src={blog_img1}
                           alt=''
-                          class='img-fluid'
+                          className='img-fluid'
                         />
                       </div>
-                      <div class='innerblog_des2'>
+                      <div className='innerblog_des2'>
                         <p>
                           ความรู้เรื่องเพศไม่เคยหยุดนิ่งและลื่นไหลอยู่ตลอดเวลาซึ่งแบบเรียนเพศวิถีศึกษารบด้านนี่แหละจะช่วยเปิดเวทีและสร้างบทสนทนาที่ส่งเสริมความรู้ความเข้าใจอันดีจนวันหนึ่งเราจะสามารถพูดเรื่องเร้นลับในสื่อสาธารณะได้โดยไม่ต้องกลัวเกรง
                           เหมือนวันที่เด็กในวงประสานเสียงได้ร้องเพลง “suck,
@@ -168,20 +168,20 @@ const KnowledgeBlog = () => {
             </div>
           </div>
         </div>
-        <div class='inner_content_maincont'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-lg-12'>
-                <div class='inner_subblock'>
+        <div className='inner_content_maincont'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <div className='inner_subblock'>
                   <h2>Related Blogs</h2>
-                  <div class='inner_subblock_des'>
-                    <div class='blog_item'>
-                      <div class='blog_item_pic'>
+                  <div className='inner_subblock_des'>
+                    <div className='blog_item'>
+                      <div className='blog_item_pic'>
                         <Link to='#'>
                           <img
                             src={blog_pic1}
                             alt=''
-                            class='img-fluid'
+                            className='img-fluid'
                           />
                         </Link>
                       </div>
@@ -193,13 +193,13 @@ const KnowledgeBlog = () => {
                       </p>
                     </div>
 
-                    <div class='blog_item'>
-                      <div class='blog_item_pic'>
+                    <div className='blog_item'>
+                      <div className='blog_item_pic'>
                         <Link to='#'>
                           <img
                             src={blog_pic2}
                             alt=''
-                            class='img-fluid'
+                            className='img-fluid'
                           />
                         </Link>
                       </div>
@@ -211,13 +211,13 @@ const KnowledgeBlog = () => {
                       </p>
                     </div>
 
-                    <div class='blog_item'>
-                      <div class='blog_item_pic'>
+                    <div className='blog_item'>
+                      <div className='blog_item_pic'>
                         <Link to='#'>
                           <img
                             src={blog_pic3}
                             alt=''
-                            class='img-fluid'
+                            className='img-fluid'
                           />
                         </Link>
                       </div>
