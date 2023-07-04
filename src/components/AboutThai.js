@@ -93,8 +93,8 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_1} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>JJOOPJIP.C</h4>
-                  <p className='color-blue sub-title'>Marketing Manager</p>
+                  <h4 className='card-title'>จันทมาศ ฉัตราภรณ์</h4>
+                  <p className='color-blue sub-title'>ผู้จัดการ</p>
                   <p className='quote'>จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p>
                 </div>
               </div>
@@ -103,8 +103,8 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_2} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>_ITSPPNUTT_</h4>
-                  <p className='color-orange sub-title'>Communication Officer</p>
+                  <h4 className='card-title'>ศุภณัฐ นาคอนุเคราะห์</h4>
+                  <p className='color-orange sub-title'>ครีเอทีฟ</p>
                   <p className='quote'>เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p>
                 </div>
               </div>
@@ -113,8 +113,8 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_3} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>TXN_AXXL</h4>
-                  <p className='color-blue sub-title'>Communication Officer</p>
+                  <h4 className='card-title'>อรรถพล เหลาพร</h4>
+                  <p className='color-blue sub-title'>ครีเอทีฟ</p>
                   <p className='quote'>เชื่อมั่น & ทำความดีด้วยสติ ✨</p>
                 </div>
               </div>
@@ -124,9 +124,9 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_4} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>PHANITPICHA</h4>
+                  <h4 className='card-title'>สรัญญา พันธ์คำ</h4>
                   <p className='color-orange sub-title'>
-                    Customer Service & coordinator
+                  ประสานงาน
                   </p>
                   <p className='quote'>“ ทุกอย่างมีเวลาของมัน ”</p>
                 </div>
@@ -136,9 +136,9 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_5} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>MEENSRY.P</h4>
+                  <h4 className='card-title'>อัญชิสา อึ่งชื่น</h4>
                   <p className='color-green sub-title'>
-                    Customer Service & Coordinator
+                  เจ้าหน้าที่ธุรการแอดมิน
                   </p>
                   <p className='quote'>
                     เพื่อนกิน เพื่อนกัน เพื่อนกินไม่ทัน เพื่อนกันเอาไปกิน
@@ -150,9 +150,9 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_6} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>_JANECST_</h4>
+                  <h4 className='card-title'>วาสินี หมายจันดี</h4>
                   <p className='color-blue sub-title'>
-                    Customer Service & Coordinator
+                  เจ้าหน้าที่บริการติดต่อและประสานงาน
                   </p>
                   <p className='quote'>จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p>
                 </div>
@@ -163,8 +163,8 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_7} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>WASINEE_NOONA</h4>
-                  <p className='color-blue sub-title'>Content & Social media</p>
+                  <h4 className='card-title'>โชษิตา ทองดุก</h4>
+                  <p className='color-blue sub-title'>เจ้าหน้าที่ธุรการแอดมิน</p>
                   <p className='quote'>เชื่อมั่น & ทำความดีด้วยสติ ✨</p>
                 </div>
               </div>
@@ -173,8 +173,8 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_8} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>VI_VIANNNNNN</h4>
-                  <p className='color-green sub-title'>Graphic Designer</p>
+                  <h4 className='card-title'>วิเวียน ชเนพป์</h4>
+                  <p className='color-green sub-title'>กราฟิก ดีไซน์</p>
                   <p className='quote'>
                     เงื่อนไขที่ว่า แก้งานได้ 2 ครั้งมีอยู่จริง คือ “ครั้งแล้ว”
                     และ “ครั้งเล่า”
@@ -186,8 +186,8 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_9} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>UN_ANCHISA</h4>
-                  <p className='color-orange sub-title'>Administrative Officer</p>
+                  <h4 className='card-title'>ฐิตารีย์ กลั่นเงินวงศ์</h4>
+                  <p className='color-orange sub-title'>ที่ปรึกษาทีม </p>
                   <p className='quote'>เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p>
                 </div>
               </div>
@@ -197,7 +197,7 @@ const AboutThai = () => {
                   <div className='graphic'>
                     <img src={team_img_10} alt='Team Member' />
                   </div>
-                  <h4 className='card-title'>SARISARISAS</h4>
+                  <h4 className='card-title'>สาริศา คชเสนี </h4>
                   <p className='color-green sub-title'>
                     <br />
                   </p>

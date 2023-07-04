@@ -98,7 +98,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+              Just Sex or Make Love, What's the Difference ?
               </h3>
               </Link>
             </div>
@@ -109,7 +109,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+              Can No Protection Sex Be Safe? 
               </h3>
               </Link>
             </div>
@@ -120,7 +120,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+              Can Sex Cause Stress?
               </h3>
               </Link>
             </div>
@@ -177,7 +177,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+              The Rise of HPV Infections: Understanding the Need for Increased Testing in Thailand
               </h3>
               </Link>
             </div>
@@ -188,7 +188,7 @@ const Home = () => {
               </div>
               <h3 className='blog-title'>
 
-              Sex is a beautiful thing.
+              Debunking Common Misconceptions about HPV and HPV Testing
               </h3>
               </Link>
             </div>
@@ -198,7 +198,7 @@ const Home = () => {
                 <img src={blog_thumb__4} alt='' />
               </div>
               <h3 className='blog-title'>
-              Sex is a beautiful thing. But b is not always{" "}
+              Navigating Sexual Health Education in Thailand: How Pedsupab wants to Make a Difference
               </h3>
               </Link>
             </div>
@@ -208,7 +208,7 @@ const Home = () => {
                 <img src={blog_thumb__5} alt='' />
               </div>
               <h3 className='blog-title'>
-              Sex is a beautiful thing, but
+              Understanding the Importance of HPV Testing: Why Early Detection Matters
               </h3>
               </Link>
             </div>
