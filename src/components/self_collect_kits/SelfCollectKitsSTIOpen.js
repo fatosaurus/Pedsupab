@@ -162,39 +162,10 @@ const SelfCollectKitsSTIOpen = () => {
                     <div class='prod_inner_cont'>
                       <ul>
                         <li>
-                          <Link to=''>Neisseria Gonorrhoeae </Link>
+                          <Link to=''>Yeast Infection/Candida albicans  </Link>
                         </li>
 
-                        <li>
-                          <Link to=''>Ureaplasma Parvum </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Chlamydia Trachomatis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Treponema Pallidum </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Mycoplasma Genitalium </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Gardnerella Vaginalis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Mycoplasma hominis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Haemophilus Ducreyi </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Ureaplasma Urealyticum </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Group B Streptococcus </Link>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -205,39 +176,14 @@ const SelfCollectKitsSTIOpen = () => {
                     <div class='prod_inner_cont'>
                       <ul>
                         <li>
-                          <Link to=''>Neisseria Gonorrhoeae </Link>
+                          <Link to=''>Oral herpes or cold sores/Herpes simplex virus type 1 </Link>
                         </li>
 
                         <li>
-                          <Link to=''>Ureaplasma Parvum </Link>
+                          <Link to=''>Genital herpes/Herpes simplex virus type 2  </Link>
                         </li>
 
-                        <li>
-                          <Link to=''>Chlamydia Trachomatis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Treponema Pallidum </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Mycoplasma Genitalium </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Gardnerella Vaginalis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Mycoplasma hominis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Haemophilus Ducreyi </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Ureaplasma Urealyticum </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Group B Streptococcus </Link>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -248,39 +194,10 @@ const SelfCollectKitsSTIOpen = () => {
                     <div class='prod_inner_cont'>
                       <ul>
                         <li>
-                          <Link to=''>Neisseria Gonorrhoeae </Link>
+                          <Link to=''>Trichomoniasis/Trichomonas vaginalis  </Link>
                         </li>
 
-                        <li>
-                          <Link to=''>Ureaplasma Parvum </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Chlamydia Trachomatis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Treponema Pallidum </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Mycoplasma Genitalium </Link>
-                        </li>
-
-                        <li>
-                          <Link to=''>Gardnerella Vaginalis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Mycoplasma hominis </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Haemophilus Ducreyi </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Ureaplasma Urealyticum </Link>
-                        </li>
-                        <li>
-                          <Link to=''>Group B Streptococcus </Link>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
