@@ -96,7 +96,7 @@ function Header(){
         .querySelectorAll(".menu-close-btn")[0]
         .removeEventListener("click", handleMenuClose);
     };
-  }, [setUrl]);
+  }, []);
   // useEffect(() => {
   //   setRandonKey(Math.random());
   //   return () => {
@@ -109,7 +109,7 @@ function Header(){
       <div className='container-fluid'>
         <div className='row'>
           <div className='col-lg-3 col-4 brand'>
-            <Link to='/'>
+            <Link to={language == 'TH' ? '/th' : '/'}>
               <img src={logo} alt='' />
             </Link>
           </div>
@@ -156,7 +156,7 @@ function Header(){
                   <NavLink to={language == 'EN' ? `/th${url}` : ``} onClick={(e) => changeLanguage(e, 'TH')}> TH </NavLink>
 
                 </li>
-                {url}
+                
               </ul>
               <Link to='' className='menu-close-btn'>
                 &times;
@@ -171,7 +171,7 @@ function Header(){
               </div>
             </nav>
             <div className='utility-links'>
-              <Link to='/mycart'>
+            <Link to={language == 'TH' ? '/th/mycart' :'/mycart'}>
                 <img src={cart} alt='' />
               </Link>
             </div>

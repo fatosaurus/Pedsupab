@@ -25,7 +25,7 @@ import KnowledgeBlog from "./components/KnowledgeBlog";
 import KnowledgeBlogThai from "./components/KnowledgeBlogThai"
 
 function App() {
-  const language = localStorage.getItem("language");
+  const language = localStorage.setItem("language",'EN');
   console.log(language + "=====language app")
   return (
 
