@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../style.css";
@@ -7,6 +7,8 @@ import { useFormik } from "formik";
 import * as yup from 'yup';
 import axios from 'axios';
 import { ToastContainer, toast } from "react-toastify";
+import SocialLinks from "./SocialLinks";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -20,7 +22,8 @@ const initialValues = {
 };
 
 const Affiliates = () => {
-
+  const [socialLinks,setSocialLinks] = useState([])
+  const navigate = useNavigate();
 
   const showCharacterLimit = (textarea, display_id) => {
     const maxCharacters = 150;
@@ -60,6 +63,12 @@ const Affiliates = () => {
     validationSchema: affillateSchema,
     onSubmit: (values) => {
       console.log(values)
+      var Links = socialLinks.map(function(item) {
+        return item['socialMediaLinks'];
+      });
+      // console.log(Links)
+      
+      values.socialMediaLinks = Links.toString();
 
       axios({
         method: 'POST',
@@ -75,6 +84,7 @@ const Affiliates = () => {
           //  alert(res.data.message);  
            else{
             toast.success("Sucessfully Registered")
+            return navigate("/" ,{ replace: true });
               // alert("Sucessfully Registered");  
            }
            
@@ -87,7 +97,10 @@ const Affiliates = () => {
   });
  
   
-  
+  const getSocialLinks =(data) =>{
+    console.log(data)
+    setSocialLinks(data);
+}
   
   return (
     <div className='site-wrap'>
@@ -180,7 +193,8 @@ const Affiliates = () => {
                     />
                     {errors.confirmEmail && touched.confirmEmail ?( <p className="text-danger">{errors.confirmEmail}</p>): null}
                   </div>
-                  <div className='mb-3'>
+                  <SocialLinks getSocialLinks={getSocialLinks}/>
+                  {/* <div className='mb-3'>
                     <label htmlFor='social-media-links' className='form-label'>
                     โซเชีบลมีเดียของท่าน
                     </label>
@@ -194,7 +208,7 @@ const Affiliates = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                     />
-                  </div>
+                  </div> */}
                   <div className='mb-3'>
                     <label htmlFor='why-join' className='form-label'>
                     ทำไมถึงอยากเข้าร่วม
