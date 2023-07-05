@@ -3221,4 +3221,33 @@ a.learn_more_btn {
   }
 }
 
+/* 5-7-2023 code for social */
+.social-media-add-w {
+  background: #fff;
+  padding: 5px;
+  border-radius: 9px;
+  margin-bottom: 15px;
+}
+
+.social-media-add-w button {
+  border: none;
+  background: transparent;
+}
+
+.plus_icon {
+  display: inline-block;
+  vertical-align: top;
+}
+
+span.plus_icon:before {
+  content: "+";
+  font-weight: bold;
+  font-size: 32px;
+  font-family: Arial;
+  line-height: 15px;
+  color: #13595F;
+  display: block;
+  margin-top: 4px;
+}
+
 /* Sushanta end */

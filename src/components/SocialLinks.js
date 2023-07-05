@@ -57,7 +57,7 @@ function SocialLinks({ getSocialLinks }) {
 
 
             )) : "No Social Links added"}
-            <button style={{ color: "red", fontSize: "15px", float: "right" }} onClick={addFields}>Add More..</button>
+            <div className='social-media-add-w d-flex justify-content-end'><button onClick={addFields}><span className='plus_icon'></span> {/*Add More..*/}</button></div>
         </div>
     );
 }
