@@ -210,8 +210,8 @@ const Faq = () => {
                   a check-up at a sexual health clinic as soon as you can. Do
                   not have sex, including oral sex, without using a condom until
                   you've had a check-up. You can have an STI without knowing it
-                  and infect your partner during sex.
-                  <p>STI symptoms:</p>
+                  and infect your partner during sex.STI symptoms
+                  <p>The symptoms of an STI can include:</p>
                   <ul>
                     <li>
                       an unusual discharge from the vagina, penis, or anus
@@ -233,7 +233,7 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-            <div className='accordion-item all-faq'>
+            {/* <div className='accordion-item all-faq'>
               <h4 className='accordion-header'>
                 <button
                   className='accordion-button collapsed'
@@ -290,7 +290,7 @@ const Faq = () => {
               <div id='faq_row_5' className='accordion-collapse collapse' data-bs-parent="#faq_accordion_list">
                 <div className='accordion-body'>Coming Soon</div>
               </div>
-            </div>
+            </div> */}
             <div className='accordion-item all-faq'>
               <h4 className='accordion-header'>
                 <button
