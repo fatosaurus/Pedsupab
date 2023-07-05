@@ -219,6 +219,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 0 0;
   padding-left: 80px;
+  min-height: 55px;
 }
 
 .choose-ava-list .action {
@@ -1913,7 +1914,7 @@ img {
   background: #D2E9EB;
   padding: 100px 0;
   text-align: center;
-  position: relative;
+  position: relative; 
 }
 
 .avaKit_opt2 {
@@ -1958,6 +1959,9 @@ img {
   z-index: 10;
   margin-top: -128px;
 }
+
+.order_ket_opt { position: relative; z-index: 3;}
+.howitowrk_wrap { position: relative; z-index: 3;}
 
 .order_ket_opt a {
   background: #5B7FBD;
