@@ -6,12 +6,7 @@ function SocialLinks({ getSocialLinks }) {
     const [socialLinks, setsocialLinks] = useState([])
     const language = localStorage.getItem('language');
 
-    // useEffect(() => {
-
-
-    //     AssignmentData()
-
-    // }, []);
+  
 
     const [inputFields, setInputFields] = useState([
         { socialMediaLinks: '' }
