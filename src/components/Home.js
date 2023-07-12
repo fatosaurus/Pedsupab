@@ -92,7 +92,7 @@ const Home = () => {
 
           <div className='feature-three-blogs-w'>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/blog1">
               <div className='graphic'>
                 <img src={blog_thumb_1} alt='' />
               </div>
@@ -103,7 +103,7 @@ const Home = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/blog2">
               <div className='graphic'>
                 <img src={blog_thumb_2} alt='' />
               </div>
@@ -114,7 +114,7 @@ const Home = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/blog3">
               <div className='graphic'>
                 <img src={blog_thumb_3} alt='' />
               </div>
