@@ -4,9 +4,36 @@ import Footer from "./Footer";
 import "../style.css";
 import order_product from "../assets/image/order-product.png";
 import { Link } from "react-router-dom";
+import { useFormik } from "formik";
+import * as yup from 'yup';
+import axios from 'axios';
+import { ToastContainer, toast } from "react-toastify";
+import { useJwt } from "react-jwt";
+import base64url from "base64url";
+import { Buffer } from "buffer";
+import { Stream } from "stream";
+import jwt from 'jwt-decode'
+import { useNavigate } from 'react-router-dom';
+// import { createHmac } from "crypto";
 
-const MyCart = () => {   
+// import json_encode
+
+// const token = "Your JWT";
+
+
+const MyCart = () => {
+
+  // var json_encode = require('json_encode');
+  // var createHmac = require('create-hmac');
+  const sign = require('jwt-encode');
+  // const navigate = useNavigate();
+
+  window.Buffer = window.Buffer || Buffer;
+
   const [quantity, setQuantity] = useState(1);
+  const [cardNumber, setCardNumber] = useState('');
+  const [expiryDate, setExpiryDate] = useState('');
+  const [cvv, setCvv] = useState('');
 
   const handleMinusClick = () => {
     if (quantity > 1) {
@@ -17,6 +44,89 @@ const MyCart = () => {
   const handlePlusClick = () => {
     setQuantity(quantity + 1);
   };
+
+  const handleCreditDebit = () => {
+    document.querySelectorAll('#creditDebitCard')[0].style.display = "block";
+  }
+  useEffect(() => {
+    document.querySelectorAll('#creditDebitCard')[0].style.display = "none";
+  }, [])
+  const initialValues = {
+    cardNumber: '',
+    expiryDate: '',
+    cvv: ''
+  };
+
+  const affillateSchema = yup.object({
+    cardNumber: yup.string().required("Card Number is required"),
+    expiryDate: yup.string().required("expiry Date  is required"),
+    cvv: yup.string().required("Cvv is required"),
+  });
+
+  
+
+  const { values, errors, handleChange, handleSubmit, handleBlur, touched } = useFormik({
+    initialValues: initialValues,
+    // validationSchema: affillateSchema,
+    onSubmit: (values) => {
+
+
+
+      console.log(cardNumber)
+      console.log(expiryDate);
+      console.log(cvv);
+      // e.preventDefault();
+      // values.cardNumber = cardNumber;
+      // values.expiryDate = expiryDate;
+      // values.cvv = cvv;
+      values.merchantID = "764764000009347";
+      values.secretKey = "0D6A706933AE782A686365CFA7C19160F65E887D55DC9F41729BB13D8B32C10A";
+      values.amount = 1000;
+      values.currencyCode = 'USD';
+      values.description = 'item 1';
+      values.invoiceNo = '1523953662'
+      let value;
+
+      const PT_dataArray = {
+        //MANDATORY PARAMS
+        "merchantID": values.merchantID,
+        "invoiceNo": values.invoiceNo,
+        "description": values.description,
+        "amount": values.amount,
+        "currencyCode": values.currencyCode,
+      }
+
+
+      
+      const payload = sign(PT_dataArray, values.secretKey);
+      console.log(payload);
+
+
+      const options = {
+        method: 'POST',
+        headers: { accept: 'application/json', 'content-type': 'application/*+json' },
+        body: JSON.stringify({
+          'payload': payload
+        })
+      };
+
+      fetch('https://sandbox-pgw.2c2p.com/payment/4.1/PaymentToken', options)
+        .then(response => response.json())
+        .then(response => {
+          console.log(response)
+          var paymentDetails = jwt(response.payload);
+          console.log(paymentDetails);
+          if(paymentDetails.respCode === '0000'){
+            //Redirect to the payment url paymentDetails.webPaymentUrl
+            window.location.replace( paymentDetails.webPaymentUrl);
+          }
+        }
+        )
+        .catch(err => console.error(err));
+
+      
+    },
+  });
 
   return (
     <div class='site-wrap'>
@@ -108,15 +218,52 @@ const MyCart = () => {
                 <div class='card-header text-color-pink'>My Payment Method</div>
                 <div class='card-body'>
                   <div class='btn-groups'>
-                    <button type='button' class='btn btn-secondary'>
+                    <button type='button' class='btn btn-secondary' onClick={handleCreditDebit}>
                       Credit/Debit Card
                     </button>
-                    <button type='button' class='btn btn-secondary'>
+                    <form onSubmit={handleSubmit} method='post'>
+
+                      <div class='row' id="creditDebitCard">
+                        <div class='col-lg-12'>
+                          <label for='cardNumber'>Card Number</label>
+                          <input
+                            type="text"
+                            placeholder="Card Number"
+                            value={cardNumber}
+                            onChange={(e) => setCardNumber(e.target.value)}
+                          />
+                        </div>
+                        <div class='col-lg-6'>
+                          <label for='expiryDate'>Expiry Date</label>
+                          <input
+                            type="text"
+                            placeholder="Expiry Date"
+                            value={expiryDate}
+                            onChange={(e) => setExpiryDate(e.target.value)}
+                            onBlur={handleBlur}
+                          />
+                        </div>
+                        <div class='col-lg-6'>
+                          <label for='cvv'>CVV</label>
+                          <input
+                            type="text"
+                            placeholder="CVV"
+                            value={cvv}
+                            onChange={(e) => setCvv(e.target.value)}
+                          />
+                        </div>
+                        <button type='submit' className='btn btn-primary'>
+                          ADD Card Details
+
+                        </button>
+                      </div>
+                    </form>
+                    {/* <button type='button' class='btn btn-secondary'>
                       Bank Transfer
                     </button>
                     <button type='button' class='btn btn-secondary'>
                       Promptpay/QR
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

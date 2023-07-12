@@ -7,7 +7,7 @@ import cart from "../assets/image/icons/cart.svg";
 import { Link, NavLink, redirect, useLocation, useNavigate } from "react-router-dom";
 import { Navigate } from 'react-router-dom';
 
-function Header(){
+function Header({productscount}){
 
 
 
@@ -172,7 +172,7 @@ function Header(){
             </nav>
             <div className='utility-links'>
             <Link to={language == 'TH' ? '/th/mycart' :'/mycart'}>
-                <img src={cart} alt='' />
+                <img src={cart} alt='' />{productscount == 0 ? '' : productscount}
               </Link>
             </div>
 
