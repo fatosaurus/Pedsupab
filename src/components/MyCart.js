@@ -110,7 +110,7 @@ const MyCart = () => {
     expiryDate: '',
     cvv: '',
     affiliateCode: '',
-    invoiceNo: ''
+    invoiceNo: Date.now()
   };
 
   const affillateSchema = yup.object({
@@ -142,9 +142,9 @@ const MyCart = () => {
       console.log(expiryDate);
       console.log(cvv);
       
-      values.cardNumber = cardNumber;
-      values.expiryDate = expiryDate;
-      values.cvv = cvv;
+      // values.cardNumber = cardNumber;
+      // values.expiryDate = expiryDate;
+      // values.cvv = cvv;
       values.affiliateCode = affiliateCode
       values.merchantID = "764764000009347";
       // secretKey = "0D6A706933AE782A686365CFA7C19160F65E887D55DC9F41729BB13D8B32C10A";
@@ -152,7 +152,7 @@ const MyCart = () => {
       values.currencyCode = 'USD';
       values.description = 'item 1';
       // values.invoiceNo = ;
-      let value;
+      // let value;
 
       // const PT_dataArray = {
       //   //MANDATORY PARAMS
@@ -386,12 +386,13 @@ const MyCart = () => {
                           </div>
                           <div class='col-lg-6'>
                             <label for='invoiceNo'>Invoice No</label>
+                
                             <input
                               type="text"
                               id="invoiceNo"
                               className='form-control'
                               placeholder="Invoice No"
-                              value={ Date.now()}
+                              value={values.invoiceNo}
                               onChange={handleChange}
                             />
                             <p className="error">
