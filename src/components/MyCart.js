@@ -440,7 +440,7 @@ const MyCart = () => {
                   <div class='card-body'>
                     <div class='card order-product-card'>
                       {/* {console.log(cart[0].name)} */}
-                      {cart.map((item, index) => {
+                      {(cart && cart.length > 0) ? cart.map((item, index) => {
                         total = total + item.quantity * item.price
                         // quantity = item.quantity
                         // setQuantity(item.quantity)
@@ -491,7 +491,7 @@ const MyCart = () => {
                             </div>
                           </div>)
 
-                      })}
+                      }): 'no products are added'}
                     </div>
 
                     {/* <!-- info --> */}
