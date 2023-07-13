@@ -160,7 +160,7 @@ const SelfCollectKitsHPVProduct = () => {
                           </button>
                         </div> */}
                         <div class='buynow_opt'>
-                          <Link to='/mycart' onClick={(e) => addToCart(product)} type='button' class='buynow_btn'>
+                          <Link to='/mycart'  type='button' class='buynow_btn'>
                             {/* <Link to='' type='button' class='buynow_btn'> */}
                             BUY NOW
                           </Link>

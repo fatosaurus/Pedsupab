@@ -68,7 +68,9 @@ const MyCart = () => {
       })
       // alert('The product '+cart[foundIndex].name+' is removed');
       console.log('---------------->')
-      cart.pop(cart[foundIndex]);
+      const foundObject = cart.find(obj => obj.id === value.id);
+      console.log(cart[foundIndex])
+      cart.splice(foundIndex,1);
       localStorage.setItem('cart',JSON.stringify(cart));
       
     }else{
@@ -200,6 +202,7 @@ const MyCart = () => {
           console.log(response)
           var paymentDetails = jwt(response.payload);
           console.log(paymentDetails);
+          localStorage. removeItem('cart')
           if (paymentDetails.respCode === '0000') {
             //Redirect to the payment url paymentDetails.webPaymentUrl
             window.location.replace(paymentDetails.webPaymentUrl);
@@ -440,7 +443,7 @@ const MyCart = () => {
                   <div class='card-body'>
                     <div class='card order-product-card'>
                       {/* {console.log(cart[0].name)} */}
-                      {cart?.map((item, index) => {
+                      {(cart && cart.length > 0) ? cart.map((item, index) => {
                         total = total + item.quantity * item.price
                         // quantity = item.quantity
                         // setQuantity(item.quantity)
@@ -491,7 +494,7 @@ const MyCart = () => {
                             </div>
                           </div>)
 
-                      })}
+                      }) : 'no products are added'}
                     </div>
 
                     {/* <!-- info --> */}
