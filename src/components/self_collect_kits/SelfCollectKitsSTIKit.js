@@ -29,21 +29,21 @@ const SelfCollectKitsSTIKit = () => {
     const handlePlusClick = () => {
       setQuantity(quantity + 1);
     };
-    const removeCart = (e,product) => {
-      console.log(product)
-      setCart(localStorage.getItem('cart'));
-      console.log(cart);
-      cart.pop(product);
+    // const removeCart = (e,product) => {
+    //   console.log(product)
+    //   setCart(localStorage.getItem('cart'));
+    //   console.log(cart);
+    //   cart.pop(product);
       
-      console.log(cart);
-      console.log(total);
-      total = Number(total) -(quantity * Number(product.price));
-      console.log(cart);
-      console.log(total);
-      console.log(cart.length+ 'length');
-      // setReloadKey(Math.random());
+    //   console.log(cart);
+    //   console.log(total);
+    //   total = Number(total) -(quantity * Number(product.price));
+    //   console.log(cart);
+    //   console.log(total);
+    //   console.log(cart.length+ 'length');
+    //   // setReloadKey(Math.random());
       
-    }
+    // }
     const addToCart = (e,product) => {
   
       console.log(product);
@@ -57,7 +57,7 @@ const SelfCollectKitsSTIKit = () => {
       localStorage.setItem('cart', JSON.stringify(cart));
       console.log(cart);
       console.log(total);
-      document.querySelectorAll('.removecart_but')[0].style.display = "block";
+      // document.querySelectorAll('.removecart_but')[0].style.display = "block";
       document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
       
     }
@@ -145,11 +145,11 @@ const SelfCollectKitsSTIKit = () => {
                           ADD TO CART
                         </button>
                       </div>
-                      <div class='Remove_prod'>
+                      {/* <div class='Remove_prod'>
                         <button type='button' onClick={(e) => removeCart(e,product)} style={{display:'none'}} class='removecart_but'>
                           Remove
                         </button>
-                      </div>
+                      </div> */}
                       <div class='buynow_opt'>
                         <Link to='/mycart' type='button' onClick={(e) => addToCart(product)} class='buynow_btn'>
                         {/* <Link to='' type='button' class='buynow_btn'> */}

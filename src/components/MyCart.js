@@ -14,6 +14,7 @@ import { Buffer } from "buffer";
 import { Stream } from "stream";
 import jwt from 'jwt-decode'
 import { useNavigate } from 'react-router-dom';
+import Alert from 'react-popup-alert'
 // import { createHmac } from "crypto";
 
 // import json_encode
@@ -39,6 +40,11 @@ const MyCart = () => {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
   let total = 0;
   const [reloadKey, setReloadKey] = useState(1)
+  const [alert, setAlert] = React.useState({
+    type: 'error',
+    text: 'This is a alert message',
+    show: false
+  })
   const locale = 'en';
   const time = today.toLocaleTimeString(locale, { hour: 'numeric', hour12: true, minute: 'numeric' });
 
@@ -54,7 +60,18 @@ const MyCart = () => {
       setCart(JSON.parse(JSON.stringify(cart)));
       console.log(cart);
       localStorage.setItem('cart',JSON.stringify(cart)); 
-    } else {
+    } else if(foundIndex !== -1 && value.quantity == 1){
+      setAlert({
+        type: 'error',
+        text: 'The product '+cart[foundIndex].name+' is removed',
+        show: true
+      })
+      // alert('The product '+cart[foundIndex].name+' is removed');
+      console.log('---------------->')
+      cart.pop(cart[foundIndex]);
+      localStorage.setItem('cart',JSON.stringify(cart));
+      
+    }else{
       console.log('Object not found');
     }
     // if(value)
@@ -428,7 +445,7 @@ const MyCart = () => {
                         // quantity = item.quantity
                         // setQuantity(item.quantity)
                         return (
-                          <div class='card-body d-flex' key={reloadKey}>
+                          <div class='card-body d-flex' key={item.id}>
                             <div class='graphic'>
                               <img src={order_product} alt='' />
                             </div>
