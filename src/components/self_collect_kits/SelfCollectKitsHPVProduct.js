@@ -81,7 +81,7 @@ const SelfCollectKitsHPVProduct = () => {
         setQuantity(cart[foundIndex].quantity);
       
         console.log(cart);
-        document.querySelectorAll('.removecart_but')[0].style.display = "block";
+        // document.querySelectorAll('.removecart_but')[0].style.display = "block";
         document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
       } else {
         console.log('Object not found');
