@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const SelfCollectKitsSTIKit = () => {
   const [quantity, setQuantity] = useState(1)
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart'))? JSON.parse(localStorage.getItem('cart')) : []);
   let [total, setTotal] = useState(0);
   const [reloadKey, setReloadKey] = useState(1)
 
@@ -63,7 +63,7 @@ const SelfCollectKitsSTIKit = () => {
     }
 
     useEffect(() => {
-      if (cart.length != 0) {
+      if (cart?.length > 0) {
         const foundIndex = cart.findIndex(obj => obj.id === '2');
         // const foundObject = cart.find(obj => obj.id === value.id);
   
@@ -134,11 +134,11 @@ const SelfCollectKitsSTIKit = () => {
                     </div>
                     <div class='prod_dtn_option'>
                       <div class='prod_inc'>
-                        <span class='prod_inc_opt'> - </span>
+                        <span class='prod_inc_opt' onClick={handleMinusClick}> - </span>
                         <div class='prod_inc_inp'>
                           <input type='text' placeholder='1' value={quantity}/>
                         </div>
-                        <span class='prod_inc_opt'> + </span>
+                        <span class='prod_inc_opt' onClick={handlePlusClick}> + </span>
                       </div>
                       <div class='add_tocard_opt'>
                         <button type='button' onClick={(e) => addToCart(e,product)} class='addtocart_but'>

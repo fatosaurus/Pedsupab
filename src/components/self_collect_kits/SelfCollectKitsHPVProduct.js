@@ -11,7 +11,7 @@ const SelfCollectKitsHPVProduct = () => {
   // const [cart, setCart] = useState([]);
   let [total, setTotal] = useState(0);
   const [reloadKey, setReloadKey] = useState(1)
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart'))? JSON.parse(localStorage.getItem('cart')) : []);
   // const [product]
 
   const products = [
@@ -50,7 +50,7 @@ const SelfCollectKitsHPVProduct = () => {
 
     console.log(product);
     console.log(cart);
-    console.log(cart.length);
+    console.log(cart?.length);
     console.log(product);
     product.quantity = quantity;
     cart.push(product);
@@ -65,7 +65,7 @@ const SelfCollectKitsHPVProduct = () => {
   }
 
   useEffect(() => {
-    if (cart.length != 0) {
+    if (cart?.length > 0) {
       const foundIndex = cart.findIndex(obj => obj.id === '1');
       // const foundObject = cart.find(obj => obj.id === value.id);
 
@@ -89,7 +89,7 @@ const SelfCollectKitsHPVProduct = () => {
 
   return (
     <div class='site-wrap'>
-      <Header key={reloadKey} productscount={cart.length > 0 ? cart.length : ''} />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
       <div class='inner_content_outer'>
         <div class='sep1'></div>
