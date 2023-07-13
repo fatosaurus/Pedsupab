@@ -48,7 +48,7 @@ const SelfCollectKitsSTIKit = () => {
   
       console.log(product);
       console.log(cart);
-      console.log(cart.length);
+      console.log(cart?.length);
         console.log(product);
         product.quantity = quantity;
         cart.push(product);
