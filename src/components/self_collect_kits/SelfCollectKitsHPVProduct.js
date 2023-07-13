@@ -67,7 +67,7 @@ const SelfCollectKitsHPVProduct = () => {
     localStorage.setItem('cart', JSON.stringify(cart));
     console.log(cart);
     console.log(total);
-    document.querySelectorAll('.removecart_but')[0].style.display = "block";
+    // document.querySelectorAll('.removecart_but')[0].style.display = "block";
     document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
 
   }
