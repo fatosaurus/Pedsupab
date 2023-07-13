@@ -11,7 +11,7 @@ const SelfCollectKitsHPVProduct = () => {
   // const [cart, setCart] = useState([]);
   let [total, setTotal] = useState(0);
   const [reloadKey, setReloadKey] = useState(1)
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart'))? JSON.parse(localStorage.getItem('cart')) : []);
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   // const [product]
 
   const products = [
@@ -31,21 +31,29 @@ const SelfCollectKitsHPVProduct = () => {
   const handlePlusClick = () => {
     setQuantity(quantity + 1);
   };
-  const removeCart = (e, product) => {
-    console.log(product)
-    setCart(localStorage.getItem('cart'));
-    console.log(cart);
-    cart.pop(product);
+  // const removeCart = (e, product) => {
+  //   console.log(product)
+  //   setCart(localStorage.getItem('cart'));
+  //   console.log(cart);
+  //   // cart?.pop(product);
+  //   const foundObject = cart.find(obj => obj.id === product.id);
 
-    console.log(cart);
-    console.log(total);
-    total = Number(total) - (quantity * Number(product.price));
-    console.log(cart);
-    console.log(total);
-    console.log(cart.length + 'length');
-    // setReloadKey(Math.random());
+  //   if (foundObject) {
+  //     cart?.pop(foundObject);
+  //     // foundObject.name = newName;
+  //     console.log('Object updated:', foundObject);
+  //     document.querySelectorAll('.removecart_but')[0].style.display = "none";
+  //     document.querySelectorAll('.add_tocard_opt')[0].style.display = "block";
+  //   } else {
+  //     console.log('Object not found');
+  //   }
 
-  }
+  //   total = Number(total) - (quantity * Number(product.price));
+  //   localStorage.setItem('cart', JSON.stringify(cart));
+    
+  //   // setReloadKey(Math.random());
+
+  // }
   const addToCart = (e, product) => {
 
     console.log(product);
@@ -66,16 +74,13 @@ const SelfCollectKitsHPVProduct = () => {
 
   useEffect(() => {
     if (cart?.length > 0) {
-      const foundIndex = cart.findIndex(obj => obj.id === '1');
+      const foundIndex = cart?.findIndex(obj => obj.id === '1');
       // const foundObject = cart.find(obj => obj.id === value.id);
 
       if (foundIndex !== -1) {
         setQuantity(cart[foundIndex].quantity);
-        // cart[foundIndex].quantity = cart[foundIndex].quantity + 1;
-        // console.log('Object updated:', cart);
-        // setCart(JSON.parse(JSON.stringify(cart)));
+      
         console.log(cart);
-        // localStorage.setItem('cart', JSON.stringify(cart));
         document.querySelectorAll('.removecart_but')[0].style.display = "block";
         document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
       } else {
@@ -149,11 +154,11 @@ const SelfCollectKitsHPVProduct = () => {
                             ADD TO CART
                           </button>
                         </div>
-                        <div class='Remove_prod'>
+                        {/* <div class='Remove_prod'>
                           <button type='button' onClick={(e) => removeCart(e, product)} style={{ display: 'none' }} class='removecart_but'>
                             Remove
                           </button>
-                        </div>
+                        </div> */}
                         <div class='buynow_opt'>
                           <Link to='/mycart' onClick={(e) => addToCart(product)} type='button' class='buynow_btn'>
                             {/* <Link to='' type='button' class='buynow_btn'> */}
