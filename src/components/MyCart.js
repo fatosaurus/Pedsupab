@@ -422,7 +422,7 @@ const MyCart = () => {
                   <div class='card-body'>
                     <div class='card order-product-card'>
                       {/* {console.log(cart[0].name)} */}
-                      {cart.map((item, index) => {
+                      {cart?.map((item, index) => {
                         total = total + item.quantity * item.price
                         // quantity = item.quantity
                         // setQuantity(item.quantity)
@@ -451,7 +451,7 @@ const MyCart = () => {
                                   </button>
                                 </span>
                                 <input
-                                  id="qty"
+                                  // id="qty"
                                   type='number'
                                   class='form-control input-number'
                                   // value='1'

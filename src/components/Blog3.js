@@ -10,7 +10,7 @@ import blog_img1 from "../assets/image/blog_img1.png";
 import blog_pic1 from "../assets/image/blog_pic1.png";
 import blog_pic2 from "../assets/image/blog_pic2.png";
 import blog_pic3 from "../assets/image/blog_pic3.png";
-import imag_blog1 from "../assets/image/image_blog1.png";
+import imag_blog3 from "../assets/image/img_blog3.jpg";
 
 const Blog3 = () => {
   return (
@@ -105,7 +105,7 @@ const Blog3 = () => {
               <div className="col-lg-12">
                 <div className="inner_maincont">
                 <div className='blog-middle-img mb-5'>
-                                    <img src={imag_blog1} alt='' className='img-fluid' />
+                                    <img src={imag_blog3} alt='' className='img-fluid' />
                                 </div>
                   <div className="inner_cont_des_view">
                     {/* <h2>เซ็กซ์คือการเมือง</h2>

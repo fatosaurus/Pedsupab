@@ -41,9 +41,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog1" element={<Blog1 />} />
-        <Route path="/blog2" element={<Blog2 />} />
-        <Route path="/blog3" element={<Blog3/>} />
+        <Route path="/knowledge/blog/Just_Sex_or_Make_Love_What's_the_Difference" element={<Blog1 />} />
+        <Route path="/knowledge/blog/Can_No_Protection_Sex_Be_Safe" element={<Blog2 />} />
+        <Route path="/knowledge/blog/Can_Sex_Cause_Stress" element={<Blog3/>} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/affiliates" element={<Affiliates />} />
         <Route path="/mycart" element={<MyCart />} />

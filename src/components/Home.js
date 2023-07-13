@@ -24,7 +24,7 @@ import static_cont_img_1 from "../assets/image/static-cont-img-1.png";
 import static_cont_img_2 from "../assets/image/static-cont-img-2.png";
 import static_cont_img_3 from "../assets/image/static-cont-img-3.png";
 import Blog_Highlight from "../assets/image/Blog-Highlight.png";
-import Home_vid_img from "../assets/image/home-vid-banner.png";
+import Home_vid_img from "../assets/image/home-vid-banner-eng.png";
 import { Link } from "react-router-dom";
 
 import HomeTitleUnderline from "../iconComponents/HomeTitleUnderline.js";
@@ -99,7 +99,7 @@ const Home = () => {
 
           <div className='feature-three-blogs-w'>
             <div className='item'>
-            <Link to="/blog1">
+            <Link to="/knowledge/blog/Just_Sex_or_Make_Love_What's_the_Difference">
               <div className='graphic'>
                 <img src={blog_thumb_1} alt='' />
               </div>
@@ -110,7 +110,7 @@ const Home = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/blog2">
+            <Link to="/knowledge/blog/Can_No_Protection_Sex_Be_Safe">
               <div className='graphic'>
                 <img src={blog_thumb_2} alt='' />
               </div>
@@ -121,7 +121,7 @@ const Home = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/blog3">
+            <Link to="/knowledge/blog/Can_Sex_Cause_Stress">
               <div className='graphic'>
                 <img src={blog_thumb_3} alt='' />
               </div>
