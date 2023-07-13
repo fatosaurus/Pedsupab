@@ -24,6 +24,10 @@ import Knowledge from "./components/Knowledge";
 import KnowledgeThai from "./components/KnowledgeThai"
 import KnowledgeBlog from "./components/KnowledgeBlog";
 import KnowledgeBlogThai from "./components/KnowledgeBlogThai"
+import Blog1 from "./components/blog1"
+import Blog2 from "./components/Blog2"
+import Blog3 from "./components/Blog3"
+
 import { useState } from "react"
 
 function App() {
@@ -37,6 +41,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog1" element={<Blog1 />} />
+        <Route path="/blog2" element={<Blog2 />} />
+        <Route path="/blog3" element={<Blog3/>} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/affiliates" element={<Affiliates />} />
         <Route path="/mycart" element={<MyCart />} />
@@ -62,6 +69,7 @@ function App() {
         <Route path="/th/selfcollectkit/sti/kit" element={<SelfCollectKitsSTIKitThai />} />
         <Route path="/th/selfcollectkit/sti_open" element={<SelfCollectKitsSTIOpenThai />} />
         <Route path="/th/selfcollectkit/hpv/product" element={<SelfCollectKitsHPVProductThai />} />
+
       </Routes>
 
 

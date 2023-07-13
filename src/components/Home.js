@@ -24,6 +24,7 @@ import static_cont_img_1 from "../assets/image/static-cont-img-1.png";
 import static_cont_img_2 from "../assets/image/static-cont-img-2.png";
 import static_cont_img_3 from "../assets/image/static-cont-img-3.png";
 import Blog_Highlight from "../assets/image/Blog-Highlight.png";
+import Home_vid_img from "../assets/image/home-vid-banner.png";
 import { Link } from "react-router-dom";
 
 import HomeTitleUnderline from "../iconComponents/HomeTitleUnderline.js";
@@ -34,6 +35,12 @@ const Home = () => {
     { "img": "images/banner_1.jpg", "link": "#" },
     { "img": "images/banner_1.jpg", "link": "#" },
   ]);
+  const [hvid_play, set_hvid_play] = useState(false);
+
+  function video_play(){
+    set_hvid_play(true);
+    //document.querySelectorAll('.home-vid-iframe iframe')[0].play();
+  }
 
   return (
     <div className='site-wrap'>
@@ -92,7 +99,7 @@ const Home = () => {
 
           <div className='feature-three-blogs-w'>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/blog1">
               <div className='graphic'>
                 <img src={blog_thumb_1} alt='' />
               </div>
@@ -103,7 +110,7 @@ const Home = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/blog2">
               <div className='graphic'>
                 <img src={blog_thumb_2} alt='' />
               </div>
@@ -114,7 +121,7 @@ const Home = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/blog3">
               <div className='graphic'>
                 <img src={blog_thumb_3} alt='' />
               </div>
@@ -133,10 +140,20 @@ const Home = () => {
 
             Watch
           </h2>
-          <div className='iframe-embade'>
-            <img src={new_text} alt='' className='floated-img mb-2' />
-            <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe></div>
+          {!hvid_play && 
+          <div className="banner-preview-img home-vid-preview" onClick={()=>video_play()} style={{cursor: 'pointer'}}>
+            <img src={Home_vid_img} alt='' className='floated-img mb-2' />
           </div>
+          }
+          {hvid_play && 
+          <div className='iframe-embade home-vid-iframe'>
+            <img src={new_text} alt='' className='floated-img mb-2' />
+            <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowFullScreen
+            ></iframe></div>
+          </div>
+          }
         </div>
       </div>
 

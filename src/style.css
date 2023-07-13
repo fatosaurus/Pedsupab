@@ -2645,8 +2645,15 @@ a.learn_more_btn {
 }
 
 .addinfo3 img {
+  /* 2648 */
+  /* width: 255px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; */
   width: 100%;
 }
+.blog-middle-img { text-align:center; display:flex; justify-content: center;}
+.blog-middle-img img { max-width: 400px;}
 
 .inner_block_info2 {
   display: flex;
