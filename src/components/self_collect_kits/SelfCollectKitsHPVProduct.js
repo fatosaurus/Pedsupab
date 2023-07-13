@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -8,14 +8,18 @@ import misc from "../../assets/image/misc.png";
 
 const SelfCollectKitsHPVProduct = () => {
   const [quantity, setQuantity] = useState(1)
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
   let [total, setTotal] = useState(0);
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
+  // const [product]
 
   const products = [
     {
-        name: 'AVA HPV Kit',
-        desc: 'Take control of your sexual health with AVA’s Self-Collecting HPV Kit. With simple instructions and a painless sampling swab, you can discreetly collect a sample at home. Send it to our certified laboratory using the prepaid shipping label, and within days, receive confidential and accurate results indicating the presence of high-risk HPV strains. Armed with this information, you can make informed decisions about your health and seek appropriate medical advice if necessary.',
-        price: '1200'
+      id: '1',
+      name: 'AVA HPV Kit',
+      desc: 'Take control of your sexual health with AVA’s Self-Collecting HPV Kit. With simple instructions and a painless sampling swab, you can discreetly collect a sample at home. Send it to our certified laboratory using the prepaid shipping label, and within days, receive confidential and accurate results indicating the presence of high-risk HPV strains. Armed with this information, you can make informed decisions about your health and seek appropriate medical advice if necessary.',
+      price: '1200'
     }];
 
   const handleMinusClick = () => {
@@ -27,44 +31,65 @@ const SelfCollectKitsHPVProduct = () => {
   const handlePlusClick = () => {
     setQuantity(quantity + 1);
   };
-  const removeCart = (e,product) => {
+  const removeCart = (e, product) => {
     console.log(product)
-    cart.pop(product.name);
-    total = Number(total) - Number(product.price);
+    setCart(localStorage.getItem('cart'));
+    console.log(cart);
+    cart.pop(product);
+
     console.log(cart);
     console.log(total);
+    total = Number(total) - (quantity * Number(product.price));
+    console.log(cart);
+    console.log(total);
+    console.log(cart.length + 'length');
+    // setReloadKey(Math.random());
+
   }
-  const addToCart = (e,product) => {
-    // console.log(e.target.innerText );
-    // e.target.innerText
+  const addToCart = (e, product) => {
+
     console.log(product);
     console.log(cart);
     console.log(cart.length);
-    // if(cart.length == 0){
-      console.log(product);
-      cart.push(product.name);
-      total = Number(total) + (quantity * Number(product.price));
-      // setCart([product.name]);
-      // setTotal(total + product.price);
+    console.log(product);
+    product.quantity = quantity;
+    cart.push(product);
+    total = Number(total) + (quantity * Number(product.price));
 
-    // }else{
-    //   // setCart(product.name);
-    // setCart(current => [...current, product.name]);
-    // setTotal(current => current + product.price);
-    // }
-    
-
+    localStorage.setItem('cart', JSON.stringify(cart));
     console.log(cart);
     console.log(total);
     document.querySelectorAll('.removecart_but')[0].style.display = "block";
     document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
-    
 
   }
 
+  useEffect(() => {
+    if (cart.length != 0) {
+      const foundIndex = cart.findIndex(obj => obj.id === '1');
+      // const foundObject = cart.find(obj => obj.id === value.id);
+
+      if (foundIndex !== -1) {
+        setQuantity(cart[foundIndex].quantity);
+        // cart[foundIndex].quantity = cart[foundIndex].quantity + 1;
+        // console.log('Object updated:', cart);
+        // setCart(JSON.parse(JSON.stringify(cart)));
+        console.log(cart);
+        // localStorage.setItem('cart', JSON.stringify(cart));
+        document.querySelectorAll('.removecart_but')[0].style.display = "block";
+        document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+      } else {
+        console.log('Object not found');
+      }
+
+
+    }
+
+  }, [])
+
   return (
     <div class='site-wrap'>
-      <Header productscount={cart.length >0 ? cart.length : ''} products={products}/>
+      <Header key={reloadKey} productscount={cart.length > 0 ? cart.length : ''} />
 
       <div class='inner_content_outer'>
         <div class='sep1'></div>
@@ -92,52 +117,52 @@ const SelfCollectKitsHPVProduct = () => {
                   </ul>
                 </div>
                 {products.map(product => (
-                <div class='prod_des'>
-                  <div class='prod_add_info'>
-                    <div class='prod_add_slider'>
-                      <img src={prod_add} alt='' />
+                  <div class='prod_des'>
+                    <div class='prod_add_info'>
+                      <div class='prod_add_slider'>
+                        <img src={prod_add} alt='' />
+                      </div>
                     </div>
-                  </div>
-                  <div class='prod_add_content'>
-                    <h2>
-                      <span>Self-Collecting Kit</span>{product.name}
-                    </h2>
-                    <div class='price_info'>
-                      <div class='price_text'>฿ {product.price}</div>
-                    </div>
-                    <div class='prod_cont_des'>
-                      <h3>About the Product</h3>
-                      <p>
-                      {product.desc}{" "}
-                      </p>
-                    </div>
-                    <div class='prod_dtn_option'>
-                      <div class='prod_inc'>
-                        <span class='prod_inc_opt' onClick={handleMinusClick}> - </span>
-                        <div class='prod_inc_inp'>
-                          <input type='text' placeholder='1' value={quantity} />
+                    <div class='prod_add_content'>
+                      <h2>
+                        <span>Self-Collecting Kit</span>{product.name}
+                      </h2>
+                      <div class='price_info'>
+                        <div class='price_text'>฿ {product.price}</div>
+                      </div>
+                      <div class='prod_cont_des'>
+                        <h3>About the Product</h3>
+                        <p>
+                          {product.desc}{" "}
+                        </p>
+                      </div>
+                      <div class='prod_dtn_option'>
+                        <div class='prod_inc'>
+                          <span class='prod_inc_opt' onClick={handleMinusClick}> - </span>
+                          <div class='prod_inc_inp'>
+                            <input type='text' placeholder='1' value={quantity} />
+                          </div>
+                          <span class='prod_inc_opt' onClick={handlePlusClick}> + </span>
                         </div>
-                        <span class='prod_inc_opt' onClick={handlePlusClick}> + </span>
-                      </div>
-                      <div class='add_tocard_opt'>
-                        <button type='button' onClick={(e) => addToCart(e,product)} class='addtocart_but'>
-                          ADD TO CART
-                        </button>
-                      </div>
-                      <div class='Remove_prod'>
-                        <button type='button' onClick={(e) => removeCart(e,product)} style={{display:'none'}} class='removecart_but'>
-                          Remove
-                        </button>
-                      </div>
-                      <div class='buynow_opt'>
-                        <Link to='/mycart' onClick={(e) => addToCart(product)} type='button' class='buynow_btn'>
-                          {/* <Link to='' type='button' class='buynow_btn'> */}
-                          BUY NOW
-                        </Link>
+                        <div class='add_tocard_opt'>
+                          <button type='button' onClick={(e) => addToCart(e, product)} class='addtocart_but'>
+                            ADD TO CART
+                          </button>
+                        </div>
+                        <div class='Remove_prod'>
+                          <button type='button' onClick={(e) => removeCart(e, product)} style={{ display: 'none' }} class='removecart_but'>
+                            Remove
+                          </button>
+                        </div>
+                        <div class='buynow_opt'>
+                          <Link to='/mycart' onClick={(e) => addToCart(product)} type='button' class='buynow_btn'>
+                            {/* <Link to='' type='button' class='buynow_btn'> */}
+                            BUY NOW
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
                 ))}
               </div>
             </div>
