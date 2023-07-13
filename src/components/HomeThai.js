@@ -99,7 +99,7 @@ const HomeThai = () => {
 
           <div className='feature-three-blogs-w'>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/th/knowledge/blog/Just_Sex_or_Make_Love_What's_the_Difference">
               <div className='graphic'>
                 <img src={blog_thumb_1} alt='' />
               </div>
@@ -110,7 +110,7 @@ const HomeThai = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe">
               <div className='graphic'>
                 <img src={blog_thumb_2} alt='' />
               </div>
@@ -121,7 +121,7 @@ const HomeThai = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/th/knowledge/blog/Can_Sex_Cause_Stress">
               <div className='graphic'>
                 <img src={blog_thumb_3} alt='' />
               </div>
