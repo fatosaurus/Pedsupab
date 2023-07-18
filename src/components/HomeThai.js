@@ -31,8 +31,8 @@ import HomeTitleUnderline from "../iconComponents/HomeTitleUnderline.js";
 
 const HomeThai = () => {
   const [bannerData, setBannerData] = useState([
-    { "img": "images/banner_1.jpg", "link": "#" },
-    { "img": "images/banner_1.jpg", "link": "#" },
+    { "img": "images/AVA_banner_thai.jpg", "link": "#" },
+    { "img": "images/Banner_HPV_Thai.jpg", "link": "#" },
     { "img": "images/banner_1.jpg", "link": "#" },
   ]);
   const [hvid_play, set_hvid_play] = useState(false);
@@ -61,7 +61,7 @@ const HomeThai = () => {
         <div className='carousel-inner'>
           {bannerData.map((item, ind) => (
             <div className={`carousel-item ${ind === 0 ? 'active' : ''}`} key={'banner_' + ind}>
-              <img src={banner1} className='d-block w-100' alt='...' />
+              <img src={'/'+item.img} className='d-block w-100' alt='...' />
             </div>
           ))}
 

@@ -93,16 +93,16 @@ const SelfCollectKitsHPVProduct = () => {
   }, [])
 
   return (
-    <div class='site-wrap'>
+    <div className='site-wrap'>
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
-      <div class='inner_content_outer'>
-        <div class='sep1'></div>
-        <div class='bandcamp_info'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-lg-12'>
-                <div class='bandcamp_des'>
+      <div className='inner_content_outer'>
+        <div className='sep1'></div>
+        <div className='bandcamp_info'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <div className='bandcamp_des'>
                   <ul>
                     <li>
                       <Link to='/'>Home</Link>{" "}
@@ -116,52 +116,52 @@ const SelfCollectKitsHPVProduct = () => {
                       <Link to='/selfcollectkit/hpv'>HPV Kits</Link>{" "}
                       {/* <Link to=''>HPV Kits</Link>{" "} */}
                     </li>
-                    <li class='selected'>
+                    <li className='selected'>
                       <span>AVA HPV Kit</span>{" "}
                     </li>
                   </ul>
                 </div>
                 {products.map(product => (
-                  <div class='prod_des'>
-                    <div class='prod_add_info'>
-                      <div class='prod_add_slider'>
+                  <div className='prod_des' key={product.id}>
+                    <div className='prod_add_info'>
+                      <div className='prod_add_slider'>
                         <img src={prod_add} alt='' />
                       </div>
                     </div>
-                    <div class='prod_add_content'>
+                    <div className='prod_add_content'>
                       <h2>
                         <span>Self-Collecting Kit</span>{product.name}
                       </h2>
-                      <div class='price_info'>
-                        <div class='price_text'>฿ {product.price}</div>
+                      <div className='price_info'>
+                        <div className='price_text'>฿ {product.price}</div>
                       </div>
-                      <div class='prod_cont_des'>
+                      <div className='prod_cont_des'>
                         <h3>About the Product</h3>
                         <p>
                           {product.desc}{" "}
                         </p>
                       </div>
-                      <div class='prod_dtn_option'>
-                        <div class='prod_inc'>
-                          <span class='prod_inc_opt' onClick={handleMinusClick}> - </span>
-                          <div class='prod_inc_inp'>
+                      <div className='prod_dtn_option'>
+                        <div className='prod_inc'>
+                          <span className='prod_inc_opt' onClick={handleMinusClick}> - </span>
+                          <div className='prod_inc_inp'>
                             <input type='text' placeholder='1' value={quantity} />
                           </div>
-                          <span class='prod_inc_opt' onClick={handlePlusClick}> + </span>
+                          <span className='prod_inc_opt' onClick={handlePlusClick}> + </span>
                         </div>
-                        <div class='add_tocard_opt'>
-                          <button type='button' onClick={(e) => addToCart(e, product)} class='addtocart_but'>
+                        <div className='add_tocard_opt'>
+                          <button type='button' onClick={(e) => addToCart(e, product)} className='addtocart_but'>
                             ADD TO CART
                           </button>
                         </div>
-                        {/* <div class='Remove_prod'>
-                          <button type='button' onClick={(e) => removeCart(e, product)} style={{ display: 'none' }} class='removecart_but'>
+                        {/* <div className='Remove_prod'>
+                          <button type='button' onClick={(e) => removeCart(e, product)} style={{ display: 'none' }} className='removecart_but'>
                             Remove
                           </button>
                         </div> */}
-                        <div class='buynow_opt'>
-                          <Link to='/mycart'  type='button' class='buynow_btn'>
-                            {/* <Link to='' type='button' class='buynow_btn'> */}
+                        <div className='buynow_opt'>
+                          <Link to='/mycart'  type='button' className='buynow_btn'>
+                            {/* <Link to='' type='button' className='buynow_btn'> */}
                             BUY NOW
                           </Link>
                         </div>
@@ -174,14 +174,14 @@ const SelfCollectKitsHPVProduct = () => {
           </div>
         </div>
       </div>
-      <div class='hpv_continfo'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12'>
-              <div class='inner_head_des2'>
+      <div className='hpv_continfo'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='inner_head_des2'>
                 <h2>More about the AVA HPV Kit</h2>
               </div>
-              <div class='inner_cont_wrap'>
+              <div className='inner_cont_wrap'>
                 <ul>
                   <li>
                     AVA
@@ -202,7 +202,7 @@ const SelfCollectKitsHPVProduct = () => {
                     (US-FDA)
                   </li>
                 </ul>
-                <div class='inner_cont_view'>
+                <div className='inner_cont_view'>
                   <h3>EQUIPMENT</h3>
                   <ol>
                     <li>
@@ -222,7 +222,7 @@ const SelfCollectKitsHPVProduct = () => {
                     </li>
                   </ol>
                 </div>
-                <div class='inner_cont_view'>
+                <div className='inner_cont_view'>
                   <h3>CAUTION</h3>
                   <ol>
                     <li>ไม่ควรใช้อุปกรณ์ขณะตั้งครรภ์หรือมีประจำ เดือน</li>
@@ -253,11 +253,11 @@ const SelfCollectKitsHPVProduct = () => {
       </div>
 
       {/* <!-- Banner ends --> */}
-      <div class='howitowrk_wrap addpaddint_top'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12'>
-              <div class='positive_info'>
+      <div className='howitowrk_wrap addpaddint_top'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='positive_info'>
                 <h2>What if I test positive? </h2>
                 <p>
                   Don’t worry - we got you covered. Explore a list of partner
@@ -268,8 +268,8 @@ const SelfCollectKitsHPVProduct = () => {
                   </span>
                 </p>
 
-                <div class='def_btnopt2'>
-                  <Link to='#' class='learn_more_btn'>
+                <div className='def_btnopt2'>
+                  <Link to='#' className='learn_more_btn'>
                     Learn More{" "}
                   </Link>
                 </div>

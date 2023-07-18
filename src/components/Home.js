@@ -3,6 +3,8 @@ import "../style.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import banner1 from "../assets/image/banner-1.jpg";
+// import AVA_banner from "../assets/image/AVA_banner.jpg";
+// import Banner_HPV from "../assets/image/Banner_HPV.jpg";
 import blog_thumb_1 from "../assets/image/blog_thumb_1.jpg";
 import blog_thumb_2 from "../assets/image/blog_thumb_2.jpg";
 import blog_thumb_3 from "../assets/image/blog_thumb_3.jpg";
@@ -31,8 +33,8 @@ import HomeTitleUnderline from "../iconComponents/HomeTitleUnderline.js";
 
 const Home = () => {
   const [bannerData, setBannerData] = useState([
-    { "img": "images/banner_1.jpg", "link": "#" },
-    { "img": "images/banner_1.jpg", "link": "#" },
+    { "img": "images/AVA_banner.jpg", "link": "#" },
+    { "img": "images/Banner_HPV .jpg", "link": "#" },
     { "img": "images/banner_1.jpg", "link": "#" },
   ]);
   const [hvid_play, set_hvid_play] = useState(false);
@@ -61,7 +63,7 @@ const Home = () => {
         <div className='carousel-inner'>
           {bannerData.map((item, ind) => (
             <div className={`carousel-item ${ind === 0 ? 'active' : ''}`} key={'banner_' + ind}>
-              <img src={banner1} className='d-block w-100' alt='...' />
+              <img src={item.img} className='d-block w-100' alt='...' />
             </div>
           ))}
 

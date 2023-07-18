@@ -216,27 +216,27 @@ const MyCart = () => {
   });
 
   return (
-    <div class='site-wrap'>
+    <div className='site-wrap'>
       <Header />
-      <div class='cart-page-inner-banner'>
-        <div class='container'>
-          <h1 class='page-title'>My Cart</h1>
+      <div className='cart-page-inner-banner'>
+        <div className='container'>
+          <h1 className='page-title'>My Cart</h1>
         </div>
       </div>
-      <div class='cart-container-wrap'>
-        <div class='container'>
+      <div className='cart-container-wrap'>
+        <div className='container'>
           <form onSubmit={handleSubmit} method='post'>
-            <div class='row'>
-              <div class='col-lg-7'>
+            <div className='row'>
+              <div className='col-lg-7'>
 
-                <div class='card card-shipping-address'>
-                  <div class='card-header'>My Shipping Address</div>
-                  <div class='card-body'>
+                <div className='card card-shipping-address'>
+                  <div className='card-header'>My Shipping Address</div>
+                  <div className='card-body'>
                     {/* <form> */}
-                    <div class='row'>
-                      <div class='col-lg-6'>
-                        <label for='name'>Name</label>
-                        <input type='text' class='form-control' id='name'
+                    <div className='row'>
+                      <div className='col-lg-6'>
+                        <label htmlFor='name'>Name</label>
+                        <input type='text' className='form-control' id='name'
                           value={values.name}
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -245,9 +245,9 @@ const MyCart = () => {
                           {errors.name && touched.name && errors.name}
                         </p>
                       </div>
-                      <div class='col-lg-6'>
-                        <label for='phone'>Phone Number</label>
-                        <input type='text' class='form-control' id='phone'
+                      <div className='col-lg-6'>
+                        <label htmlFor='phone'>Phone Number</label>
+                        <input type='text' className='form-control' id='phone'
                           value={values.phone}
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -257,10 +257,10 @@ const MyCart = () => {
                         </p>
                       </div>
                     </div>
-                    <div class='row'>
-                      <div class='col-lg-12'>
-                        <label for='address'>Address</label>
-                        <input type='text' class='form-control' id='address'
+                    <div className='row'>
+                      <div className='col-lg-12'>
+                        <label htmlFor='address'>Address</label>
+                        <input type='text' className='form-control' id='address'
                           value={values.address}
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -270,10 +270,10 @@ const MyCart = () => {
                         </p>
                       </div>
                     </div>
-                    <div class='row'>
-                      <div class='col-lg-6'>
-                        <label for='province'>Province</label>
-                        <select class='form-select' id='province'
+                    <div className='row'>
+                      <div className='col-lg-6'>
+                        <label htmlFor='province'>Province</label>
+                        <select className='form-select' id='province'
                           value={values.province}
                           onChange={handleChange}
                           onBlur={handleBlur}>
@@ -299,9 +299,9 @@ const MyCart = () => {
                           {errors.province && touched.province && errors.province}
                         </p>
                       </div>
-                      <div class='col-lg-6'>
-                        <label for='district'>District</label>
-                        <select class='form-select' id='district'
+                      <div className='col-lg-6'>
+                        <label htmlFor='district'>District</label>
+                        <select className='form-select' id='district'
                           value={values.district}
                           onChange={handleChange}
                           onBlur={handleBlur}>
@@ -322,10 +322,10 @@ const MyCart = () => {
                         </p>
                       </div>
                     </div>
-                    <div class='row'>
-                      <div class='col-lg-6'>
-                        <label for='postalCode'>Post Code</label>
-                        <input type='text' class='form-control' id='postalCode'
+                    <div className='row'>
+                      <div className='col-lg-6'>
+                        <label htmlFor='postalCode'>Post Code</label>
+                        <input type='text' className='form-control' id='postalCode'
                           value={values.postalCode}
                           onChange={handleChange}
                           onBlur={handleBlur} />
@@ -333,9 +333,9 @@ const MyCart = () => {
                           {errors.postalCode && touched.postalCode && errors.postalCode}
                         </p>
                       </div>
-                      <div class='col-lg-6'>
-                        <label for='email'>Email Address</label>
-                        <input type='email' class='form-control' id='email'
+                      <div className='col-lg-6'>
+                        <label htmlFor='email'>Email Address</label>
+                        <input type='email' className='form-control' id='email'
                           value={values.email}
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -349,23 +349,23 @@ const MyCart = () => {
                   </div>
                 </div>
 
-                <div class='card card-payment-method'>
-                  <div class='card-header text-color-pink'>My Payment Method</div>
-                  <div class='card-body'>
-                    <div class='btn-groups'>
-                      <button type='button' class='btn btn-secondary' onClick={handleCreditDebit}>
+                <div className='card card-payment-method'>
+                  <div className='card-header text-color-pink'>My Payment Method</div>
+                  <div className='card-body'>
+                    <div className='btn-groups'>
+                      <button type='button' className='btn btn-secondary' onClick={handleCreditDebit}>
                         Credit/Debit Card
                       </button>
                       {/* <form onSubmit={handleSubmit} method='post'> */}
                       <div className="card-body">
-                        <div class='row' id="creditDebitCard">
+                        <div className='row' id="creditDebitCard">
 
-                          <div class='col-lg-12'>
+                          <div className='col-lg-12'>
 
-                            <label for='cardNumber'>Card Number</label>
+                            <label htmlFor='cardNumber'>Card Number</label>
                             <input
                               type="text"
-                              class='form-control'
+                              className='form-control'
                               id='cardNumber'
                               placeholder="Card Number"
                               value={values.cardNumber}
@@ -375,11 +375,11 @@ const MyCart = () => {
                               {errors.cardNumber && touched.cardNumber && errors.cardNumber}
                             </p>
                           </div>
-                          <div class='col-lg-6'>
-                            <label for='expiryDate'>Expiry Date</label>
+                          <div className='col-lg-6'>
+                            <label htmlFor='expiryDate'>Expiry Date</label>
                             <input
                               type="text"
-                              class='form-control'
+                              className='form-control'
                               id='expiryDate'
                               placeholder="Expiry Date"
                               value={values.expiryDate}
@@ -390,12 +390,12 @@ const MyCart = () => {
                               {errors.expiryDate && touched.expiryDate && errors.expiryDate}
                             </p>
                           </div>
-                          <div class='col-lg-6'>
-                            <label for='cvv'>CVV</label>
+                          <div className='col-lg-6'>
+                            <label htmlFor='cvv'>CVV</label>
                             <input
                               type="text"
                               id='cvv'
-                              class='form-control'
+                              className='form-control'
                               placeholder="CVV"
                               value={values.cvv}
                               onChange={handleChange}
@@ -404,8 +404,8 @@ const MyCart = () => {
                               {errors.cvv && touched.cvv && errors.cvv}
                             </p>
                           </div>
-                          <div class='col-lg-6'>
-                            <label for='invoiceNo'>Invoice No</label>
+                          <div className='col-lg-6'>
+                            <label htmlFor='invoiceNo'>Invoice No</label>
                 
                             <input
                               type="text"
@@ -426,10 +426,10 @@ const MyCart = () => {
                         </div>
                       </div>
 
-                      {/* <button type='button' class='btn btn-secondary'>
+                      {/* <button type='button' className='btn btn-secondary'>
                       Bank Transfer
                     </button>
-                    <button type='button' class='btn btn-secondary'>
+                    <button type='button' className='btn btn-secondary'>
                       Promptpay/QR
                     </button> */}
                     </div>
@@ -437,33 +437,33 @@ const MyCart = () => {
                 </div>
 
               </div>
-              <div class='col-lg-5'>
-                <div class='card bg-primary order-card-sec'>
-                  <div class='card-header'>Your Order</div>
-                  <div class='card-body'>
-                    <div class='card order-product-card'>
+              <div className='col-lg-5'>
+                <div className='card bg-primary order-card-sec'>
+                  <div className='card-header'>Your Order</div>
+                  <div className='card-body'>
+                    <div className='card order-product-card'>
                       {/* {console.log(cart[0].name)} */}
                       {(cart && cart.length > 0) ? cart.map((item, index) => {
                         total = total + item.quantity * item.price
                         // quantity = item.quantity
                         // setQuantity(item.quantity)
                         return (
-                          <div class='card-body d-flex' key={item.id}>
-                            <div class='graphic'>
+                          <div className='card-body d-flex' key={item.id}>
+                            <div className='graphic'>
                               <img src={order_product} alt='' />
                             </div>
-                            <div class='info'>
-                              <h5 class='card-title'>{item.name}</h5>
-                              <p class='card-text'>
+                            <div className='info'>
+                              <h5 className='card-title'>{item.name}</h5>
+                              <p className='card-text'>
                                 {item.desc}
                               </p>
 
                               {/* <!-- quantity --> */}
-                              <div class='input-group quantity-btns'>
-                                <span class='input-group-btn'>
+                              <div className='input-group quantity-btns'>
+                                <span className='input-group-btn'>
                                   <button
                                     type='button'
-                                    class='btn btn-outline-secondary btn-number minus'
+                                    className='btn btn-outline-secondary btn-number minus'
                                     data-type='minus'
                                     id='minus-btn'
                                     onClick={() => handleMinusClick(item)}
@@ -474,15 +474,15 @@ const MyCart = () => {
                                 <input
                                   // id="qty"
                                   type='number'
-                                  class='form-control input-number'
+                                  className='form-control input-number'
                                   // value='1'
                                   id='quantity'
                                   value={item.quantity}
                                 />
-                                <span class='input-group-btn'>
+                                <span className='input-group-btn'>
                                   <button
                                     type='button'
-                                    class='btn btn-outline-secondary btn-number plus'
+                                    className='btn btn-outline-secondary btn-number plus'
                                     data-type='plus'
                                     id='plus-btn'
                                     onClick={() => handlePlusClick(item)}
@@ -498,35 +498,35 @@ const MyCart = () => {
                     </div>
 
                     {/* <!-- info --> */}
-                    <div class='row'>
-                      <div class='col-12'>
-                        <label for='affiliate-code' class='form-label'>
+                    <div className='row'>
+                      <div className='col-12'>
+                        <label htmlFor='affiliate-code' className='form-label'>
                           Affiliate Code
                         </label>
                         <input
                           type='text'
                           id='affiliate-code'
-                          class='form-control'
+                          className='form-control'
                           value={affiliateCode}
                           onChange={(e) => setAffiliate(e.target.value)}
                           onBlur={handleBlur}
                         />
                       </div>
-                      <div class='col-12'>
-                        <ul class='list-group list-group-flush'>
-                          <li class='list-group-item'>
+                      <div className='col-12'>
+                        <ul className='list-group list-group-flush'>
+                          <li className='list-group-item'>
                             <strong>Subtotal</strong>
                             <span>฿ {total}</span>
                           </li>
-                          <li class='list-group-item'>
+                          <li className='list-group-item'>
                             <strong>Delivery</strong>
                             <span>฿ 50</span>
                           </li>
                         </ul>
                       </div>
-                      <div class='col-12'>
-                        <ul class='list-group list-group-flush bold-text'>
-                          <li class='list-group-item'>
+                      <div className='col-12'>
+                        <ul className='list-group list-group-flush bold-text'>
+                          <li className='list-group-item'>
                             <strong>Total</strong>
                             <span>฿ {total + 50}</span>
                           </li>
@@ -537,9 +537,9 @@ const MyCart = () => {
                 </div>
               </div>
             </div>
-            <div class='row actions'>
-              <div class='col-12'>
-                <Link to='' class='btn btn-trinary' onClick={handleSubmit}>
+            <div className='row actions'>
+              <div className='col-12'>
+                <Link to='' className='btn btn-trinary' onClick={handleSubmit}>
                   Confirm My Order
                 </Link>
               </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -7,17 +7,101 @@ import prod_add from "../../assets/image/prod_add.png";
 import misc from "../../assets/image/misc.png";
 
 const SelfCollectKitsHPVProductThai = () => {
-  return (
-    <div class='site-wrap'>
-      <Header />
+  const [quantity, setQuantity] = useState(1)
+  // const [cart, setCart] = useState([]);
+  let [total, setTotal] = useState(0);
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
+  // const [product]
 
-      <div class='inner_content_outer'>
-        <div class='sep1'></div>
-        <div class='bandcamp_info'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-lg-12'>
-                <div class='bandcamp_des'>
+  const products = [
+    {
+      id: '1',
+      name: 'เกี่ยวกับชุดตรวจ เอชพีวี',
+      desc: 'ชุดตรวจ HPV ที่คุณสามารถใช้ได้ด้วยตัวเองของ AVA ใช้งานง่าย ไม่เจ็บ และเป็นส่วนตัว เมื่อเก็บตัวอย่างด้วยตัวเองตามขั้นตอน ส่งไปยังห้องปฏิบัติของ winmed โดยใช้กล่องเดิมส่งฟรีที่ไปรษญีย์ไทย เพียงหนึ่งอาทิตย์ คุณจะได้รับผลการตรวจที่ระบุถึงการมีเชื้อ HPV สายพันธุ์ที่เสี่ยงสูง และหากผลเป็นบวกก็สามารถหาคำปรึกษาทางการแพทย์ที่เหมาะสมได้ทันที.',
+      price: '1200'
+    }];
+
+  const handleMinusClick = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const handlePlusClick = () => {
+    setQuantity(quantity + 1);
+  };
+  // const removeCart = (e, product) => {
+  //   console.log(product)
+  //   setCart(localStorage.getItem('cart'));
+  //   console.log(cart);
+  //   // cart?.pop(product);
+  //   const foundObject = cart.find(obj => obj.id === product.id);
+
+  //   if (foundObject) {
+  //     cart?.pop(foundObject);
+  //     // foundObject.name = newName;
+  //     console.log('Object updated:', foundObject);
+  //     document.querySelectorAll('.removecart_but')[0].style.display = "none";
+  //     document.querySelectorAll('.add_tocard_opt')[0].style.display = "block";
+  //   } else {
+  //     console.log('Object not found');
+  //   }
+
+  //   total = Number(total) - (quantity * Number(product.price));
+  //   localStorage.setItem('cart', JSON.stringify(cart));
+    
+  //   // setReloadKey(Math.random());
+
+  // }
+  const addToCart = (e, product) => {
+
+    console.log(product);
+    console.log(cart);
+    console.log(cart?.length);
+    console.log(product);
+    product.quantity = quantity;
+    cart.push(product);
+    total = Number(total) + (quantity * Number(product.price));
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    console.log(cart);
+    console.log(total);
+    // document.querySelectorAll('.removecart_but')[0].style.display = "block";
+    document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+
+  }
+
+  useEffect(() => {
+    if (cart?.length > 0) {
+      const foundIndex = cart?.findIndex(obj => obj.id === '1');
+      // const foundObject = cart.find(obj => obj.id === value.id);
+
+      if (foundIndex !== -1) {
+        setQuantity(cart[foundIndex].quantity);
+      
+        console.log(cart);
+        // document.querySelectorAll('.removecart_but')[0].style.display = "block";
+        document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+      } else {
+        console.log('Object not found');
+      }
+
+
+    }
+
+  }, [])
+  return (
+    <div className='site-wrap'>
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}  />
+
+      <div className='inner_content_outer'>
+        <div className='sep1'></div>
+        <div className='bandcamp_info'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <div className='bandcamp_des'>
                   <ul>
                     <li>
                       <Link to='/'>Home</Link>{" "}
@@ -31,66 +115,68 @@ const SelfCollectKitsHPVProductThai = () => {
                       <Link to='/selfcollectkit/hpv'>HPV Kits</Link>{" "}
                       {/* <Link to=''>HPV Kits</Link>{" "} */}
                     </li>
-                    <li class='selected'>
+                    <li className='selected'>
                       <span>เกี่ยวกับชุดตรวจ เอชพีวี</span>{" "}
                     </li>
                   </ul>
                 </div>
-
-                <div class='prod_des'>
-                  <div class='prod_add_info'>
-                    <div class='prod_add_slider'>
+                {products.map(product => (
+                <div key={product.id} className='prod_des'>
+                  <div className='prod_add_info'>
+                    <div className='prod_add_slider'>
                       <img src={prod_add} alt='' />
                     </div>
                   </div>
-                  <div class='prod_add_content'>
+                  <div className='prod_add_content'>
                     <h2>
-                      <span>ชุดเก็บตัวอย่างด้วยตัวเอง</span>เกี่ยวกับชุดตรวจ เอชพีวี
+                      <span>ชุดเก็บตัวอย่างด้วยตัวเอง</span>{product.name}
                     </h2>
-                    <div class='price_info'>
-                      <div class='price_text'>฿ 1200</div>
+                    <div className='price_info'>
+                      <div className='price_text'>฿ {product.price}</div>
                     </div>
-                    <div class='prod_cont_des'>
+                    <div className='prod_cont_des'>
                       <h3>เกี่ยวกับสินค้า</h3>
                       <p>
-                      ชุดตรวจ HPV ที่คุณสามารถใช้ได้ด้วยตัวเองของ AVA ใช้งานง่าย ไม่เจ็บ และเป็นส่วนตัว เมื่อเก็บตัวอย่างด้วยตัวเองตามขั้นตอน ส่งไปยังห้องปฏิบัติของ winmed โดยใช้กล่องเดิมส่งฟรีที่ไปรษญีย์ไทย เพียงหนึ่งอาทิตย์ คุณจะได้รับผลการตรวจที่ระบุถึงการมีเชื้อ HPV สายพันธุ์ที่เสี่ยงสูง และหากผลเป็นบวกก็สามารถหาคำปรึกษาทางการแพทย์ที่เหมาะสมได้ทันที.{" "}
+                      
+                      {product.desc}
                       </p>
                     </div>
-                    <div class='prod_dtn_option'>
-                      <div class='prod_inc'>
-                        <span class='prod_inc_opt'> - </span>
-                        <div class='prod_inc_inp'>
-                          <input type='text' placeholder='1' />
+                    <div className='prod_dtn_option'>
+                      <div className='prod_inc'>
+                        <span className='prod_inc_opt' onClick={handleMinusClick}> - </span>
+                        <div className='prod_inc_inp'>
+                          <input type='text' placeholder='1' value={quantity} />
                         </div>
-                        <span class='prod_inc_opt'> + </span>
+                        <span className='prod_inc_opt'onClick={handlePlusClick}> + </span>
                       </div>
-                      <div class='add_tocard_opt'>
-                        <button type='button' class='addtocart_but'>
+                      <div className='add_tocard_opt'>
+                        <button type='button' className='addtocart_but' onClick={(e) => addToCart(e, product)}>
                         ใส่ตะกร้า
                         </button>
                       </div>
-                      <div class='buynow_opt'>
-                        <Link to='/mycart' type='button' class='buynow_btn'>
-                        {/* <Link to='' type='button' class='buynow_btn'> */}
+                      <div className='buynow_opt'>
+                        <Link to='/mycart' type='button' className='buynow_btn'>
+                        {/* <Link to='' type='button' className='buynow_btn'> */}
                         สั่งซื้อชุดตรวจ
                         </Link>
                       </div>
                     </div>
                   </div>
                 </div>
+                 ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class='hpv_continfo'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12'>
-              <div class='inner_head_des2'>
+      <div className='hpv_continfo'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='inner_head_des2'>
                 <h2>More about the AVA HPV Kit</h2>
               </div>
-              <div class='inner_cont_wrap'>
+              <div className='inner_cont_wrap'>
                 <ul>
                   <li>
                     AVA
@@ -111,7 +197,7 @@ const SelfCollectKitsHPVProductThai = () => {
                     (US-FDA)
                   </li>
                 </ul>
-                <div class='inner_cont_view'>
+                <div className='inner_cont_view'>
                   <h3>EQUIPMENT</h3>
                   <ol>
                     <li>
@@ -131,7 +217,7 @@ const SelfCollectKitsHPVProductThai = () => {
                     </li>
                   </ol>
                 </div>
-                <div class='inner_cont_view'>
+                <div className='inner_cont_view'>
                   <h3>CAUTION</h3>
                   <ol>
                     <li>ไม่ควรใช้อุปกรณ์ขณะตั้งครรภ์หรือมีประจำ เดือน</li>
@@ -162,11 +248,11 @@ const SelfCollectKitsHPVProductThai = () => {
       </div>
 
       {/* <!-- Banner ends --> */}
-      <div class='howitowrk_wrap addpaddint_top'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12'>
-              <div class='positive_info'>
+      <div className='howitowrk_wrap addpaddint_top'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='positive_info'>
                 <h2>ทำยังไงถ้าตรวจพบเชื้อ?</h2>
                 <p>
                 ไม่ต้องกังวล - เราจะดูแลคุณอย่างเต็มที่ มาพูดคุยกับเรา สำรวจรายชื่อสถานบริการทางการแพทย์และคลินิกพาร์ทเนอร์ที่อยู่ใกล้คุณได้เลย หรือโทรหาเราเพื่อรับการปรึกษา
@@ -175,8 +261,8 @@ const SelfCollectKitsHPVProductThai = () => {
                   </span>
                 </p>
 
-                <div class='def_btnopt2'>
-                  <Link to='#' class='learn_more_btn'>
+                <div className='def_btnopt2'>
+                  <Link to='#' className='learn_more_btn'>
                   เรียนรู้เพิ่ม{" "}
                   </Link>
                 </div>
