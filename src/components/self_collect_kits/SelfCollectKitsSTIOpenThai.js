@@ -255,7 +255,7 @@ const SelfCollectKitsSTIOpenThai = () => {
         </div>
 
         <div class='order_ket_opt order_ket_opt2'>
-          <Link to='/selfcollectkit/sti/kit'>สั่งซื้อชุดตรวจ</Link>
+          <Link to='/th/selfcollectkit/sti/kit'>สั่งซื้อชุดตรวจ</Link>
         </div>
       </div>
 

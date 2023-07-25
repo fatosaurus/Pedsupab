@@ -155,7 +155,7 @@ const SelfCollectKitsHPVProductThai = () => {
                         </button>
                       </div>
                       <div className='buynow_opt'>
-                        <Link to='/mycart' type='button' className='buynow_btn'>
+                        <Link to='/th/mycart' type='button' className='buynow_btn'>
                         {/* <Link to='' type='button' className='buynow_btn'> */}
                         สั่งซื้อชุดตรวจ
                         </Link>

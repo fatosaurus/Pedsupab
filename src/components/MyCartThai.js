@@ -145,6 +145,7 @@ const MyCart = () => {
     cardNumber: yup.string().required("Card Number is required"),
     expiryDate: yup.string().required("expiry Date  is required"),
     cvv: yup.string().required("Cvv is required"),
+    // amount: yup.string().required("amount is required"),
   });
 
 
@@ -173,23 +174,22 @@ const MyCart = () => {
       //LIVE
       // values.merchantID = "764764000009573";
       // secretKey = "C155E4D4A2A68503C878673E9ED0320718F8B0442C28835D556CDEBB1B5AFBFB";
-      
+
       values.amount = total;
       values.currencyCode = 'USD';
       values.description = 'item 1';
-      // values.invoiceNo = ;
-
       values.frontendReturnUrl = 'http://localhost:3000/order/thank-you' ;
+      values.frontendRedirectMethod = null;
       // let value;
 
-      // const PT_dataArray = {
-      //   //MANDATORY PARAMS
-      //   "merchantID": values.merchantID,
-      //   "invoiceNo": values.invoiceno,
-      //   "description": values.description,
-      //   "amount": values.amount,
-      //   "currencyCode": values.currencyCode,
-      // }
+      const PT_dataArray = {
+        //MANDATORY PARAMS
+        "merchantID": values.merchantID,
+        "invoiceNo": values.invoiceNo,
+        "description": values.description,
+        "amount": values.amount,
+        "currencyCode": values.currencyCode,
+      }
 
 
 
@@ -204,6 +204,9 @@ const MyCart = () => {
           'payload': payload
         })
       };
+      if( values.amount <= 50){
+        toast.error('Please add Product to Cart')
+      }else{
 
       fetch('https://sandbox-pgw.2c2p.com/payment/4.1/PaymentToken', options)
         .then(response => response.json())
@@ -215,13 +218,15 @@ const MyCart = () => {
           if (paymentDetails.respCode === '0000') {
             //Redirect to the payment url paymentDetails.webPaymentUrl
             window.location.replace(paymentDetails.webPaymentUrl);
+
           }
         }
         )
         .catch(err => console.error(err));
 
 
-    },
+    }
+  },
   });
 
   return (
@@ -251,7 +256,8 @@ const MyCart = () => {
                           onBlur={handleBlur}
                         />
                         <p className="error">
-                          {errors.name && touched.name && errors.name}
+    
+                          {errors.name && touched.name  ? (<p className="text-danger">{errors.name}</p>) : null}
                         </p>
                       </div>
                       <div className='col-lg-6'>
@@ -262,7 +268,7 @@ const MyCart = () => {
                           onBlur={handleBlur}
                         />
                         <p className="error">
-                          {errors.phone && touched.phone && errors.phone}
+                          {errors.phone && touched.phone ? (<p className="text-danger">{errors.phone}</p>) : null}
                         </p>
                       </div>
                     </div>
@@ -275,7 +281,7 @@ const MyCart = () => {
                           onBlur={handleBlur}
                         />
                         <p className="error">
-                          {errors.address && touched.address && errors.address}
+                          {errors.address && touched.address ? (<p className="text-danger">{errors.address}</p>) : null}
                         </p>
                       </div>
                     </div>
@@ -305,7 +311,7 @@ const MyCart = () => {
                           </option>
                         </select>
                         <p className="error">
-                          {errors.province && touched.province && errors.province}
+                          {errors.province && touched.province ? (<p className="text-danger">{errors.province}</p>) : null}
                         </p>
                       </div>
                       <div className='col-lg-6'>
@@ -327,7 +333,7 @@ const MyCart = () => {
                           <option value="St. John's">St. John's</option>
                         </select>
                         <p className="error">
-                          {errors.district && touched.district && errors.district}
+                          {errors.district && touched.district ? (<p className="text-danger">{errors.district}</p>) : null}
                         </p>
                       </div>
                     </div>
@@ -339,7 +345,7 @@ const MyCart = () => {
                           onChange={handleChange}
                           onBlur={handleBlur} />
                         <p className="error">
-                          {errors.postalCode && touched.postalCode && errors.postalCode}
+                          {errors.postalCode && touched.postalCode ? (<p className="text-danger">{errors.postalCode}</p>) : null}
                         </p>
                       </div>
                       <div className='col-lg-6'>
@@ -350,7 +356,7 @@ const MyCart = () => {
                           onBlur={handleBlur}
                         />
                         <p className="error">
-                          {errors.email && touched.email && errors.email}
+                          {errors.email && touched.email ? (<p className="text-danger">{errors.email}</p>) : null}
                         </p>
                       </div>
                     </div>
@@ -381,7 +387,7 @@ const MyCart = () => {
                               onChange={handleChange}
                             />
                             <p className="error">
-                              {errors.cardNumber && touched.cardNumber && errors.cardNumber}
+                              {errors.cardNumber && touched.cardNumber ? (<p className="text-danger">{errors.cardNumber}</p>) : null}
                             </p>
                           </div>
                           <div className='col-lg-6'>
@@ -396,7 +402,7 @@ const MyCart = () => {
                               onBlur={handleBlur}
                             />
                             <p className="error">
-                              {errors.expiryDate && touched.expiryDate && errors.expiryDate}
+                              {errors.expiryDate && touched.expiryDate ? (<p className="text-danger">{errors.expiryDate}</p>) : null}
                             </p>
                           </div>
                           <div className='col-lg-6'>
@@ -410,7 +416,7 @@ const MyCart = () => {
                               onChange={handleChange}
                             />
                             <p className="error">
-                              {errors.cvv && touched.cvv && errors.cvv}
+                              {errors.cvv && touched.cvv ? (<p className="text-danger">{errors.cvv}</p>) : null}
                             </p>
                           </div>
                           <div className='col-lg-6'>
@@ -425,7 +431,7 @@ const MyCart = () => {
                               onChange={handleChange}
                             />
                             <p className="error">
-                              {errors.invoiceNo && touched.invoiceNo && errors.invoiceNo}
+                              {errors.invoiceNo && touched.invoiceNo ? (<p className="text-danger">{errors.invoiceNo}</p>) : null}
                             </p>
                           </div>
                           {/* <button type='submit' className='btn btn-primary'>

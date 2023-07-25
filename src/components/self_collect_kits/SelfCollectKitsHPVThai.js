@@ -120,7 +120,7 @@ const SelfCollectKitsHPVThai = () => {
         </div>
 
         <div class='order_ket_opt'>
-          <Link to='/selfcollectkit/hpv/product'>สั่งซื้อชุดตรวจ</Link>
+          <Link to='/th/selfcollectkit/hpv/product'>สั่งซื้อชุดตรวจ</Link>
         </div>
       </div>
 
