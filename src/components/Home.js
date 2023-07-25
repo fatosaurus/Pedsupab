@@ -35,7 +35,9 @@ const Home = () => {
   const [bannerData, setBannerData] = useState([
     { "img": "images/AVA_banner.jpg", "link": "#" },
     { "img": "images/Banner_HPV .jpg", "link": "#" },
-    { "img": "images/banner_1.jpg", "link": "#" },
+    { "img": "images/home-vid-banner-eng.png", "link": "#" },
+    // { "img": "/static/media/home-vid-banner-eng.d5ba04753f0ab48670bf.png", "link": "#" },
+    
   ]);
   const [hvid_play, set_hvid_play] = useState(false);
 
@@ -64,6 +66,7 @@ const Home = () => {
           {bannerData.map((item, ind) => (
             <div className={`carousel-item ${ind === 0 ? 'active' : ''}`} key={'banner_' + ind}>
               <img src={item.img} className='d-block w-100' alt='...' />
+              {/* {console.log(item.img,"+++++>>>>+++----->>")} */}
             </div>
           ))}
 
@@ -150,7 +153,9 @@ const Home = () => {
           {hvid_play &&  */}
           <div className='iframe-embade home-vid-iframe'>
             <img src={new_text} alt='' className='floated-img mb-2' />
-            <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
+            <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" 
+            // src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
+            src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
              allowFullScreen
             ></iframe></div>
