@@ -178,28 +178,19 @@ const Knowledge = () => {
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
 
-                    เพศสัมพันธ์เป็นสิ่งที่สวยงาม แต่ก็ไม่เสมอไป เข้าใจ SEX
-                    กับความปลอดภัยในบทความนี้
+                    Debunking Common Misconceptions about HPV
                   </h2>
-                  <div className='post-meta'>Sarisa Gajaseni 20 Mar 2023</div>
+                  <div className='post-meta'>Pedsupab Team 17 July 2023</div>
                   <p>
 
-                    Lorem ipsum dolor sit amet. Et eius galisum ut expedita
-                    alias qui neque laboriosam aut fugiat officiis et quia
-                    tempore. Id recusandae modi eos architecto odio et placeat
-                    cupiditate ut fugit asperiores. Eum iure tempore qui odio
-                    autem et asperiores atque in illum molestias qui temporibus
-                    voluptatum. Ut velit amet et perferendis fugiat ut nemo
-                    voluptas et cumque voluptatem et ipsam nesciunt ad molestiae
-                    perspiciatis.
+                    In this blog, we will address common misconceptions surrounding HPV (Human Papillomavirus) and HPV testing. By dispelling myths and providing accurate information, we aim to equip you with the knowledge needed to take control of your sexual health. Let's dive in! Understanding HPV and its Link to Cervical Cancer:
+
+                    HPV is a common sexually transmitted infection that affects both men and women. Contrary to popular belief, HPV is not limited to a specific group or age range. It can be transmitted through various sexual activities, including vaginal, anal, and oral sex, as well as through intimate skin-to-skin contact. One of the most significant misconceptions about HPV is its association with cervical cancer.
                   </p>
 
                   <p>
 
-                    Eum vero molestias non ipsa modi quo recusandae voluptates.
-                    Non consequuntur repudiandae non laborum nihil qui placeat
-                    temporibus aut nesciunt quasi ab quia quis. Id architecto
-                    magni in voluptatem nesciunt eos quibusdam
+                    While it is true that certain high-risk strains of HPV can increase the risk of developing cervical cancer, it's important to note that not all HPV infections lead to cancer. Most HPV infections clear up on their own without causing any long-term health issues.
                   </p>
                   <div className='post-tag-meta'>
                     <Link to='' className='btn btn-pill-outline '>
@@ -208,12 +199,120 @@ const Knowledge = () => {
                     </Link>
                     <Link to='' className='btn btn-pill-outline '>
 
-                      #BIRTHCONTROL
+                      #RELATIONSHIPS
                     </Link>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div className='post-article card'>
+              <div className='row'>
+                <div className='col-lg-7 graphic'>
+                  <img src={blog_img} alt='' className='image-fluid' />
+                </div>
+                <div className='col-lg-5 content'>
+                  <h2 className='post-title'>
+
+                    E-Cigarettes and Cervical Cancer
+                  </h2>
+                  <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <p>
+
+                    How can smoking increase the risk of cervical cancer? You might be wondering, given that smoke only enters the lungs, not the uterus or the vagina… wouldn’t it cause other cancers like oral, throat, or lung cancer? Seems more logical, right? With how e-cigarettes are readily available, let’s consider this.
+
+                    Here me out, girls, smoking e-cigarettes can increase your chances of cervical cancer.
+
+                    Not to blame the men in our lives, but studies illustrate that most men carry HPV without realizing it; thus, sexual intercourse accounts for 90% of transmission (other factors contribute the remaining 10%, such as public restrooms). It’s important to note that whatever sexual activities you involve may lead to cancer or warts due to HPV.
+                  </p>
+
+                  <p>
+
+                    Even though vaping doesn't create combustion like rolled cigarettes or contain harmful substances like gamma radiation, carbon monoxide, rat poison, etc., however, one substance: e-cigarettes contain nicotine, which is also a carcinogen. Toxicologically, nicotine is considered toxic compared to other substances. It also potentially causes Alzheimer's and Parkinson's diseases.
+                  </p>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-pill-outline '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-pill-outline '>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='post-article card'>
+              <div className='row'>
+                <div className='col-lg-7 graphic'>
+                  <img src={blog_img} alt='' className='image-fluid' />
+                </div>
+                <div className='col-lg-5 content'>
+                  <h2 className='post-title'>
+
+                  The Rise of Cervical Cancer Infections
+                  </h2>
+                  <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <p>
+
+                  In more than 90% of individuals infected with HPV, their bodies can clear the infection on their own. However, according to the World Health Organization (WHO) survey in 2020, there were up to 60,400 new cases of cervical cancer and 34,200 deaths. Moreover, many cases remain untreated, with 90% of new infections and deaths occurring in low-income countries. Notably, over 90% of infections are attributed to sexual intercourse.
+                  </p>
+
+                  <p>
+
+                  It has also been found that individuals infected with HIV are up to 6 times more likely to develop cervical cancer than those without HIV.
+                  </p>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-pill-outline '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-pill-outline '>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='post-article card'>
+              <div className='row'>
+                <div className='col-lg-7 graphic'>
+                  <img src={blog_img} alt='' className='image-fluid' />
+                </div>
+                <div className='col-lg-5 content'>
+                  <h2 className='post-title'>
+
+                  Can Sexual Activity Caause Stress
+                  </h2>
+                  <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <p>
+
+                  Sexual intercourse includes masturbation. Both goals are inevitable to climax. or making the other person feel good But some couples feel bad, stressed, depressed, anxious, feeling not doing well enough. Aggressive arguing with a partner attitudes about sex Knot from being abused Post-coital tristesse (PCT) symptoms of sadness or loneliness that occur after sex Most people can experience these conditions. and often disappears on its own Or for some people it may be longer than normal, which is a condition in which brain chemistry is involved.
+                  </p>
+
+                  <p>
+
+                  The main cause of Post-coital tristesse (PCT) is hormones in the body. at the climax The body will release hormones such as dopamine.and oxytocin If reaching orgasm, including other hormones will be released quickly. and rapidly decreasing This is what is known as the hormonal instability. This causes post-coital tristesse (PCT) symptoms.
+                  </p>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-pill-outline '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-pill-outline '>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
           </div>
           {/* <!-- posts Ends --> */}
           <div className='post-pagination'>
