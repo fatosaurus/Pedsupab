@@ -29,6 +29,7 @@ import Blog2 from "./components/Blog2"
 import Blog3 from "./components/Blog3"
 
 import { useState } from "react"
+import ThankYou from "./components/Thankyou"
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
         <Route path="/selfcollectkit/hpv" element={<SelfCollectKitsHPV />} />
         <Route path="/selfcollectkit/sti/kit" element={<SelfCollectKitsSTIKit />} />
         <Route path="/selfcollectkit/sti_open" element={<SelfCollectKitsSTIOpen />} />
+        <Route path="/thank-you" element={<ThankYou />} />
 
         <Route path="/th" element={<HomeThai />} />
         <Route path="/th/aboutus" element={<AboutThai />} />
