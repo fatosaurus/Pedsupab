@@ -70,9 +70,11 @@ const Affiliates = () => {
       
       values.socialMediaLinks = Links.toString();
 
+      const lang = localStorage.getItem('language');
+
       axios({
         method: 'POST',
-        url: 'https://pedsupab-dev.azure-api.net/pedsupabapi/affiliates/register',
+        url: 'https://pedsupab-dev.azure-api.net/pedsupabapi/affiliates/register?lang='+lang,
         data: values
       })
         .then(function (res) {
