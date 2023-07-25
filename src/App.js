@@ -74,6 +74,7 @@ function App() {
         <Route path="/th/knowledge/blog/Just_Sex_or_Make_Love_What's_the_Difference" element={<Blog1 />} />
         <Route path="/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe" element={<Blog2 />} />
         <Route path="/th/knowledge/blog/Can_Sex_Cause_Stress" element={<Blog3/>} />
+        <Route path="/th/thank-you" element={<ThankYou />} />
 
       </Routes>
 
