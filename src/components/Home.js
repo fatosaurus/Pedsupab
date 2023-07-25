@@ -195,34 +195,37 @@ const Home = () => {
         <div className='container recent-blog-bg'>
           <div className='blogs-w d-flex'>
             <div className='item'>
-              <Link to="/knowledge">
+              <Link to="/knowledge/blog/Debunking_Misconceptions_of_HPV">
               <div className='graphic'>
                 <img src={blog_thumb__1} alt='' />
               </div>
               <h3 className='blog-title'>
 
-              The Rise of HPV Infections: Understanding the Need for Increased Testing in Thailand
+              {/* The Rise of HPV Infections: Understanding the Need for Increased Testing in Thailand */}
+              Debunking Misconceptions of HPV
               </h3>
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer">
               <div className='graphic'>
                 <img src={blog_thumb__2} alt='' />
               </div>
               <h3 className='blog-title'>
 
-              Debunking Common Misconceptions about HPV and HPV Testing
+              {/* Debunking Common Misconceptions about HPV and HPV Testing */}
+              E-Ciggarettes and Cervical Cancer
               </h3>
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/knowledge/blog/The_Rise_of_HPV_Infections">
               <div className='graphic'>
                 <img src={blog_thumb__4} alt='' />
               </div>
               <h3 className='blog-title'>
-              Navigating Sexual Health Education in Thailand: How Pedsupab wants to Make a Difference
+              {/* Navigating Sexual Health Education in Thailand: How Pedsupab wants to Make a Difference */}
+              The Rise of HPV Infections
               </h3>
               </Link>
             </div>
@@ -232,7 +235,8 @@ const Home = () => {
                 <img src={blog_thumb__5} alt='' />
               </div>
               <h3 className='blog-title'>
-              Understanding the Importance of HPV Testing: Why Early Detection Matters
+              {/* Understanding the Importance of HPV Testing: Why Early Detection Matters */}
+              Can Sexual Activity Caause Stress
               </h3>
               </Link>
             </div>

@@ -190,34 +190,34 @@ const HomeThai = () => {
         <div className='container recent-blog-bg'>
           <div className='blogs-w d-flex'>
             <div className='item'>
-              <Link to="/knowledge">
+              <Link to="/th/knowledge/blog/Debunking_Misconceptions_of_HPV">
               <div className='graphic'>
                 <img src={blog_thumb__1} alt='' />
               </div>
               <h3 className='blog-title'>
 
-              ยอดติดเชื้อ HPV ที่สูงขึ้นเรื่อยๆ : ทำความเข้าใจกับความจำเป็นของการตรวจคัดกรองเอชพีวีในประเทศไทย
+              หักล้างความเข้าใจผิดเกี่ยวกับ HPV
               </h3>
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer">
               <div className='graphic'>
                 <img src={blog_thumb__2} alt='' />
               </div>
               <h3 className='blog-title'>
 
-              เรื่องเอชพีวีและการตรวจคัดกรองที่มักเข้าใจผิด 
+              บุหรี่ไฟฟ้ากับมะเร็งปากมดลูก
               </h3>
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/th/knowledge/blog/The_Rise_of_HPV_Infections">
               <div className='graphic'>
                 <img src={blog_thumb__4} alt='' />
               </div>
               <h3 className='blog-title'>
-              คุยเรื่องสุขภาพทางเพศกับการศึกษาไทย
+                การเพิ่มขึ้นของการติดเชื้อ HPV
               </h3>
               </Link>
             </div>
@@ -227,7 +227,7 @@ const HomeThai = () => {
                 <img src={blog_thumb__5} alt='' />
               </div>
               <h3 className='blog-title'>
-              มาเข้าใจความสำคัญของการตรวจคัดกรองมะเร็งปากมดลูก และทำไมการตรวจก่อน เจอก่อนถึงสำคัญ
+              กิจกรรมทางเพศทำให้เกิดความเครียดได้
               </h3>
               </Link>
             </div>
