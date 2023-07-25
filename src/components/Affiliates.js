@@ -69,13 +69,12 @@ const Affiliates = () => {
       // console.log(Links)
       
       values.socialMediaLinks = Links.toString();
-      // console.log(values)
-      // console.log(socialLinks);
 
+      const lang = localStorage.getItem('language');
 
       axios({
         method: 'POST',
-        url: 'https://pedsupab-dev.azure-api.net/pedsupabapi/affiliates/register',
+        url: 'https://pedsupab-dev.azure-api.net/pedsupabapi/affiliates/register?lang='+lang,
         data: values
       })
         .then(function (res) {
@@ -86,8 +85,8 @@ const Affiliates = () => {
            }
           //  alert(res.data.message);  
            else{
-            toast.success("Sucessfully Registered")
-            return navigate("/" ,{ replace: true });
+            toast.success("Your application has been submitted.")
+            return navigate("/th" ,{ replace: true });
               // alert("Sucessfully Registered");  
            }
            

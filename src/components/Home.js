@@ -142,12 +142,12 @@ const Home = () => {
 
             Watch
           </h2>
-          {!hvid_play && 
+          {/* {!hvid_play && 
           <div className="banner-preview-img home-vid-preview" onClick={()=>video_play()} style={{cursor: 'pointer'}}>
             <img src={Home_vid_img} alt='' className='floated-img mb-2' />
           </div>
           }
-          {hvid_play && 
+          {hvid_play &&  */}
           <div className='iframe-embade home-vid-iframe'>
             <img src={new_text} alt='' className='floated-img mb-2' />
             <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
@@ -155,7 +155,7 @@ const Home = () => {
              allowFullScreen
             ></iframe></div>
           </div>
-          }
+          {/* // } */}
         </div>
       </div>
 
