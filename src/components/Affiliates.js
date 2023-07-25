@@ -86,7 +86,7 @@ const Affiliates = () => {
           //  alert(res.data.message);  
            else{
             toast.success("Your application has been submitted.")
-            return navigate("/th" ,{ replace: true });
+            return navigate("/thank-you" ,{ replace: true });
               // alert("Sucessfully Registered");  
            }
            
