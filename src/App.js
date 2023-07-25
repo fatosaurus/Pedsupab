@@ -85,15 +85,11 @@ function App() {
         <Route path="/th/knowledge/blog/Just_Sex_or_Make_Love_What's_the_Difference" element={<Blog1 />} />
         <Route path="/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe" element={<Blog2 />} />
         <Route path="/th/knowledge/blog/Can_Sex_Cause_Stress" element={<Blog3/>} />
-<<<<<<< HEAD
-        <Route path="/th/thank-you" element={<ThankYou />} />
-=======
         <Route path="/th/knowledge/blog/Debunking_Misconceptions_of_HPV" element={<Blog4Thai/>} />
         <Route path="/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer" element={<Blog5Thai/>} />
         <Route path="/th/knowledge/blog/The_Rise_of_HPV_Infections" element={<Blog6Thai/>} />
         <Route path="/th/thank-you" element={<ThankYou />} />
 
->>>>>>> a56bc1c0ca3cbc22919dd8c850f394326a290864
 
       </Routes>
 
