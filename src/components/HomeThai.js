@@ -222,7 +222,7 @@ const HomeThai = () => {
               </Link>
             </div>
             <div className='item'>
-            <Link to="/knowledge">
+            <Link to="/th/knowledge/blog/Can_Sex_Cause_Stress">
               <div className='graphic'>
                 <img src={blog_thumb__5} alt='' />
               </div>
