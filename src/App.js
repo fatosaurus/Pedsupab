@@ -37,6 +37,9 @@ import Blog4Thai from "./components/Blog4Thai"
 import Blog5Thai from "./components/Blog5Thai"
 import Blog6Thai from "./components/Blog6Thai"
 import ThankYou from "./components/Thankyou"
+import ThankYouThai from "./components/ThankyouThai"
+import ThankYouPG from "./components/ThankyouPG"
+import ThankYouThaiPG from "./components/ThankyouThaiPG"
 
 function App() {
 
@@ -68,6 +71,7 @@ function App() {
         <Route path="/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer" element={<Blog5/>} />
         <Route path="/knowledge/blog/The_Rise_of_HPV_Infections" element={<Blog6/>} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/order/thank-you" element={<ThankYouPG />} />
 
 
         <Route path="/th" element={<HomeThai />} />
@@ -88,7 +92,8 @@ function App() {
         <Route path="/th/knowledge/blog/Debunking_Misconceptions_of_HPV" element={<Blog4Thai/>} />
         <Route path="/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer" element={<Blog5Thai/>} />
         <Route path="/th/knowledge/blog/The_Rise_of_HPV_Infections" element={<Blog6Thai/>} />
-        <Route path="/th/thank-you" element={<ThankYou />} />
+        <Route path="/th/thank-you" element={<ThankYouThai />} />
+        <Route path="/th/order/thank-you" element={<ThankYouThaiPG />} />
 
 
       </Routes>

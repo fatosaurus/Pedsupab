@@ -165,12 +165,21 @@ const MyCart = () => {
       // values.expiryDate = expiryDate;
       // values.cvv = cvv;
       values.affiliateCode = affiliateCode
+
+      //TESTING
       values.merchantID = "764764000009347";
       // secretKey = "0D6A706933AE782A686365CFA7C19160F65E887D55DC9F41729BB13D8B32C10A";
+
+      //LIVE
+      // values.merchantID = "764764000009573";
+      // secretKey = "C155E4D4A2A68503C878673E9ED0320718F8B0442C28835D556CDEBB1B5AFBFB";
+      
       values.amount = total;
       values.currencyCode = 'USD';
       values.description = 'item 1';
       // values.invoiceNo = ;
+
+      values.frontendReturnUrl = 'http://localhost:3000/order/thank-you' ;
       // let value;
 
       // const PT_dataArray = {

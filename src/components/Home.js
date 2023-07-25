@@ -157,7 +157,7 @@ const Home = () => {
             // src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
             src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-             allowFullScreen
+             allowFullScreen autoplay="false"
             ></iframe></div>
           </div>
           {/* // } */}

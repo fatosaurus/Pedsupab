@@ -145,6 +145,7 @@ const MyCart = () => {
     cardNumber: yup.string().required("Card Number is required"),
     expiryDate: yup.string().required("expiry Date  is required"),
     cvv: yup.string().required("Cvv is required"),
+    // amount: yup.string().required("amount is required"),
   });
 
 
@@ -177,7 +178,8 @@ const MyCart = () => {
       values.amount = total;
       values.currencyCode = 'USD';
       values.description = 'item 1';
-      values.frontendReturnUrl = 'http://localhost:3000/knowledge' ;
+      values.frontendReturnUrl = 'http://localhost:3000/order/thank-you' ;
+      values.frontendRedirectMethod = null;
       // let value;
 
       const PT_dataArray = {
@@ -202,6 +204,9 @@ const MyCart = () => {
           'payload': payload
         })
       };
+      if( values.amount <= 50){
+        toast.error('Please add the Product to buy before submitting')
+      }else{
 
       fetch('https://sandbox-pgw.2c2p.com/payment/4.1/PaymentToken', options)
         .then(response => response.json())
@@ -213,13 +218,15 @@ const MyCart = () => {
           if (paymentDetails.respCode === '0000') {
             //Redirect to the payment url paymentDetails.webPaymentUrl
             window.location.replace(paymentDetails.webPaymentUrl);
+            
           }
         }
         )
         .catch(err => console.error(err));
 
 
-    },
+    }
+  },
   });
 
   return (
