@@ -14,7 +14,9 @@ import { Buffer } from "buffer";
 import { Stream } from "stream";
 import jwt from 'jwt-decode'
 import { useNavigate } from 'react-router-dom';
-import Alert from 'react-popup-alert'
+import Alert from 'react-popup-alert';
+// import { useNavigate } from 'react-router-dom';
+
 // import { createHmac } from "crypto";
 
 // import json_encode
@@ -30,6 +32,8 @@ const MyCart = () => {
   // const navigate = useNavigate();
 
   window.Buffer = window.Buffer || Buffer;
+
+  const navigate = useNavigate();
 
   let [quantity, setQuantity] = useState(1);
   const [today, setDate] = React.useState(new Date());
@@ -53,27 +57,27 @@ const MyCart = () => {
     console.log(value);
     const foundIndex = cart.findIndex(obj => obj.id === value.id);
     // const foundObject = cart.find(obj => obj.id === value.id);
-    
+
     if (foundIndex !== -1 && value.quantity > 1) {
       cart[foundIndex].quantity = cart[foundIndex].quantity - 1;
       console.log('Object updated:', cart);
       setCart(JSON.parse(JSON.stringify(cart)));
       console.log(cart);
-      localStorage.setItem('cart',JSON.stringify(cart)); 
-    } else if(foundIndex !== -1 && value.quantity == 1){
+      localStorage.setItem('cart', JSON.stringify(cart));
+    } else if (foundIndex !== -1 && value.quantity == 1) {
       setAlert({
         type: 'error',
-        text: 'The product '+cart[foundIndex].name+' is removed',
+        text: 'The product ' + cart[foundIndex].name + ' is removed',
         show: true
       })
       // alert('The product '+cart[foundIndex].name+' is removed');
       console.log('---------------->')
       const foundObject = cart.find(obj => obj.id === value.id);
       console.log(cart[foundIndex])
-      cart.splice(foundIndex,1);
-      localStorage.setItem('cart',JSON.stringify(cart));
-      
-    }else{
+      cart.splice(foundIndex, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+    } else {
       console.log('Object not found');
     }
     // if(value)
@@ -85,18 +89,18 @@ const MyCart = () => {
 
   const handlePlusClick = (value) => {
     console.log(value);
-    
+
     // const value.id = 2;
     // const newName = 'Updated Object 2';
     const foundIndex = cart.findIndex(obj => obj.id === value.id);
     // const foundObject = cart.find(obj => obj.id === value.id);
-    
+
     if (foundIndex !== -1) {
       cart[foundIndex].quantity = cart[foundIndex].quantity + 1;
       console.log('Object updated:', cart);
       setCart(JSON.parse(JSON.stringify(cart)));
-      console.log(cart); 
-      localStorage.setItem('cart',JSON.stringify(cart));
+      console.log(cart);
+      localStorage.setItem('cart', JSON.stringify(cart));
     } else {
       console.log('Object not found');
     }
@@ -158,10 +162,10 @@ const MyCart = () => {
       console.log(values, 'values...>');
 
 
-      console.log(cardNumber)
-      console.log(expiryDate);
-      console.log(cvv);
-      
+      // console.log(cardNumber)
+      // console.log(expiryDate);
+      // console.log(cvv);
+
       // values.cardNumber = cardNumber;
       // values.expiryDate = expiryDate;
       // values.cvv = cvv;
@@ -178,8 +182,36 @@ const MyCart = () => {
       values.amount = total;
       values.currencyCode = 'USD';
       values.description = 'item 1';
-      values.frontendReturnUrl = 'http://localhost:3000/order/thank-you' ;
-      values.frontendRedirectMethod = null;
+
+      // values.frontendReturnUrl = 'http://localhost:3000/order/thank-you';
+      // values.frontendRedirectMethod = null;
+      // Billing Address
+      // values.customerAddress = {
+      //   billing:
+      //   {
+      //     address1: values.address,
+      //     city: values.district,
+      //     state: values.province,
+      //     postalCode: values.postalCode
+      //   },
+      //   shipping:
+      //   {
+      //     address1: values.address,
+      //     city: values.district,
+      //     state: values.province,
+      //     postalCode: values.postalCode
+      //   }
+
+      // }
+      // values.customerAddress.billing.city = values.district;
+      // values.customerAddress.billing.state = values.province;
+      // values.customerAddress.billing.postalCode = values.postalCode
+      // Shipping Address
+
+      // values.customerAddress.shipping.address1 = values.address;
+      // values.customerAddress.shipping.city = values.district;
+      // values.customerAddress.shipping.state = values.province;
+      // values.customerAddress.shipping.postalCode = values.postalCode
       // let value;
 
       const PT_dataArray = {
@@ -190,7 +222,7 @@ const MyCart = () => {
         "amount": values.amount,
         "currencyCode": values.currencyCode,
       }
-
+      console.log(values)
 
 
       const payload = sign(values, 'C155E4D4A2A68503C878673E9ED0320718F8B0442C28835D556CDEBB1B5AFBFB');
@@ -204,29 +236,30 @@ const MyCart = () => {
           'payload': payload
         })
       };
-      if( values.amount <= 50){
+      if (values.amount <= 50) {
         toast.error('Please add Product to Cart')
-      }else{
+      } else {
 
-      fetch('https://sandbox-pgw.2c2p.com/payment/4.1/PaymentToken', options)
-        .then(response => response.json())
-        .then(response => {
-          console.log(response)
-          var paymentDetails = jwt(response.payload);
-          console.log(paymentDetails);
-          localStorage. removeItem('cart')
-          if (paymentDetails.respCode === '0000') {
-            //Redirect to the payment url paymentDetails.webPaymentUrl
-            window.location.replace(paymentDetails.webPaymentUrl);
+        fetch('https://pgw.2c2p.com/payment/4.1/PaymentToken', options)
+          .then(response => response.json())
+          .then(response => {
+            console.log(response)
+            var paymentDetails = jwt(response.payload);
+            console.log(paymentDetails);
+            localStorage.removeItem('cart')
+            if (paymentDetails.respCode === '0000') {
+              //Redirect to the payment url paymentDetails.webPaymentUrl
+              window.location.replace(paymentDetails.webPaymentUrl);
+              // return navigate(paymentDetails.webPaymentUrl ,{ replace: true });
 
+            }
           }
-        }
-        )
-        .catch(err => console.error(err));
+          )
+          .catch(err => console.error(err));
 
 
-    }
-  },
+      }
+    },
   });
 
   return (
@@ -256,8 +289,8 @@ const MyCart = () => {
                           onBlur={handleBlur}
                         />
                         <p className="error">
-    
-                          {errors.name && touched.name  ? (<p className="text-danger">{errors.name}</p>) : null}
+
+                          {errors.name && touched.name ? (<p className="text-danger">{errors.name}</p>) : null}
                         </p>
                       </div>
                       <div className='col-lg-6'>
@@ -421,7 +454,7 @@ const MyCart = () => {
                           </div>
                           <div className='col-lg-6'>
                             <label htmlFor='invoiceNo'>Invoice No</label>
-                
+
                             <input
                               type="text"
                               id="invoiceNo"

@@ -178,8 +178,8 @@ const MyCart = () => {
       values.amount = total;
       values.currencyCode = 'USD';
       values.description = 'item 1';
-      values.frontendReturnUrl = 'http://localhost:3000/th/order/thank-you' ;
-      values.frontendRedirectMethod = null;
+      // values.frontendReturnUrl = 'http://localhost:3000/th/order/thank-you' ;
+      // values.frontendRedirectMethod = null;
       // let value;
 
       const PT_dataArray = {
@@ -208,7 +208,7 @@ const MyCart = () => {
         toast.error('Please add Product to Cart')
       }else{
 
-      fetch('https://sandbox-pgw.2c2p.com/payment/4.1/PaymentToken', options)
+      fetch('https://pgw.2c2p.com/payment/4.1/PaymentToken', options)
         .then(response => response.json())
         .then(response => {
           console.log(response)

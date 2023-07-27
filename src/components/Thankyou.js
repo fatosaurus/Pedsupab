@@ -10,8 +10,8 @@ const ThankYou = () => {
             <Header />
             <div className="thank_you_w" style={{ backgroundImage: `url(${affiliate_img})` }}>
                 <div className="thank_you_content">
-                    <h2 className="blue-title">Thank You For Sign Up</h2>
-                    <p>You will here form us</p>
+                    <h2 className="blue-title">Thank You for Signing Up</h2>
+                    <p>You will hear back from us soon!</p>
                 </div>
             </div>
             <Footer />

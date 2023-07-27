@@ -214,7 +214,7 @@ const Home = () => {
               <h3 className='blog-title'>
 
               {/* Debunking Common Misconceptions about HPV and HPV Testing */}
-              E-Ciggarettes and Cervical Cancer
+              E-Cigarettes and Cervical Cancer
               </h3>
               </Link>
             </div>
