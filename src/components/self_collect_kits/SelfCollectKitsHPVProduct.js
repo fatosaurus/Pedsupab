@@ -14,6 +14,8 @@ const SelfCollectKitsHPVProduct = () => {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   // const [product]
 
+  const [disabled, setDisabled] = useState(false);
+
   const products = [
     {
       id: '1',
@@ -68,7 +70,8 @@ const SelfCollectKitsHPVProduct = () => {
     console.log(cart);
     console.log(total);
     // document.querySelectorAll('.removecart_but')[0].style.display = "block";
-    document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+    // document.querySelectorAll('.add_tocard_opt')[0].style.disabled = "true";
+    setDisabled(true);
     setReloadKey(Math.random());
 
   }
@@ -83,7 +86,8 @@ const SelfCollectKitsHPVProduct = () => {
       
         console.log(cart);
         // document.querySelectorAll('.removecart_but')[0].style.display = "block";
-        document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+        // document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+        setDisabled(true);
       } else {
         console.log('Object not found');
       }
@@ -151,7 +155,7 @@ const SelfCollectKitsHPVProduct = () => {
                           <span className='prod_inc_opt' onClick={handlePlusClick}> + </span>
                         </div>
                         <div className='add_tocard_opt'>
-                          <button type='button' onClick={(e) => addToCart(e, product)} className='addtocart_but'>
+                          <button type='button' disabled={disabled}  onClick={(e) => addToCart(e, product)} className='addtocart_but'>
                             ADD TO CART
                           </button>
                         </div>
