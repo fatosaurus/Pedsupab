@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useState,useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../style.css";
@@ -8,6 +8,8 @@ import faq_col_3 from "../assets/image/faq-col-3.png";
 import { Link } from "react-router-dom";
 
 const Faq = () => {
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
 
   useEffect(() => {
     allFaQ()
@@ -91,7 +93,7 @@ const Faq = () => {
   }
   return (
     <div className='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <section className='inner-banner faq-banner bg-light-blue'>
         <h1 className='font-2 banner-title'>
           KNOWLEDGE <br />

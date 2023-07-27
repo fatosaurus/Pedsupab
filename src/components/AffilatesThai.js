@@ -22,6 +22,8 @@ const initialValues = {
 };
 
 const Affiliates = () => {
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   const [socialLinks,setSocialLinks] = useState([])
   const navigate = useNavigate();
 
@@ -106,7 +108,7 @@ const Affiliates = () => {
   
   return (
     <div className='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <div className='affiliate-page-inner bg-gray'>
         <div className='container-fluid'>
           <div className='row'>

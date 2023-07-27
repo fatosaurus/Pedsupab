@@ -22,6 +22,8 @@ import misc from "../../assets/image/misc.png";
 const SelfCollectKitsSTIOpenThai = () => {
   const [activeOption, setActiveOption] = useState(null);
   const language = localStorage.getItem('language');
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   const handleOptionClick = (index) => {
     if (activeOption === index) {
       setActiveOption(null);
@@ -31,7 +33,7 @@ const SelfCollectKitsSTIOpenThai = () => {
   };
   return (
     <div class='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <div class='inner-small-banner innerbanner innerbanner2'>
         <div class='text-center'>
           <img src={innerbanner2} alt='' class='img-fluid' />

@@ -69,6 +69,7 @@ const SelfCollectKitsHPVProduct = () => {
     console.log(total);
     // document.querySelectorAll('.removecart_but')[0].style.display = "block";
     document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+    setReloadKey(Math.random());
 
   }
 
