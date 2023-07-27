@@ -3277,3 +3277,6 @@ span.plus_icon:before {
 div#root .container.our-kit-sec {
   max-width: 90% !important;
 }
+.about-team .container {
+  max-width: 90% !important;
+}
