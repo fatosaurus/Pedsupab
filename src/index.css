@@ -14,7 +14,7 @@ code {
 
 
 div#root .container {
-  max-width: 100%;
+  max-width: 1600px;
   padding-left:100px; padding-right: 100px;
 }
 .post-tag-meta { flex-wrap: wrap;}
