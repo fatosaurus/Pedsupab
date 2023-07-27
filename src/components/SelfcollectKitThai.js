@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import "../style.css";
@@ -9,10 +9,12 @@ import about_lab_img from "../assets/image/about-lab-img.png";
 import { Link } from "react-router-dom";
 
 const SelfcollectKitThai = () => {
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
 
   return (
     <div class='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
       <div class='inner-small-banner'>
         <h1 class='text-center'>
           <img src={self_kit_banner} alt='' class='img-fluid' />

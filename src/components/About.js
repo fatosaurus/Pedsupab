@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../style.css";
@@ -20,9 +20,11 @@ import { Link } from "react-router-dom";
 import TeamTextHighlight from "../iconComponents/TeamTextHighlight";
 
 const About = () => {
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   return (
     <div className='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
       <div className='about-page-wrap'>
         <div className='top-border'></div>
         <div className='language-chooser'>

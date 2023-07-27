@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import "../../style.css";
@@ -19,9 +19,13 @@ import misc from "../../assets/image/misc.png";
 import { Link } from "react-router-dom";
 
 const SelfCollectKitsHPV = () => {
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
+
+
   return (
     <div class='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <div class='inner-small-banner innerbanner'>
         <div class='text-center'>
           <img src={innerbanner1} alt='' class='img-fluid' />

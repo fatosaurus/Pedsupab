@@ -59,6 +59,7 @@ const SelfCollectKitsSTIKit = () => {
       console.log(total);
       // document.querySelectorAll('.removecart_but')[0].style.display = "block";
       document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
+      setReloadKey(Math.random());
       
     }
 
@@ -86,7 +87,7 @@ const SelfCollectKitsSTIKit = () => {
     }, [])
   return (
     <div class='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <div class='inner_content_outer'>
         <div class='sep1'></div>
         <div class='bandcamp_info'>

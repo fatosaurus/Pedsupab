@@ -30,6 +30,8 @@ import { Link } from "react-router-dom";
 import HomeTitleUnderline from "../iconComponents/HomeTitleUnderline.js";
 
 const HomeThai = () => {
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   const [bannerData, setBannerData] = useState([
     { "img": "images/AVA_banner_thai.jpg", "link": "#" },
     { "img": "images/Banner_HPV_Thai.jpg", "link": "#" },
@@ -44,7 +46,7 @@ const HomeThai = () => {
 
   return (
     <div className='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <div
         id='carouselExampleAutoplaying'
         className='carousel slide'

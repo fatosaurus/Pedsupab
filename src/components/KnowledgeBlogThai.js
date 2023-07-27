@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -12,9 +12,11 @@ import blog_pic2 from "../assets/image/blog_pic2.png";
 import blog_pic3 from "../assets/image/blog_pic3.png";
 
 const KnowledgeBlogThai = () => {
+  const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   return (
     <div class='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
       <div class='inner-small-banner innerbanner'>
         <div class='text-center'>

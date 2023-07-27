@@ -25,6 +25,8 @@ import Alert from 'react-popup-alert';
 
 
 const MyCart = () => {
+  // const [reloadKey, setReloadKey] = useState(1)
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
 
   // var json_encode = require('json_encode');
   // var createHmac = require('create-hmac');
@@ -41,7 +43,7 @@ const MyCart = () => {
   const [expiryDate, setExpiryDate] = useState('');
   const [cvv, setCvv] = useState('');
   const [affiliateCode, setAffiliate] = useState('');
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
+  // const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
   let total = 0;
   const [reloadKey, setReloadKey] = useState(1)
   const [alert, setAlert] = React.useState({
@@ -264,7 +266,7 @@ const MyCart = () => {
 
   return (
     <div className='site-wrap'>
-      <Header />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <div className='cart-page-inner-banner'>
         <div className='container'>
           <h1 className='page-title'>My Cart</h1>
