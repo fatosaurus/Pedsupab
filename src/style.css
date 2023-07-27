@@ -3280,3 +3280,7 @@ div#root .container.our-kit-sec {
 .about-team .container {
   max-width: 90% !important;
 }
+.addtocart_but[disabled] {
+    opacity: .3;
+    filter: grayscale(1);
+}
