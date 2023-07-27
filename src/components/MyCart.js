@@ -112,12 +112,12 @@ const MyCart = () => {
     // setReloadKey(Math.random());
   };
 
-  const handleCreditDebit = () => {
-    document.querySelectorAll('#creditDebitCard')[0].style.display = "block";
-  }
+  // const handleCreditDebit = () => {
+  //   document.querySelectorAll('#creditDebitCard')[0].style.display = "block";
+  // }
   useEffect(() => {
 
-    document.querySelectorAll('#creditDebitCard')[0].style.display = "none";
+    // document.querySelectorAll('#creditDebitCard')[0].style.display = "none";
     // let cartlocal = JSON.parse(localStorage.getItem('cart'));
     // cart.push(cartlocal)
     console.log(cart);
@@ -131,9 +131,9 @@ const MyCart = () => {
     district: '',
     postalCode: '',
     email: '',
-    cardNumber: '',
-    expiryDate: '',
-    cvv: '',
+    // cardNumber: '',
+    // expiryDate: '',
+    // cvv: '',
     affiliateCode: '',
     invoiceNo: Date.now()
   };
@@ -148,9 +148,9 @@ const MyCart = () => {
     email: yup.string()
       .required("email is required")
       .email("Email should be in correct format"),
-    cardNumber: yup.string().required("Card Number is required"),
-    expiryDate: yup.string().required("expiry Date  is required"),
-    cvv: yup.string().required("Cvv is required"),
+    // cardNumber: yup.string().required("Card Number is required"),
+    // expiryDate: yup.string().required("expiry Date  is required"),
+    // cvv: yup.string().required("Cvv is required"),
     // amount: yup.string().required("amount is required"),
   });
 
@@ -182,7 +182,7 @@ const MyCart = () => {
       // secretKey = "C155E4D4A2A68503C878673E9ED0320718F8B0442C28835D556CDEBB1B5AFBFB";
 
       values.amount = total;
-      values.currencyCode = 'USD';
+      values.currencyCode = 'THB';
       values.description = 'item 1';
 
       // values.frontendReturnUrl = 'http://localhost:3000/order/thank-you';
@@ -399,14 +399,14 @@ const MyCart = () => {
                   </div>
                 </div>
 
-                <div className='card card-payment-method'>
+                {/* <div className='card card-payment-method'>
                   <div className='card-header text-color-pink'>My Payment Method</div>
                   <div className='card-body'>
                     <div className='btn-groups'>
                       <button type='button' className='btn btn-secondary' onClick={handleCreditDebit}>
                         Credit/Debit Card
                       </button>
-                      {/* <form onSubmit={handleSubmit} method='post'> */}
+                      
                       <div className="card-body">
                         <div className='row' id="creditDebitCard">
 
@@ -469,22 +469,22 @@ const MyCart = () => {
                               {errors.invoiceNo && touched.invoiceNo ? (<p className="text-danger">{errors.invoiceNo}</p>) : null}
                             </p>
                           </div>
-                          {/* <button type='submit' className='btn btn-primary'>
+                          <button type='submit' className='btn btn-primary'>
                             ADD Card Details
 
-                          </button> */}
+                          </button>
                         </div>
                       </div>
 
-                      {/* <button type='button' className='btn btn-secondary'>
+                      <button type='button' className='btn btn-secondary'>
                       Bank Transfer
                     </button>
                     <button type='button' className='btn btn-secondary'>
                       Promptpay/QR
-                    </button> */}
+                    </button>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
               </div>
               <div className='col-lg-5'>
