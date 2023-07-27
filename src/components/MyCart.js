@@ -127,8 +127,8 @@ const MyCart = () => {
     name: '',
     phone: '',
     address: '',
-    province: '',
-    district: '',
+    province: 'Thailand',
+    district: 'Thailand',
     postalCode: '',
     email: '',
     // cardNumber: '',
@@ -326,22 +326,23 @@ const MyCart = () => {
                         <select className='form-select' id='province'
                           value={values.province}
                           onChange={handleChange}
+                          defaultValue='Thailand'
                           onBlur={handleBlur}>
-                          <option value=''>Select Province</option>
+                          <option value='Thailand'>Thailand</option>
                           <option value='Ontario'>Ontario</option>
                           <option value='Quebec'>Quebec</option>
-                          <option value='British Columbia'>
+                          <option value='British_Columbia'>
                             British Columbia
                           </option>
                           <option value='Alberta'>Alberta</option>
                           <option value='Manitoba'>Manitoba</option>
                           <option value='Saskatchewan'>Saskatchewan</option>
-                          <option value='New Brunswick'>New Brunswick</option>
-                          <option value='Nova Scotia'>Nova Scotia</option>
-                          <option value='Prince Edward Island'>
+                          <option value='New_Brunswick'>New Brunswick</option>
+                          <option value='Nova_Scotia'>Nova Scotia</option>
+                          <option value='Prince_Edward_Island'>
                             Prince Edward Island
                           </option>
-                          <option value='Newfoundland and Labrador'>
+                          <option value='Newfoundland_and_Labrador'>
                             Newfoundland and Labrador
                           </option>
                         </select>
@@ -354,8 +355,9 @@ const MyCart = () => {
                         <select className='form-select' id='district'
                           value={values.district}
                           onChange={handleChange}
+                          defaultValue='Thailand'
                           onBlur={handleBlur}>
-                          <option value=''>Select District</option>
+                          <option value='Thailand'>Thailand</option>
                           <option value='Toronto'>Toronto</option>
                           <option value='Montreal'>Montreal</option>
                           <option value='Vancouver'>Vancouver</option>

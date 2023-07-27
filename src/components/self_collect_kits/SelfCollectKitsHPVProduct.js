@@ -72,7 +72,14 @@ const SelfCollectKitsHPVProduct = () => {
     // document.querySelectorAll('.removecart_but')[0].style.display = "block";
     // document.querySelectorAll('.add_tocard_opt')[0].style.disabled = "true";
     setDisabled(true);
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
     setReloadKey(Math.random());
+    // window.scrollTo(0, 0);
 
   }
 

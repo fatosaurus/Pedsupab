@@ -63,6 +63,7 @@ const SelfCollectKitsSTIKit = () => {
       // document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
       setDisabled(true);
       setReloadKey(Math.random());
+      window.scrollTo(0, 0);
       
     }
 

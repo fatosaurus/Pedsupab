@@ -71,6 +71,7 @@ const SelfCollectKitsHPVProductThai = () => {
     // document.querySelectorAll('.add_tocard_opt')[0].style.display = "none";
     setReloadKey(Math.random());
     setDisabled(true);
+    window.scrollTo(0, 0);
 
   }
 
