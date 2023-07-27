@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -12,7 +12,7 @@ import blog_pic2 from "../assets/image/blog_pic2.png";
 import blog_pic3 from "../assets/image/blog_pic3.png";
 import imag_blog2 from "../assets/image/image_blog2.jpg";
 
-const Blog2 = () => {
+const Blog2Thai = () => {
   const [reloadKey, setReloadKey] = useState(1)
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   return (
@@ -33,7 +33,7 @@ const Blog2 = () => {
                   <div className="inner_head_info">
                     <h2>#SAFESEX #STDPREVENTION</h2>
                     <div className="caption_info">
-                      <h3>Isn&#39;t it safe to wear a condom?</h3>
+                      <h3>เนื้อแนบเนื้อ ปลอดภัยจริงหรอ?</h3>
                       {/* <p>เข้าใจ SEX กับความปลอดภัยในบทความนี้</p> */}
                       <div className="profile_add">
                         <div className="pref_pic">
@@ -95,7 +95,7 @@ const Blog2 = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-
+                
               </div>
             </div>
           </div>
@@ -106,9 +106,9 @@ const Blog2 = () => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="inner_maincont">
-                  <div className='blog-middle-img mb-5'>
-                    <img src={imag_blog2} alt='' className='img-fluid' />
-                  </div>
+                <div className='blog-middle-img mb-5'>
+                                    <img src={imag_blog2} alt='' className='img-fluid' />
+                                </div>
                   <div className="inner_cont_des_view">
                     {/* <h2>เซ็กซ์คือการเมือง</h2>
                                         <p>
@@ -156,77 +156,79 @@ const Blog2 = () => {
                       </div> */}
                       <div className="innerblog_des2">
                         <p>
-                          Many people wonder if the &quot;skin-to-skin&quot; feeling is better than using actual
-                          condoms for protection. And if there is frequent &quot;skin-to-skin&quot; contact, does it
-
-                          immediately increase the risk of sexually transmitted diseases? Today, we will
-                          discuss this topic.
-                          The issue of protection through condom usage depends on the agreement of
-                          both parties involved. Whether it is a woman or a man, it is important for both
-                          parties to have mutual consent, whether they choose to use a condom or not.
-                          In general, we often hear many people believe that the sensation without
-                          using condoms is better. However, the use of condoms is crucial for protection
-                          against sexually transmitted infections. Condoms act as a barrier, reducing the
-                          risk of transmitting diseases during sexual intercourse. While it is true that
-                          some individuals may perceive a difference in sensation when using condoms,
-                          it is important to prioritize safe sex practices to maintain sexual health.
-                          However, this may not always be true because modern condoms are designed
-                          to compete in terms of thinness, almost mimicking the feeling of not wearing
-                          one. They provide a skin-to-skin sensation and even contain natural-feeling
-                          lubricants. Many brands advertise the smoothness of their lubricants, claiming
-                          they feel natural. However, there are some people who prefer to engage in
-                          unprotected sex for various reasons, such as latex allergies or a sense of trust
-                          when in a committed relationship.
+                          หลายคนสงสัยว่าความรู้สึกแบบเนื้อแนบเนื้อมันดีกว่า
+                          ใส่ถุงจริงๆหรอ
+                          แล้วถ้าเนื้อแนบเนื้อบ่อยๆจะติดโรคติดต่อทางเพศสัมพันธ์ได้ทันทีเลยไหม
+                          วันนี้เราจะมาพูดคุยถึงหัวข้อนี้กัน
+                          เรื่องการป้องกันขึ้นอยู่ที่การตกลงของทั้งสองฝ่าย
+                          ซึ่งไม่ว่าจะเป็นผู้หญิงหรือผู้ชายควรมีความยิมยอมกันทั้งสองฝ่ายไม่ว่าจะใส่ถุงหรือไม่ใส่
+                          ส่วนใหญ่เรามักจะได้ยินมาว่าถ้าสดแล้วจะฟิลลื่นกว่าแบบถุง
+                          ซึ่งอาจจะไม่จริงเสมอไปเพราะถุงยางอนามัยในปัจุบันนี้ต่างผลิตออกมาแข่งขันกันเรื่องสรรพคุณความบางเฉียบเหมือนไม่ใส่
+                          ฟิลเนื้อแนบเนื้อ
+                          และต่างโฆษณาถึงความลื่นของสารหล่อลื่นต่างๆนาๆ
+                          แต่ก็จะมีอีกส่วนที่ชอบสด อาจเพราะเหตุผลแพ้ถุงยางอนามัย
+                          หรือก็เราคบกันแล้วจะไปกังวลทำไม เหตุผลความเชื่อใจ
                         </p>
                         <p>
-                          Engaging in sexual activities outside of penetrative intercourse, such as mutual
-                          masturbation or oral sex, also carries a risk of contracting sexually transmitted
-                          diseases. Some individuals have a strong immune system that can fight off
-                          infections, while others may be more susceptible to contracting diseases if
-                          their immune system is compromised. Today, we will provide examples of
-                          various diseases that can occur.
-                          Syphilis is caused by a bacterium that can be present in various bodily fluids,
-                          including saliva. The disease has an incubation period, and common symptoms
-                          include sores on the genitals, a rash on the body, fever, enlarged lymph nodes,
-                          and can be transmitted from mother to baby during pregnancy.
+                          การมีเพศสัมพันธ์ภายนอก การเล้าโลม การใช้ปาก (Oral Sex
+                          ) ไม่ว่าจะแบบไหนไม่สอดใส่เข้าไป
+                          ก็มีความเสี่ยงที่จะติดโรคติดต่อทางเพศสัมพันธ์
+                          ผ่านทางสารคัดหลั่งของร่างกายบางคนร่างกายแข็งแรงภูมิคุ้มกันไม่บกพร่องก็สามารถต้านเชื้อเองได้
+                          แล้วถ้าร่างกายไม่แข็งแรงเสี่ยงติดโรค
+                          <ul>
+                            <li>
+                              ซิฟิลิส (Syphilis) เกิดจากเชื่อแบคทีเรีย
+                              สารคัดหลั่งต่างๆ รวมไปถึงน้ำลาย
+                              มีระยะเวลาการฟักตัวของโรค
+                              ส่วนใหญ่การแสดงอาการของโรคได้แก่
+                              แผลที่อวัยวะเพศแผลขอบแข็ง มีผื่นขึ้นตามตัว มีไข้
+                              ต่อมน้ำเหลืองโต
+                              สามารถติดต่อจากแม่สู่ทารกในครรภ์ได้
+                            </li>
+                            <li>
+                              โรคหนองใน (Gonorrhea)
+                              พบได้บ่อยเกิดจากเชื้อแบคทีเรีย
+                              ลักษณะอาการส่วนใหญ่จะติดมาจากการมีเพศสัมพันธ์ที่ไม่ป้องกัน
+                              ผู้ชายมีหนองไหลจากท่อปัสสาวะ ปัสสาวะแสบขัด
+                              ผู้หญิงมีตกขาวสีเหลืองกลิ่นเหม็นแรง ไม่คัน
+                            </li>
+                            <li>
+                              โรคหูดหงอนไก่ เกิดจากเชื่อไวรัส(HPV)
+                              ซึ่งมีหลายสายพันธ์ สายพันธ์ความเสี่ยงสูงคือ 16,18
+                              ระยะเวลาการฝักตัวประมาณ 3 สัปดาห์
+                              อาการมีติ่งเนื้อนูนคล้ายดอกกระหล่ำ
+                              ติดได้ง่ายจากการมีเพศสัมพันธ์หรือการสัมผัสร่วมไปในบริเวณที่แพร่เชื้อเมื่อไปสัมผัสบริเวณอื่นของร่างกายจึงทำให้เชื้อกระจาย
+                              มีโอกาสติดได้ง่ายและเป็นซ้ำได้บ่อย
+                            </li>
+                            <li>
+                              ไวรัสตับอักเสบบี(Hepatitis B Virus)
+                              ผู้ติดเชื้อมีอาการตาเหลือง ตัวเหลือง ปัสสาวะสีเข้ม
+                              ปวดท้อง คลื่นไส้ อ่อนเพลีย
+                              สามารถติดต่อจากแม่สู่ทารกในครรภ์ได้
+                            </li>
+                          </ul>
                         </p>
                         <p>
-                          Gonorrhea, caused by a bacterium, is often contracted through unprotected
-                          sexual intercourse. Common symptoms in males include discharge from the
-                          urethra and painful urination, while females may experience yellowish, foul-
-                          smelling vaginal discharge without itching.
+                          อย่าเสี่ยงเลยดีกว่าเพราะในปัจจุบัน
+                          มีตัวเลือกให้สามารถเช็คสุขภาพทางเพศได้ทั้งคุณและคู่นอน
+                          สามารถเช็คได้ด้วยตัวเอง (STIs Self Collect)
+                          วิธีนี้สำหรับคนที่ไม่สะดวกไปโรงพยาบาล
+                          ต้องการความเป็นส่วนตัว
+                          เรื่องสุขภาพทางเพศไม่ใช่เรื่องน่าอายหรือเรื่องที่แปลก
+                          เพื่อตัวคุณและคนที่คุณรัก
                         </p>
-                        <p>
-                          Genital warts, caused by the human papillomavirus (HPV), have several strains.
-                          High-risk strains, such as 16 and 18, can lead to the development of cancer.
-                          The incubation period for this disease is approximately three weeks, and
-
-                          symptoms include small, cauliflower-like growths on the genitals. It can be
-                          easily transmitted through sexual contact or skin-to-skin contact and can
-                          spread to other areas of the body through contact.
-                        </p>
-                        <p>Hepatitis B is caused by the hepatitis B virus. Infected individuals may
-                          experience symptoms such as jaundice, yellowing of the skin, dark urine,
-                          abdominal pain, nausea, and fatigue. It can be transmitted from mother to
-                          baby during pregnancy.</p>
-                        <p>It is better to avoid risks because nowadays, there are options available for
-                          checking sexual health for both yourself and your partner. You can perform
-                          self-collect tests for sexually transmitted infections (STIs) if you are
-                          uncomfortable visiting a healthcare facility and prefer privacy. Taking care of
-                          sexual health is not embarrassing or strange, it is essential to get checked for
-                          yourself and your loved one.</p>
                         <div className="row">
-                          <div className="col-lg-6"></div>
-                          <div className="col-lg-6">
-                            <p style={{ float: "right" }}>แหล่งข้อมูล อ้างอิง</p>
+                            <div className="col-lg-6"></div>
+                            <div className="col-lg-6">
+                                <p style={{float:"right"}}>แหล่งข้อมูล อ้างอิง</p>
+                                
+                                <p style={{float:"right",display:"block"}}>ข้อมูล ณ วันที่ 11 สิงหาคม 2565</p>
+                                <p style={{float:"right",display:"block"}}> ที่มา : อ. นพ.ธนภพ บำเพ็ญเกียรติกุล</p>
+                               <p style={{float:"right",display:"block"}}>  ศูนย์เชี่ยวชาญเฉพาะทางด้านสุขภาพคนข้ามเพศ
 
-                            <p style={{ float: "right", display: "block" }}>ข้อมูล ณ วันที่ 11 สิงหาคม 2565</p>
-                            <p style={{ float: "right", display: "block" }}> ที่มา : อ. นพ.ธนภพ บำเพ็ญเกียรติกุล</p>
-                            <p style={{ float: "right", display: "block" }}>  ศูนย์เชี่ยวชาญเฉพาะทางด้านสุขภาพคนข้ามเพศ
 
-
-                            </p>
-                          </div>
+                                </p>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -299,4 +301,4 @@ const Blog2 = () => {
   );
 };
 
-export default Blog2;
+export default Blog2Thai;

@@ -20,13 +20,13 @@ const Faq = () => {
     for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
       document.querySelectorAll('.all-faq')[i].style.display = "block";
     }
-    for(var i = 0; i < document.querySelectorAll('.sti').length; i++) {
+    for( i = 0; i < document.querySelectorAll('.sti').length; i++) {
       document.querySelectorAll('.sti')[i].style.display = "none";
     }
     for(var i = 0; i < document.querySelectorAll('.ava').length; i++) {
       document.querySelectorAll('.ava')[i].style.display = "none";
     }
-    for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
+    for( i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "none";
     }
     

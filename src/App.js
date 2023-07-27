@@ -26,10 +26,10 @@ import KnowledgeBlog from "./components/KnowledgeBlog";
 import KnowledgeBlogThai from "./components/KnowledgeBlogThai"
 import Blog1 from "./components/blog1"
 import Blog2 from "./components/Blog2"
+import Blog2Thai from "./components/Blog2Thai"
 import Blog3 from "./components/Blog3"
+import Blog3Thai from "./components/Blog3Thai"
 import Blog4 from "./components/Blog4"
-
-
 import { useState } from "react"
 import Blog5 from "./components/Blog5"
 import Blog6 from "./components/Blog6"
@@ -87,8 +87,8 @@ function App() {
         <Route path="/th/selfcollectkit/sti_open" element={<SelfCollectKitsSTIOpenThai />} />
         <Route path="/th/selfcollectkit/hpv/product" element={<SelfCollectKitsHPVProductThai />} />
         <Route path="/th/knowledge/blog/Just_Sex_or_Make_Love_What's_the_Difference" element={<Blog1 />} />
-        <Route path="/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe" element={<Blog2 />} />
-        <Route path="/th/knowledge/blog/Can_Sex_Cause_Stress" element={<Blog3/>} />
+        <Route path="/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe" element={<Blog2Thai />} />
+        <Route path="/th/knowledge/blog/Can_Sex_Cause_Stress" element={<Blog3Thai/>} />
         <Route path="/th/knowledge/blog/Debunking_Misconceptions_of_HPV" element={<Blog4Thai/>} />
         <Route path="/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer" element={<Blog5Thai/>} />
         <Route path="/th/knowledge/blog/The_Rise_of_HPV_Infections" element={<Blog6Thai/>} />

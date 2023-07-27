@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -17,7 +17,7 @@ const Blog3 = () => {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   return (
     <div className="site-wrap">
-      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
       <div className="inner-small-banner innerbanner">
         <div className="text-center">
@@ -33,7 +33,7 @@ const Blog3 = () => {
                   <div className="inner_head_info">
                     <h2>#SAFESEX #STDPREVENTION</h2>
                     <div className="caption_info">
-                      <h3>เรื่องบนเตียงทำให้เกิดภาวะความเครียดได้จริงหรอ ? </h3>
+                      <h3>Can Sexual Activity Cause Stress? </h3>
                       {/* <p>เข้าใจ SEX กับความปลอดภัยในบทความนี้</p> */}
                       <div className="profile_add">
                         <div className="pref_pic">
@@ -95,7 +95,7 @@ const Blog3 = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-               
+
               </div>
             </div>
           </div>
@@ -106,9 +106,9 @@ const Blog3 = () => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="inner_maincont">
-                <div className='blog-middle-img mb-5'>
-                                    <img src={imag_blog3} alt='' className='img-fluid' />
-                                </div>
+                  <div className='blog-middle-img mb-5'>
+                    <img src={imag_blog3} alt='' className='img-fluid' />
+                  </div>
                   <div className="inner_cont_des_view">
                     {/* <h2>เซ็กซ์คือการเมือง</h2>
                                         <p>
@@ -156,32 +156,36 @@ const Blog3 = () => {
                       </div> */}
                       <div className="innerblog_des2">
                         <p>
-                          การมีเพศสัมพันธ์รวมไปถึงการช่วยตัวเอง
-                          เป้าหมายทั้งสองอย่างคงหนีไม่พ้นการถึงจุดสุดยอด
-                          หรือการทำให้อีกฝ่ายรู้สึกดี แต่บางคู่กับรู้สึกแย่
-                          เครียด ซึมเศร้า วิตกกังวล รู้สึกทำได้ไม่ดีพอ
-                          ก้าวร้าวทะเลาะกับคู่นอน ทัศนคติเกี่ยวกับSEX
-                          ปมจากการโดนล่วงละเมิด
-                          หลังจบกิจกรรมบนเตียงภาวะเหล่านี้ถ้าเป็นได้บ่อยๆ
-                          คือภาวะ Post-coital tristesse(PCT)
-                          หมายถึงอาการความเศร้าหรือความเหงาที่เกิดขึ้นหลังจากการมีเพศสัมพันธ์
-                          ภาวะเหล่านี้คนส่วนใหญ่สามารถพบเจอได้ และมักจะหายไปเอง
-                          หรือบางคนอาจจะเป็นนานกว่าปกตินั้นคือภาวะที่เคมีในสมองมีส่วนเข้ามาเกี่ยวข้อง
-                          สาเหตุหลักภาวะ Post-coital tristesse(PCT)
-                          คือฮอร์โมนในร่างกาย เมื่อถึงจุดสุดยอด
-                          ร่างกายจะปล่อยฮอร์โมนออกมาไม่ว่าจะเป็น โดปามีน
-                          และออกซิโทซิน
-                          ถ้าถึงจุดสุดยอดรวมถึงฮอร์โมนอื่นจะปล่อยออกมาอย่างรวดเร็ว
-                          และลดระดับลงอย่างรวดเร็ว
-                          ตรงนี้คือช่วงที่เรียกได้ว่าเป็นจุดที่ฮอร์โมนไม่คงที่
-                          จึงทำให้เกิดอาการ Post-coital tristesse(PCT)
+                          Engaging in sexual activity, including self-pleasure, often aims to reach a
+                          climax or to please the other party involved. However, some couples may
+                          feel negative emotions such as stress, anxiety, depression, or
+                          dissatisfaction. These feelings commonly arise after sexual activities and
+                          are known as Post-coital tristesse (PCT). While PCT is a common
+                          experience and usually subsides on its own, for some individuals, it may
+                          persist for a longer duration due to the involvement of certain brain
+                          chemicals.
                         </p>
-                        <h3><b>วิธีการผ่อนคลายอาการ Post-coital tristesse (PCT)</b></h3>
+                        {/* <h3><b>วิธีการผ่อนคลายอาการ Post-coital tristesse (PCT)</b></h3> */}
                         <p>
 
-                        เริ่มจากการหัดสังเกตอาการตัวเอง และประเมินความรุนแรงของอาการ ถ้าอยู่ในจุดที่เราสามารถควบคุมได้ให้ฝึกการหายใจ หายใจเข้าออกลึก ๆ หลาย ๆ ครั้ง ตั้งสติมาที่การกำหนดลมหายใจ ฟังไปอาจจะดูไม่เชเกี่ยวแต่หลักการกำหนดลมหายใจนี้เป็นการผ่อนคลายฮอร์โมนในร่างกายจะกลับมาสู่จุดที่คงที่ได้เร็วขึ้นปล่อยใจให้สบาย ๆ  เซ็กส์ที่ยินยอมทั้งสองฝ่าย พร้อมการป้องกันที่ดี และการช่วยตัวเองไม่ใช่เรื่องผิดอะไร เป็นเรื่องธรรมชาติของมนุษย์ หลังจากสงบจิตใจได้แล้วแนะนำให้ลองเปิดใจคุยตรง ๆ กับคู่ของตัวเอง ว่าชอบเซ็กส์แบบไหน ชอบแบบไหนหรือไม่ชอบอะไร พูดคุยแบบเปิดใจเกี่ยวกับความกังวลที่เกิดขึ้นหลังจากการมีเพศสัมพันธ์ หากเป็นอาการหนัก และกังวลว่าจะกระทบความสัมพันธ์ในระยะยาวแนะนำให้จับมือกันไปพบจิตแพทย์ หาคนกลางเพื่อรับฟัง ช่วยแก้ไขปัญหาทางความคิด อารมณ์   
-                        </p>
-                        
+                          To alleviate symptoms of Post-coital tristesse (PCT), it is recommended
+                          to start by being mindful of your own sensations and evaluating the
+                          severity of the symptoms. If you feel you have control over your
+                          emotions, you can practice deep breathing exercises. Take deep breaths
+                          in and out multiple times, focusing on regulating your breath. Although
+                          it may not seem directly related, regulating your breathing can help relax
+                          the hormones in your body and bring them back to a stable state more
+                          quickly. Allow yourself to breathe comfortably and be in a peaceful state
+                          of mind.                        </p>
+                        <p>Consenting sexual encounters, along with good communication and self-
+                          care, are natural aspects of human life. After achieving a calm state of
+                          mind, it is advised to have an open and honest conversation with your
+                          partner about your sexual preferences and any concerns or anxieties that
+                          arise after sexual activities. If symptoms persist and you worry about the
+                          long-term impact on your relationship, it is recommended to seek
+                          professional help, such as consulting a psychiatrist or finding a mediator
+                          to listen and help address the underlying issues.</p>
+
                       </div>
                     </div>
                   </div>

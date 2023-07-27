@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,14 +10,14 @@ import blog_img1 from "../assets/image/blog_img1.png";
 import blog_pic1 from "../assets/image/blog_pic1.png";
 import blog_pic2 from "../assets/image/blog_pic2.png";
 import blog_pic3 from "../assets/image/blog_pic3.png";
-import imag_blog2 from "../assets/image/image_blog2.jpg";
+import imag_blog3 from "../assets/image/img_blog3.jpg";
 
-const Blog2 = () => {
+const Blog3 = () => {
   const [reloadKey, setReloadKey] = useState(1)
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
   return (
     <div className="site-wrap">
-      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
 
       <div className="inner-small-banner innerbanner">
         <div className="text-center">
@@ -33,7 +33,7 @@ const Blog2 = () => {
                   <div className="inner_head_info">
                     <h2>#SAFESEX #STDPREVENTION</h2>
                     <div className="caption_info">
-                      <h3>Isn&#39;t it safe to wear a condom?</h3>
+                      <h3>เรื่องบนเตียงทำให้เกิดภาวะความเครียดได้จริงหรอ ? </h3>
                       {/* <p>เข้าใจ SEX กับความปลอดภัยในบทความนี้</p> */}
                       <div className="profile_add">
                         <div className="pref_pic">
@@ -95,7 +95,7 @@ const Blog2 = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-
+               
               </div>
             </div>
           </div>
@@ -106,9 +106,9 @@ const Blog2 = () => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="inner_maincont">
-                  <div className='blog-middle-img mb-5'>
-                    <img src={imag_blog2} alt='' className='img-fluid' />
-                  </div>
+                <div className='blog-middle-img mb-5'>
+                                    <img src={imag_blog3} alt='' className='img-fluid' />
+                                </div>
                   <div className="inner_cont_des_view">
                     {/* <h2>เซ็กซ์คือการเมือง</h2>
                                         <p>
@@ -156,78 +156,32 @@ const Blog2 = () => {
                       </div> */}
                       <div className="innerblog_des2">
                         <p>
-                          Many people wonder if the &quot;skin-to-skin&quot; feeling is better than using actual
-                          condoms for protection. And if there is frequent &quot;skin-to-skin&quot; contact, does it
-
-                          immediately increase the risk of sexually transmitted diseases? Today, we will
-                          discuss this topic.
-                          The issue of protection through condom usage depends on the agreement of
-                          both parties involved. Whether it is a woman or a man, it is important for both
-                          parties to have mutual consent, whether they choose to use a condom or not.
-                          In general, we often hear many people believe that the sensation without
-                          using condoms is better. However, the use of condoms is crucial for protection
-                          against sexually transmitted infections. Condoms act as a barrier, reducing the
-                          risk of transmitting diseases during sexual intercourse. While it is true that
-                          some individuals may perceive a difference in sensation when using condoms,
-                          it is important to prioritize safe sex practices to maintain sexual health.
-                          However, this may not always be true because modern condoms are designed
-                          to compete in terms of thinness, almost mimicking the feeling of not wearing
-                          one. They provide a skin-to-skin sensation and even contain natural-feeling
-                          lubricants. Many brands advertise the smoothness of their lubricants, claiming
-                          they feel natural. However, there are some people who prefer to engage in
-                          unprotected sex for various reasons, such as latex allergies or a sense of trust
-                          when in a committed relationship.
+                          การมีเพศสัมพันธ์รวมไปถึงการช่วยตัวเอง
+                          เป้าหมายทั้งสองอย่างคงหนีไม่พ้นการถึงจุดสุดยอด
+                          หรือการทำให้อีกฝ่ายรู้สึกดี แต่บางคู่กับรู้สึกแย่
+                          เครียด ซึมเศร้า วิตกกังวล รู้สึกทำได้ไม่ดีพอ
+                          ก้าวร้าวทะเลาะกับคู่นอน ทัศนคติเกี่ยวกับSEX
+                          ปมจากการโดนล่วงละเมิด
+                          หลังจบกิจกรรมบนเตียงภาวะเหล่านี้ถ้าเป็นได้บ่อยๆ
+                          คือภาวะ Post-coital tristesse(PCT)
+                          หมายถึงอาการความเศร้าหรือความเหงาที่เกิดขึ้นหลังจากการมีเพศสัมพันธ์
+                          ภาวะเหล่านี้คนส่วนใหญ่สามารถพบเจอได้ และมักจะหายไปเอง
+                          หรือบางคนอาจจะเป็นนานกว่าปกตินั้นคือภาวะที่เคมีในสมองมีส่วนเข้ามาเกี่ยวข้อง
+                          สาเหตุหลักภาวะ Post-coital tristesse(PCT)
+                          คือฮอร์โมนในร่างกาย เมื่อถึงจุดสุดยอด
+                          ร่างกายจะปล่อยฮอร์โมนออกมาไม่ว่าจะเป็น โดปามีน
+                          และออกซิโทซิน
+                          ถ้าถึงจุดสุดยอดรวมถึงฮอร์โมนอื่นจะปล่อยออกมาอย่างรวดเร็ว
+                          และลดระดับลงอย่างรวดเร็ว
+                          ตรงนี้คือช่วงที่เรียกได้ว่าเป็นจุดที่ฮอร์โมนไม่คงที่
+                          จึงทำให้เกิดอาการ Post-coital tristesse(PCT)
                         </p>
+                        <h3><b>วิธีการผ่อนคลายอาการ Post-coital tristesse (PCT)</b></h3>
                         <p>
-                          Engaging in sexual activities outside of penetrative intercourse, such as mutual
-                          masturbation or oral sex, also carries a risk of contracting sexually transmitted
-                          diseases. Some individuals have a strong immune system that can fight off
-                          infections, while others may be more susceptible to contracting diseases if
-                          their immune system is compromised. Today, we will provide examples of
-                          various diseases that can occur.
-                          Syphilis is caused by a bacterium that can be present in various bodily fluids,
-                          including saliva. The disease has an incubation period, and common symptoms
-                          include sores on the genitals, a rash on the body, fever, enlarged lymph nodes,
-                          and can be transmitted from mother to baby during pregnancy.
+
+                        เริ่มจากการหัดสังเกตอาการตัวเอง และประเมินความรุนแรงของอาการ ถ้าอยู่ในจุดที่เราสามารถควบคุมได้ให้ฝึกการหายใจ หายใจเข้าออกลึก ๆ หลาย ๆ ครั้ง ตั้งสติมาที่การกำหนดลมหายใจ ฟังไปอาจจะดูไม่เชเกี่ยวแต่หลักการกำหนดลมหายใจนี้เป็นการผ่อนคลายฮอร์โมนในร่างกายจะกลับมาสู่จุดที่คงที่ได้เร็วขึ้นปล่อยใจให้สบาย ๆ  เซ็กส์ที่ยินยอมทั้งสองฝ่าย พร้อมการป้องกันที่ดี และการช่วยตัวเองไม่ใช่เรื่องผิดอะไร เป็นเรื่องธรรมชาติของมนุษย์ หลังจากสงบจิตใจได้แล้วแนะนำให้ลองเปิดใจคุยตรง ๆ กับคู่ของตัวเอง ว่าชอบเซ็กส์แบบไหน ชอบแบบไหนหรือไม่ชอบอะไร พูดคุยแบบเปิดใจเกี่ยวกับความกังวลที่เกิดขึ้นหลังจากการมีเพศสัมพันธ์ หากเป็นอาการหนัก และกังวลว่าจะกระทบความสัมพันธ์ในระยะยาวแนะนำให้จับมือกันไปพบจิตแพทย์ หาคนกลางเพื่อรับฟัง ช่วยแก้ไขปัญหาทางความคิด อารมณ์   
                         </p>
-                        <p>
-                          Gonorrhea, caused by a bacterium, is often contracted through unprotected
-                          sexual intercourse. Common symptoms in males include discharge from the
-                          urethra and painful urination, while females may experience yellowish, foul-
-                          smelling vaginal discharge without itching.
-                        </p>
-                        <p>
-                          Genital warts, caused by the human papillomavirus (HPV), have several strains.
-                          High-risk strains, such as 16 and 18, can lead to the development of cancer.
-                          The incubation period for this disease is approximately three weeks, and
-
-                          symptoms include small, cauliflower-like growths on the genitals. It can be
-                          easily transmitted through sexual contact or skin-to-skin contact and can
-                          spread to other areas of the body through contact.
-                        </p>
-                        <p>Hepatitis B is caused by the hepatitis B virus. Infected individuals may
-                          experience symptoms such as jaundice, yellowing of the skin, dark urine,
-                          abdominal pain, nausea, and fatigue. It can be transmitted from mother to
-                          baby during pregnancy.</p>
-                        <p>It is better to avoid risks because nowadays, there are options available for
-                          checking sexual health for both yourself and your partner. You can perform
-                          self-collect tests for sexually transmitted infections (STIs) if you are
-                          uncomfortable visiting a healthcare facility and prefer privacy. Taking care of
-                          sexual health is not embarrassing or strange, it is essential to get checked for
-                          yourself and your loved one.</p>
-                        <div className="row">
-                          <div className="col-lg-6"></div>
-                          <div className="col-lg-6">
-                            <p style={{ float: "right" }}>แหล่งข้อมูล อ้างอิง</p>
-
-                            <p style={{ float: "right", display: "block" }}>ข้อมูล ณ วันที่ 11 สิงหาคม 2565</p>
-                            <p style={{ float: "right", display: "block" }}> ที่มา : อ. นพ.ธนภพ บำเพ็ญเกียรติกุล</p>
-                            <p style={{ float: "right", display: "block" }}>  ศูนย์เชี่ยวชาญเฉพาะทางด้านสุขภาพคนข้ามเพศ
-
-
-                            </p>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -299,4 +253,4 @@ const Blog2 = () => {
   );
 };
 
-export default Blog2;
+export default Blog3;
