@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;800&display=swap");
 
 @font-face {
   font-family: "Random Grotesque Standard Bold";
@@ -183,12 +183,16 @@ a:hover {
 
 .post-title {
   margin-bottom: 15px;
-  font-size: 1.225em;
+  font-size: 1.425em;
+  font-family: 'Sarabun', Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .post-meta {
   font-weight: bold;
   margin-bottom: 15px;
+  font-family: 'Sarabun', Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .post-tag-meta {
@@ -198,15 +202,16 @@ a:hover {
 }
 
 .bg-blue-light {
-  background-color: #BEE4E8;
-  padding: 70px 70px 70px 0;
+  background-color: transparent;
+  padding: 0px 70px 70px 0;
 }
 
 .choose-ava-list {
   background-color: #FF9566;
-  max-width: 760px;
-  padding: 100px 120px;
+  max-width: 500px;
+  padding: 50px 50px;
   margin-left: -218px;
+  box-shadow: 70px 70px 0 0 #BEE4E8;
 }
 
 .choose-ava-list ul {
@@ -222,8 +227,9 @@ a:hover {
   background-image: url("./assets/image/icons/tick-icon.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  padding-left: 80px;
+  padding-left: 65px;
   min-height: 55px;
+  background-size: 37px 30px;
 }
 
 .choose-ava-list .action {
@@ -236,7 +242,7 @@ a:hover {
   color: #3C5A99;
   padding: 8px 15px;
   border-radius: 75px;
-  min-width: 330px;
+  min-width: 260px;
   border: 3px solid #3C5A99;
   margin: 0 auto;
   font-family: var(--font-family-bold);
@@ -330,7 +336,7 @@ a:hover {
 }
 
 .list-section .section-title {
-  font-size: 4.6875em;
+  font-size: 3.4875em;
   color: #BD56BF;
   font-family: var(--font-family-300);
 }
@@ -352,7 +358,7 @@ a:hover {
 }
 
 .custom-skatch-bullets li {
-  font-size: 2.1em;
+  font-size: 1.5em;
   color: #BD56BF;
   display: flex;
   gap: 15px;
@@ -393,6 +399,7 @@ a:hover {
   font-family: var(--font-family-300);
   color: #18B0BD;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .kit-about-lab p {
@@ -404,6 +411,8 @@ a:hover {
 .kit-about-lab .row {
   align-items: center;
 }
+
+.kit-about-lab .extra-top-padd { padding-top: 10vw;}
 
 .main-nav-menu {
   display: flex;
@@ -1057,6 +1066,9 @@ label {
 
 .post-article .graphic .image-fluid {
   width: 100%;
+  max-height: 378px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .post-pagination {
@@ -1094,7 +1106,7 @@ label {
 
 .secondary-title-light {
   padding-bottom: 35px;
-  font-size: 4em;
+  font-size: 2.2em;
   font-family: var(--font-family-300);
   color: #3C5A99;
 }
@@ -1222,7 +1234,7 @@ label {
 
 .search-box {
   display: flex;
-  max-width: 920px;
+  max-width: 770px;
   margin: 38px auto;
   background: #FFFFFF;
   border: 3px solid #000000;
@@ -1250,8 +1262,8 @@ label {
   margin-bottom: 60px;
 }
 
-.faq-flex-column .container {
-  max-width: 930px;
+div#root .faq-flex-column .container {
+  max-width: 930px; padding-left: 15px; padding-right: 15px;
 }
 
 .faq-flex-column .container .row {
@@ -1284,7 +1296,7 @@ label {
   color: #000000;
 }
 
-.faq-sec .container {
+div#root .faq-sec .container {
   max-width: 1170px;
 }
 
@@ -1580,6 +1592,7 @@ img {
 
 
 @media only screen and (max-width: 992px) {
+  .kit-about-lab .extra-top-padd { background-color: #fff; padding-top: 0; text-align: center;}
   .hambarger-menu-header-wrap {
     display: block;
   }

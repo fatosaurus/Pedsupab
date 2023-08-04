@@ -19,7 +19,7 @@ const Blog2 = () => {
     <div className="site-wrap">
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
-      <div className="inner-small-banner innerbanner">
+      <div className="inner-small-banner innerbanner d-none">
         <div className="text-center">
           <img src={blogbanner1} alt="" className="img-fluid" />
         </div>

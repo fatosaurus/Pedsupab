@@ -18,7 +18,7 @@ const KnowledgeBlogThai = () => {
     <div class='site-wrap'>
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
-      <div class='inner-small-banner innerbanner'>
+      <div class='inner-small-banner innerbanner d-none'>
         <div class='text-center'>
           <img src={blogbanner} alt='' class='img-fluid' />
         </div>
