@@ -23,7 +23,7 @@ const Knowledge = () => {
           <img src={knowlage_title} alt='' />
         </h1>
         <p className='page-sub-title text-center'>
-          พื้นที่แบ่งปันเรื่องที่ควรรู้ เพราะความรู้จะมีค่าเมื่อเกิดการบอกต่อ
+        Knowledge is Power 
 
         </p>
         <div className='text-center mb-5'>
