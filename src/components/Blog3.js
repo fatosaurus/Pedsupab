@@ -20,9 +20,9 @@ const Blog3 = () => {
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
       <div className="inner-small-banner innerbanner d-none">
-        <div className="text-center">
+        {/* <div className="text-center">
           <img src={blogbanner1} alt="" className="img-fluid" />
-        </div>
+        </div> */}
       </div>
       <div className="blog_content_outer">
         <div className="inner_content_maincont">

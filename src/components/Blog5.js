@@ -20,9 +20,9 @@ const Blog5 = () => {
             <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
 
             <div className='inner-small-banner innerbanner d-none'>
-                <div className='text-center'>
+                {/* <div className='text-center'>
                     <img src={blogbanner1} alt='' className='img-fluid' />
-                </div>
+                </div> */}
             </div>
             <div className='blog_content_outer'>
                 <div className='inner_content_maincont'>
@@ -36,7 +36,7 @@ const Blog5 = () => {
                                             <h3>E-Cigarettes and Cervical Cancer: How Can One Cause The Other
 - </h3>
                                             {/* <p>เข้าใจ SEX กับความปลอดภัยในบทความนี้</p> */}
-                                            {/* <div className='profile_add'>
+                                            <div className='profile_add'>
                                                 <div className='pref_pic'>
                                                     <img
                                                         src={profilepic}
@@ -48,7 +48,7 @@ const Blog5 = () => {
                                                     <h4>Pedsupab Team</h4>
                                                     <p>20 Mar 2023</p>
                                                 </div>
-                                            </div> */}
+                                            </div>
                                         </div>
                                     </div>
                                     {/* <div className='inner_cont_des_view'>
