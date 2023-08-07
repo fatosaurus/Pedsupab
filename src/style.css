@@ -3306,3 +3306,15 @@ div#root .container.our-kit-sec {
     opacity: .3;
     filter: grayscale(1);
 }
+
+input#quantity {
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
+}
+
+input#quantity::-webkit-inner-spin-button , input#quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
