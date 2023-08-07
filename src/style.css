@@ -477,7 +477,7 @@ a:hover {
 .primary-title {
   font-family: "Random Grotesque Standard Bold";
   font-weight: 700;
-  font-size: 6.25em;
+  font-size: 4.25em;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 100px;
@@ -491,6 +491,8 @@ a:hover {
   right: -29px;
   display: block;
 }
+
+.primary-title.underline .line svg { max-width: 150px;}
 
 .feature-three-blogs-w {
   padding-top: 32px;
@@ -606,6 +608,8 @@ a:hover {
 .trinary-title {
   color: #F96C2E;
   font-size: 1.625em;
+  font-size: 2.2em;
+    font-family: 'Random Grotesque Spacious Book';
 }
 
 .home-recent-blog {
@@ -644,14 +648,15 @@ a:hover {
 }
 
 .home-static-content .trinary-title {
-  margin-bottom: 84px;
+  margin-bottom: 24px;
 }
 
-.home-static-content .flex-img-card {
+html .home-static-content .flex-img-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 118px;
+  gap: 85px;
+  transform: scale(0.8);
 }
 
 .cover-card {
@@ -835,13 +840,13 @@ label {
 
 .btn-trinary {
   background-color: #FEE986;
-  padding: 25px 100px;
+  padding: 8px 20px;
   color: rgb(73, 119, 197);
-  font-size: 32px;
+  font-size: 1.125em;
 }
 
 .affiliate-page-inner {
-  padding: 24px 0;
+  padding: 0px 0;
 }
 
 .affiliate-page-inner .content-sec {
@@ -886,7 +891,7 @@ label {
 
 .affiliate-page-inner .btn-primary {
   background: #F5A07B;
-  font-size: 1.625em;
+  font-size: 1.125em;
   color: #FFFFFF;
   letter-spacing: 0.01em;
   border: none;
@@ -935,6 +940,7 @@ label {
   display: flex;
   justify-content: flex-end;
   padding: 67px 0 48px;
+  display: none;
 }
 
 .language-chooser a {
@@ -1790,7 +1796,7 @@ img {
   font-family: 'Random Grotesque Spacious Book';
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 1.875em;
   line-height: 1.3;
   text-align: center;
   color: #FFBA9B;
@@ -1800,7 +1806,7 @@ img {
   font-family: 'Random Grotesque Spacious Book';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.8em;
+  font-size: 1.25em;
   line-height: 1.3;
   text-align: center;
   color: #000000;
@@ -1862,7 +1868,7 @@ img {
   font-family: 'Random Grotesque Spacious Book';
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 1.875em;
   line-height: 1.3;
   /* identical to box height */
 
@@ -1877,7 +1883,7 @@ img {
   font-weight: 400;
   /* font-size: 32px;
   line-height: 43px; */
-  font-size: 1.3875em;
+  font-size: 1.25em;
   line-height: 40px;
   text-align: center;
   color: #000000;
@@ -2009,6 +2015,7 @@ img {
   padding: 80px 0;
   display: flex;
   /* justify-content: center; */
+  max-width: 1000px; margin: 0 auto;
 }
 
 .howitowrk_info_left {
@@ -2080,6 +2087,7 @@ img {
 
 .positive_info {
   text-align: center;
+  max-width: 1000px; margin: 0 auto;
 }
 
 .positive_info h2 {
@@ -2132,10 +2140,11 @@ a.learn_more_btn {
   font-family: 'Random Grotesque Spacious Book';
   font-style: normal;
   font-weight: 400;
-  font-size: 6em;
-  line-height: 96px;
+  font-size: 4em;
+  line-height: 1.3;
   color: #32B3BE;
 }
+.howitowrk_leftimg img { max-width: 200px;}
 
 
 .howitowrk_info_left h2 span {
