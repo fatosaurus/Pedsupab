@@ -137,30 +137,10 @@ const Knowledge = () => {
                     The issue of protection through condom usage depends on the agreement of
                     both parties involved. Whether it is a woman or a man, it is important for both
                     parties to have mutual consent, whether they choose to use a condom or not.
-                    In general, we often hear many people believe that the sensation without
-                    using condoms is better. However, the use of condoms is crucial for protection
-                    against sexually transmitted infections. Condoms act as a barrier, reducing the
-                    risk of transmitting diseases during sexual intercourse. While it is true that
-                    some individuals may perceive a difference in sensation when using condoms,
-                    it is important to prioritize safe sex practices to maintain sexual health.
-                    However, this may not always be true because modern condoms are designed
-                    to compete in terms of thinness, almost mimicking the feeling of not wearing
-                    one. They provide a skin-to-skin sensation and even contain natural-feeling
-                    lubricants. Many brands advertise the smoothness of their lubricants, claiming
-                    they feel natural. However, there are some people who prefer to engage in
-                    unprotected sex for various reasons, such as latex allergies or a sense of trust
-                    when in a committed relationship.
+                    
                   </p>
 
-                  <p>
-
-                    Engaging in sexual activities outside of penetrative intercourse, such as mutual
-                    masturbation or oral sex, also carries a risk of contracting sexually transmitted
-                    diseases. Some individuals have a strong immune system that can fight off
-                    infections, while others may be more susceptible to contracting diseases if
-                    their immune system is compromised. Today, we will provide examples of
-                    various diseases that can occur.
-                  </p>
+                  
                   <Link to='/knowledge/blog/Can_No_Protection_Sex_Be_Safe' className='btn btn-pill-outline '>
 
                     Read More
@@ -193,14 +173,12 @@ const Knowledge = () => {
                   <p>
 
                     In this blog, we will address common misconceptions surrounding HPV (Human Papillomavirus) and HPV testing. By dispelling myths and providing accurate information, we aim to equip you with the knowledge needed to take control of your sexual health. Let's dive in! Understanding HPV and its Link to Cervical Cancer:
-
-                    HPV is a common sexually transmitted infection that affects both men and women. Contrary to popular belief, HPV is not limited to a specific group or age range. It can be transmitted through various sexual activities, including vaginal, anal, and oral sex, as well as through intimate skin-to-skin contact. One of the most significant misconceptions about HPV is its association with cervical cancer.
                   </p>
 
-                  <p>
+                  {/* <p>
 
                     While it is true that certain high-risk strains of HPV can increase the risk of developing cervical cancer, it's important to note that not all HPV infections lead to cancer. Most HPV infections clear up on their own without causing any long-term health issues.
-                  </p>
+                  </p> */}
                   <Link to='/knowledge/blog/Debunking_Misconceptions_of_HPV' className='btn btn-pill-outline '>
 
                     Read More
@@ -234,15 +212,12 @@ const Knowledge = () => {
 
                     How can smoking increase the risk of cervical cancer? You might be wondering, given that smoke only enters the lungs, not the uterus or the vagina… wouldn’t it cause other cancers like oral, throat, or lung cancer? Seems more logical, right? With how e-cigarettes are readily available, let’s consider this.
 
-                    Here me out, girls, smoking e-cigarettes can increase your chances of cervical cancer.
+                   </p>
 
-                    Not to blame the men in our lives, but studies illustrate that most men carry HPV without realizing it; thus, sexual intercourse accounts for 90% of transmission (other factors contribute the remaining 10%, such as public restrooms). It’s important to note that whatever sexual activities you involve may lead to cancer or warts due to HPV.
-                  </p>
-
-                  <p>
+                  {/* <p>
 
                     Even though vaping doesn't create combustion like rolled cigarettes or contain harmful substances like gamma radiation, carbon monoxide, rat poison, etc., however, one substance: e-cigarettes contain nicotine, which is also a carcinogen. Toxicologically, nicotine is considered toxic compared to other substances. It also potentially causes Alzheimer's and Parkinson's diseases.
-                  </p>
+                  </p> */}
                   <Link to='/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' className='btn btn-pill-outline '>
 
                     Read More
@@ -277,10 +252,10 @@ const Knowledge = () => {
                     In more than 90% of individuals infected with HPV, their bodies can clear the infection on their own. However, according to the World Health Organization (WHO) survey in 2020, there were up to 60,400 new cases of cervical cancer and 34,200 deaths. Moreover, many cases remain untreated, with 90% of new infections and deaths occurring in low-income countries. Notably, over 90% of infections are attributed to sexual intercourse.
                   </p>
 
-                  <p>
+                  {/* <p>
 
                     It has also been found that individuals infected with HIV are up to 6 times more likely to develop cervical cancer than those without HIV.
-                  </p>
+                  </p> */}
                   <Link to='/knowledge/blog/The_Rise_of_HPV_Infections' className='btn btn-pill-outline '>
 
                     Read More
@@ -315,10 +290,10 @@ const Knowledge = () => {
                     Sexual intercourse includes masturbation. Both goals are inevitable to climax. or making the other person feel good But some couples feel bad, stressed, depressed, anxious, feeling not doing well enough. Aggressive arguing with a partner attitudes about sex Knot from being abused Post-coital tristesse (PCT) symptoms of sadness or loneliness that occur after sex Most people can experience these conditions. and often disappears on its own Or for some people it may be longer than normal, which is a condition in which brain chemistry is involved.
                   </p>
 
-                  <p>
+                  {/* <p>
 
                     The main cause of Post-coital tristesse (PCT) is hormones in the body. at the climax The body will release hormones such as dopamine.and oxytocin If reaching orgasm, including other hormones will be released quickly. and rapidly decreasing This is what is known as the hormonal instability. This causes post-coital tristesse (PCT) symptoms.
-                  </p>
+                  </p> */}
                   <Link to='/knowledge/blog/Can_Sex_Cause_Stress' className='btn btn-pill-outline '>
 
                     Read More
