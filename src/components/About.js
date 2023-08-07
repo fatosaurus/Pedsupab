@@ -97,6 +97,7 @@ const About = () => {
             </span>
             </h2>
             <div className='row'>
+              {/** 
               <div className='col-md-4'>
                 <div className='team-card bg-1'>
                   <div className='graphic'>
@@ -107,6 +108,7 @@ const About = () => {
                   <p className='quote'>จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p>
                 </div>
               </div>
+*/}
               <div className='col-md-4'>
                 <div className='team-card bg-2'>
                   <div className='graphic'>

@@ -279,7 +279,7 @@ const SelfcollectKitThai = () => {
           </div>
           <div class='row'>
             <div class='col-lg-6'></div>
-            <div class='col-lg-6'>
+            <div class='col-lg-6 extra-top-padd'>
               <img src={about_lab_img} alt='' />
             </div>
           </div>
