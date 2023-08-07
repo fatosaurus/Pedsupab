@@ -11,6 +11,8 @@ const Faq = () => {
   const [reloadKey, setReloadKey] = useState(1)
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
 
+  const [card, setCard] = useState('');
+
   useEffect(() => {
     allFaQ()
     
@@ -29,10 +31,13 @@ const Faq = () => {
     for( i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "none";
     }
+
+    // setCard('');
     
   }
   const HpvConnection=(e)=>{
     console.log('clicked')
+    // setCard('hpv');
     // e.currentTarget.classList.add('active');
     // document.querySelector('#hpvcard')[0].add('className','active');
     console.log(document.querySelectorAll('.all-faq').length)
@@ -47,8 +52,10 @@ const Faq = () => {
     }
     for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "block";
+      // document.querySelectorAll('#hpvcard')[i]
+     
     }
-    
+    // setCard('hpv');
     
     
     // document.getElementById('hpvcard').classList.add("active")
@@ -65,6 +72,7 @@ const Faq = () => {
     }
     for(var i = 0; i < document.querySelectorAll('.sti').length; i++) {
       document.querySelectorAll('.sti')[i].style.display = "block";
+      
     }
     for(var i = 0; i < document.querySelectorAll('.ava').length; i++) {
       document.querySelectorAll('.ava')[i].style.display = "none";
@@ -72,6 +80,8 @@ const Faq = () => {
     for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "none";
     }
+
+    // setCard('sti');
   
   }
   const shConnection=(e)=>{
@@ -86,10 +96,12 @@ const Faq = () => {
     }
     for(var i = 0; i < document.querySelectorAll('.ava').length; i++) {
       document.querySelectorAll('.ava')[i].style.display = "block";
+      
     }
     for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "none";
     }
+    // setCard('sh')
   }
   return (
     <div className='site-wrap'>
