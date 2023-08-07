@@ -267,7 +267,6 @@ const SelfcollectKit = () => {
           <div class='row'>
             <div class='col-lg-6'>
               <h2 class='sec-title'>
-                
                 About Our Lab
                 </h2>
               <p>
