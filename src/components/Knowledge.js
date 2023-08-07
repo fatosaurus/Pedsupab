@@ -7,6 +7,8 @@ import knowlage_title from "../assets/image/knowlage_title.png";
 import Blog_Highlight from "../assets/image/Blog-Highlight.png";
 import blog_img from "../assets/image/blog-img.png";
 import imag_blog2 from "../assets/image/image_blog2.jpg";
+import imag_blog3 from "../assets/image/img_blog3.jpg";
+
 
 
 const Knowledge = () => {
@@ -300,7 +302,7 @@ const Knowledge = () => {
             <div className='post-article card'>
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imag_blog3} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
