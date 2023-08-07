@@ -26,14 +26,14 @@ const AboutThai = () => {
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
       <div className='about-page-wrap'>
         <div className='top-border'></div>
-        <div className='language-chooser'>
+        {/* <div className='language-chooser'>
           <div className='container'>
             <Link to='/aboutus' >
               EN
             </Link>
             <Link to='/aboutus-th' className='active'>TH</Link>
           </div>
-        </div>
+        </div> */}
 
         {/* <!-- about content --> */}
         <div className='static-section'>

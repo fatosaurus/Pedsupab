@@ -29,6 +29,9 @@ const FaqThai = () => {
     for( i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "none";
     }
+    document.querySelector('#hpvcard').classList.remove('active');
+    document.querySelector('#sticard').classList.remove('active');
+    document.querySelector('#shcard').classList.remove('active');
     
   }
   const HpvConnection=(e)=>{
@@ -48,7 +51,9 @@ const FaqThai = () => {
     for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "block";
     }
-    
+    document.querySelector('#hpvcard').classList.add('active');
+    document.querySelector('#sticard').classList.remove('active');
+    document.querySelector('#shcard').classList.remove('active');
     
     
     // document.getElementById('hpvcard').classList.add("active")
@@ -72,6 +77,10 @@ const FaqThai = () => {
     for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "none";
     }
+
+    document.querySelector('#hpvcard').classList.remove('active');
+    document.querySelector('#sticard').classList.add('active');
+    document.querySelector('#shcard').classList.remove('active');
   
   }
   const shConnection=(e)=>{
@@ -90,6 +99,10 @@ const FaqThai = () => {
     for(var i = 0; i < document.querySelectorAll('.hpv').length; i++) {
       document.querySelectorAll('.hpv')[i].style.display = "none";
     }
+
+    document.querySelector('#hpvcard').classList.remove('active');
+    document.querySelector('#sticard').classList.remove('active');
+    document.querySelector('#shcard').classList.add('active');
   }
   return (
     <div className='site-wrap'>
