@@ -175,15 +175,15 @@ const Home = () => {
           </Link>
           <Link to='' className='faq-q'>
             <img src={faq_img_2} alt='' />
-            <h3 className="title" style={{color:'#fff410'}}>What are key symptoms of STIs?</h3>
+            <h3 className="title" style={{color:'#fff410'}}>Does everyone who has STI have symptoms?</h3>
           </Link>
           <Link to='' className='faq-q'>
             <img src={faq_img_3} alt='' />
-            <h3 className="title" style={{color:'#ebfdff'}}>What are key symptoms of STIs?</h3>
+            <h3 className="title" style={{color:'#ebfdff'}}>Do condoms protect from STIs? </h3>
           </Link>
           <Link to='' className='faq-q'>
             <img src={faq_img_4} alt='' />
-            <h3 className="title" style={{color:'#6792ca'}}>What are key symptoms of STIs?</h3>
+            <h3 className="title" style={{color:'#6792ca'}}>If I test positive for HPV, do I have cancer?</h3>
           </Link>
           <Link to='' className='faq-star-1'>
             <img src={faq_star_1} alt='' />
