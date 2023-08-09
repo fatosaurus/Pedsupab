@@ -116,6 +116,7 @@ const KnowledgeThai = () => {
           {/* <!-- posts --> */}
           <div className='posts'>
             <div className='post-article card'>
+            <Link to='/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe'>
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={imag_blog2} alt='' className='image-fluid' />
@@ -144,10 +145,10 @@ const KnowledgeThai = () => {
                     ผ่านทางสารคัดหลั่งของร่างกายบางคนร่างกายแข็งแรงภูมิคุ้มกันไม่บกพร่องก็สามารถต้านเชื้อเองได้
                     แล้วถ้าร่างกายไม่แข็งแรงมีโอกาสเสี่ยงติดโรคติดต่อทางเพศสัมพันธ์ได้
                   </p> */}
-                  <Link to='/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe' className='btn btn-pill-outline '>
+                  {/* <Link to='/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe' className='btn btn-pill-outline '>
 
                     Read More
-                  </Link>
+                  </Link> */}
                   <div className='post-tag-meta'>
                     <Link to='' className='btn btn-pill-outline '>
 
@@ -160,9 +161,11 @@ const KnowledgeThai = () => {
                   </div>
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
+            <Link to='/th/knowledge/blog/Debunking_Misconceptions_of_HPV' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={blog_img} alt='' className='image-fluid' />
@@ -184,10 +187,10 @@ const KnowledgeThai = () => {
 
                     HPV เป็นโรคติดเชื้อทางเพศที่พบบ่อยที่สุดในทั้งชายและหญิง ขัดกับความเชื่อที่เป็นที่นิยม HPV ไม่จำกัดเฉพาะกลุ่มหรือช่วงอายุ มันสามารถถูกแพร่กระจายผ่านกิจกรรมเพศที่หลากหลาย รวมถึงเพศสัมพันธ์ทางช่องคลอด เพศสัมพันธ์ทางทวารหนัก และเพศสัมพันธ์ทางปาก รวมถึงการสัมผัสผิวหนังที่ใกล้ชิดm
                   </p> */}
-                  <Link to='/th/knowledge/blog/Debunking_Misconceptions_of_HPV' className='btn btn-pill-outline '>
+                  {/* <Link to='/th/knowledge/blog/Debunking_Misconceptions_of_HPV' className='btn btn-pill-outline '>
 
                     Read More
-                  </Link>
+                  </Link> */}
                   <div className='post-tag-meta'>
                     <Link to='' className='btn btn-pill-outline '>
 
@@ -200,9 +203,11 @@ const KnowledgeThai = () => {
                   </div>
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
+            <Link to='/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={blog_img} alt='' className='image-fluid' />
@@ -226,10 +231,10 @@ const KnowledgeThai = () => {
 
                     เชื้อ HPV ส่วนใหญ่มีผู้ชายเป็นพาหะ ดังนั้นการมีเพศสัมพันธ์เป็นสาเหตุ ถึง 90% (ปัจจัยอื่นอีกอีก 10% เช่น ห้องน้ำสาธาณะ) เพราะฉะนั่นคุณมีเพศสัมพันธ์ผ่านช่องทางไหนตรงนั้นก็สามารถเป็นมะเร็งหรือหูดเพราะเชื้อ HPV ได้ทั้งหมด
                   </p> */}
-                  <Link to='/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' className='btn btn-pill-outline '>
+                  {/* <Link to='/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' className='btn btn-pill-outline '>
 
                     Read More
-                  </Link>
+                  </Link> */}
                   <div className='post-tag-meta'>
                     <Link to='' className='btn btn-pill-outline '>
 
@@ -242,9 +247,11 @@ const KnowledgeThai = () => {
                   </div>
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
+            <Link to='/th/knowledge/blog/The_Rise_of_HPV_Infections' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={blog_img} alt='' className='image-fluid' />
@@ -268,10 +275,10 @@ const KnowledgeThai = () => {
 
                     ทางองค์การอนามัยโลกจึงมีเป้าหมายให้ในปี 2030 ทุกประเทศทั่วโลกมีผู้ป่วยมะเร็งปากมดลูกน้อยกว่า 4 รายต่อประชากร 100,000 คนและคงไว้ จึงวางกลยุทธ์ 90-70-90
                   </p> */}
-                  <Link to='/th/knowledge/blog/The_Rise_of_HPV_Infections' className='btn btn-pill-outline '>
+                  {/* <Link to='/th/knowledge/blog/The_Rise_of_HPV_Infections' className='btn btn-pill-outline '>
 
                     Read More
-                  </Link>
+                  </Link> */}
                   <div className='post-tag-meta'>
                     <Link to='' className='btn btn-pill-outline '>
 
@@ -284,9 +291,11 @@ const KnowledgeThai = () => {
                   </div>
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
+            <Link to='/th/knowledge/blog/Can_Sex_Cause_Stress' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={imag_blog3} alt='' className='image-fluid' />
@@ -300,10 +309,10 @@ const KnowledgeThai = () => {
 
                   การมีเพศสัมพันธ์รวมไปถึงการช่วยตัวเอง เป้าหมายทั้งสองอย่างคงหนีไม่พ้นการถึงจุดสุดยอด หรือการทำให้อีกฝ่ายรู้สึกดี แต่บางคู่กับรู้สึกแย่ เครียด ซึมเศร้า วิตกกังวล รู้สึกทำได้ไม่ดีพอ ก้าวร้าวทะเลาะกับคู่นอน ทัศนคติเกี่ยวกับSEX ปมจากการโดนล่วงละเมิด หลังจบกิจกรรมบนเตียงภาวะเหล่านี้ถ้าเป็นได้บ่อยๆ คือภาวะ Post-coital tristesse(PCT) หมายถึงอาการความเศร้าหรือความเหงาที่เกิดขึ้นหลังจากการมีเพศสัมพันธ์ ภาวะเหล่านี้คนส่วนใหญ่สามารถพบเจอได้ และมักจะหายไปเอง หรือบางคนอาจจะเป็นนานกว่าปกตินั้นคือภาวะที่เคมีในสมองมีส่วนเข้ามาเกี่ยวข้อง สาเหตุหลักภาวะ Post-coital tristesse(PCT) คือฮอร์โมนในร่างกาย เมื่อถึงจุดสุดยอด ร่างกายจะปล่อยฮอร์โมนออกมาไม่ว่าจะเป็น โดปามีน และออกซิโทซิน ถ้าถึงจุดสุดยอดรวมถึงฮอร์โมนอื่นจะปล่อยออกมาอย่างรวดเร็ว และลดระดับลงอย่างรวดเร็ว ตรงนี้คือช่วงที่เรียกได้ว่าเป็นจุดที่ฮอร์โมนไม่คงที่ จึงทำให้เกิดอาการ Post-coital tristesse(PCT)
                   </p>
-                  <Link to='/th/knowledge/blog/Can_Sex_Cause_Stress' className='btn btn-pill-outline '>
+                  {/* <Link to='/th/knowledge/blog/Can_Sex_Cause_Stress' className='btn btn-pill-outline '>
 
                     Read More
-                  </Link>
+                  </Link> */}
                   <div className='post-tag-meta'>
                     <Link to='' className='btn btn-pill-outline '>
 
@@ -316,6 +325,7 @@ const KnowledgeThai = () => {
                   </div>
                 </div>
               </div>
+            </Link>
             </div>
           </div>
           {/* <!-- posts Ends --> */}
