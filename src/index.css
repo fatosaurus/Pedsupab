@@ -18,6 +18,11 @@ div#root .container {
   padding-left:100px; padding-right: 100px;
 }
 .post-tag-meta { flex-wrap: wrap;}
+.post-article .post-tag-meta { margin-bottom: 15px;}
+a.btn.btn-text-link {
+  padding: 0;
+}
+
 .iframe-embade.home-vid-iframe {
   max-width: 900px;
   margin: 0 auto;
