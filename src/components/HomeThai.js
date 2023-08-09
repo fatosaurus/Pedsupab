@@ -152,7 +152,7 @@ const HomeThai = () => {
             <img src={new_text} alt='' className='floated-img mb-2' />
             <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe"
             //  src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
-            src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1" 
+            src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1&mute=1" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
              allowFullScreen
             ></iframe></div>

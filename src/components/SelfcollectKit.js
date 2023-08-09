@@ -111,7 +111,7 @@ const SelfcollectKit = () => {
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
             <p>
-            It's great! It's a self-testing kit for cervical cancer, and it's convenient that you can perform the test yourself. It's also reassuring that the kit respects your personal privacy by not requiring personal identification. Once you collect the sample, you can easily send it for testing and wait for the results conveniently. Wonderful!y
+            It's great! It's a self-testing kit for cervical cancer, and it's convenient that you can perform the test yourself. It's also reassuring that the kit respects your personal privacy by not requiring personal identification. 
             </p>
           </div>
         </div>
