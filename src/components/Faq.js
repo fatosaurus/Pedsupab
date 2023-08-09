@@ -5,9 +5,11 @@ import "../style.css";
 import faq_col_1 from "../assets/image/faq-col-1.jpg";
 import faq_col_2 from "../assets/image/faq-col-2.png";
 import faq_col_3 from "../assets/image/faq-col-3.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Faq = () => {
+  const  state  = useLocation();
+  console.log("state value", state);
   const [reloadKey, setReloadKey] = useState(1)
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
 
@@ -15,12 +17,33 @@ const Faq = () => {
   const [stiCard, setstiCard] = useState(false);
   const [shCard, setshCard] = useState(false);
 
+  
+
 
   useEffect(() => {
     allFaQ()
     
     
+    
   });
+  if(state.check !== '' && state.check != null){
+    console.log('helo---')
+    if(state.check == 'faq1'){
+      document.querySelectorAll('.all-faq')[0].classList.remove('collapsed');
+    }
+    if(state.check == 'faq2'){
+      document.querySelectorAll('.all-faq')[1].classList.remove('collapsed');
+    }
+    if(state.check == 'faq3'){
+      document.querySelectorAll('.all-faq')[4].classList.remove('collapsed');
+    }
+    if(state.check == 'faq4'){
+      console.log('entered');
+      HpvConnection()
+      document.querySelectorAll('.hpv')[6].classList.remove('collapsed');
+    }
+
+  }
   const allFaQ = () => {
     for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
       document.querySelectorAll('.all-faq')[i].style.display = "block";

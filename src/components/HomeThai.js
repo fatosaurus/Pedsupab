@@ -9,10 +9,14 @@ import blog_thumb_3 from "../assets/image/blog_thumb_3.jpg";
 import new_text from "../assets/image/new-text.png";
 import video from "../assets/image/video.jpg";
 import faq_text_img from "../assets/image/faq_text_img.png";
-import faq_img_1 from "../assets/image/faq_img_1.png";
-import faq_img_2 from "../assets/image/faq_img_2.png";
-import faq_img_3 from "../assets/image/faq_img_3.png";
-import faq_img_4 from "../assets/image/faq_img_4.png";
+// import faq_img_1 from "../assets/image/faq_img_1.png";
+// import faq_img_2 from "../assets/image/faq_img_2.png";
+// import faq_img_3 from "../assets/image/faq_img_3.png";
+// import faq_img_4 from "../assets/image/faq_img_4.png";
+import faq_img_1 from "../assets/image/Green.svg";
+import faq_img_2 from "../assets/image/Orange.svg";
+import faq_img_3 from "../assets/image/Blue.svg";
+import faq_img_4 from "../assets/image/Yellow.svg";
 import faq_star_1 from "../assets/image/faq_star_1.png";
 import faq_star_2 from "../assets/image/faq_star_2.png";
 import faq_star_3 from "../assets/image/faq_star_3.png";
@@ -166,15 +170,19 @@ const HomeThai = () => {
           <img src={faq_text_img} alt='' className='faq-title' />
           <Link to='/th/faqs' className='faq-q'>
             <img src={faq_img_1} alt='' />
+            <h3 className="title" style={{color:'#e2559a'}}>อาการของเอสทีไอมีอะไรบ้าง?</h3>
           </Link>
           <Link to='/th/faqs' className='faq-q'>
+          <h3 className="title" style={{color:'#fff410'}}>โรคติดต่อทางเพศสัมพันธ์มีอาการหรือไม่?</h3>
             <img src={faq_img_2} alt='' />
           </Link>
           <Link to='/th/faqs' className='faq-q'>
             <img src={faq_img_3} alt='' />
+            <h3 className="title" style={{color:'#ebfdff'}}>ถุงอย่างอนามัยสามารถป้องกันโรคติดต่อทางเพศสัมพันธ์ได้หรือไม่? </h3>
           </Link>
           <Link to='/th/faqs' className='faq-q'>
             <img src={faq_img_4} alt='' />
+            <h3 className="title" style={{color:'#6792ca'}}> ถ้าผลตรวจ HPV เป็นบวก หมายความว่าฉันเป็นมะเร็งหรือไม่? </h3>
           </Link>
           <Link to='' className='faq-star-1'>
             <img src={faq_star_1} alt='' />
