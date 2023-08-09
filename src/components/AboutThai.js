@@ -129,7 +129,7 @@ const AboutThai = () => {
                   <p className='quote'>เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p>
                 </div>
               </div>
-              <div className='col-md-4'>
+              {/* <div className='col-md-4'>
                 <div className='team-card bg-1'>
                   <div className='graphic'>
                     <img src={team_img_1} alt='Team Member' />
@@ -138,7 +138,7 @@ const AboutThai = () => {
                   <p className='color-blue sub-title'>นักพัฒนาธุรกิจ & เภสัชกร </p>
                   <p className='quote'>จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p>
                 </div>
-              </div>
+              </div>*/}
               <div className='col-md-4'>
                 <div className='team-card bg-2'>
                   <div className='graphic'>
