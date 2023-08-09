@@ -87,9 +87,10 @@ const AboutThai = () => {
         <section className='about-team pb-0'>
           <div className='container'>
             <h2 className='primary-title'>
-           
+            <span className="circle-wrap-highlight-w">
             ทีมของเรา <span className="circle-wrap-highlight">ทีม 
                 <div className="circle-svg"><TeamTextHighlight /></div>
+            </span>
             </span>
             </h2>
 

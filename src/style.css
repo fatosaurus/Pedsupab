@@ -1599,10 +1599,10 @@ img {
 .carousel-indicators [data-bs-target] { width: 19px; height: 3px; margin: 0 10px;}
 .carousel-indicators .active { width: 120px;}
 
-.circle-wrap-highlight { position: relative; z-index: 1;}
+.circle-wrap-highlight-w { position: relative; z-index: 1;}
+.circle-wrap-highlight { position: static; z-index: 1;}
 .circle-wrap-highlight .circle-svg { position: absolute; z-index: -1; top: -40px;
-  right: -24px;}
-  .circle-wrap-highlight .circle-svg svg { max-width: 160px;}
+  right: -50px;}
 
   .main-nav-menu .nav-menu li.has_submenu { position: relative;}
   .main-nav-menu .nav-menu li.has_submenu ul { position: absolute; top: 98%; left: 0; min-width: 180px; background-color: #fff; 
