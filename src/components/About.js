@@ -126,11 +126,11 @@ const About = () => {
                     Team Leader
                     <br />
                   </p>
-                  <p
+                  {/* <p
                   // className='quote'
                   >
                     โลกนี้ไม่มีที่ยืนของคนอ่อนแอ แต่ไม่เป็นไร งั้นเรานั่งก็ได้
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
@@ -141,9 +141,9 @@ const About = () => {
                   </div>
                   <h4 className='card-title'>Thitharee K </h4>
                   <p className='color-orange sub-title'>Advisor </p>
-                  <p
+                  {/* <p
                   // className='quote'
-                  >เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p>
+                  >เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p> */}
                 </div>
               </div>
               {/* <div className='col-md-4'>
@@ -170,9 +170,9 @@ const About = () => {
                   </div>
                   <h4 className='card-title'>Suphanat N</h4>
                   <p className='color-orange sub-title'>Creative </p>
-                  <p
+                  {/* <p
                   // className='quote'
-                  >เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p>
+                  >เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p> */}
                 </div>
               </div>
               <div className='col-md-4'>
@@ -187,9 +187,9 @@ const About = () => {
                   </div>
                   <h4 className='card-title'>Attapon L</h4>
                   <p className='color-blue sub-title'>Creative </p>
-                  <p
+                  {/* <p
                   // className='quote'
-                  >เชื่อมั่น & ทำความดีด้วยสติ ✨</p>
+                  >เชื่อมั่น & ทำความดีด้วยสติ ✨</p> */}
                 </div>
               </div>
 
@@ -200,12 +200,12 @@ const About = () => {
                   </div>
                   <h4 className='card-title'>Vivian S</h4>
                   <p className='color-green sub-title'>Creative </p>
-                  <p
+                  {/* <p
                   // className='quote'
                   >
                     เงื่อนไขที่ว่า แก้งานได้ 2 ครั้งมีอยู่จริง คือ “ครั้งแล้ว”
                     และ “ครั้งเล่า”
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
@@ -218,9 +218,9 @@ const About = () => {
                   <p className='color-orange sub-title'>
                     Team Coordinator
                   </p>
-                  <p
+                  {/* <p
                   // className='quote'
-                  >“ ทุกอย่างมีเวลาของมัน ”</p>
+                  >“ ทุกอย่างมีเวลาของมัน ”</p> */}
                 </div>
               </div>
               <div className='col-md-4'>
@@ -232,11 +232,11 @@ const About = () => {
                   <p className='color-green sub-title'>
                     Content & Admin
                   </p>
-                  <p
+                  {/* <p
                   // className='quote'
                   >
                     เพื่อนกิน เพื่อนกัน เพื่อนกินไม่ทัน เพื่อนกันเอาไปกิน
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className='col-md-4'>
@@ -253,9 +253,9 @@ const About = () => {
                   <p className='color-blue sub-title'>
                     Content & Admin
                   </p>
-                  <p
+                  {/* <p
                   // className='quote'
-                  >จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p>
+                  >จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p> */}
                 </div>
               </div>
 
@@ -266,11 +266,11 @@ const About = () => {
                   </div>
                   <h4 className='card-title'>Chosita T</h4>
                   <p className='color-blue sub-title'>Content & Admin  </p>
-                  <p
+                  {/* <p
                   //  
                   // className='quote'
 
-                  >เชื่อมั่น & ทำความดีด้วยสติ ✨</p>
+                  >เชื่อมั่น & ทำความดีด้วยสติ ✨</p> */}
                 </div>
               </div>
               {/* <div className='col-md-4'>
