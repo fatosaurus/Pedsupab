@@ -1535,6 +1535,19 @@ div#root .faq-sec .container {
 }
 
 /* home faq responsive */
+.section-faq-home .faq-q .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 200px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: clamp(7px, 2.5vw, 30px);
+}
+
+
+
 .section-faq-home img {
   max-width: 100%;
 }
@@ -1548,15 +1561,15 @@ div#root .faq-sec .container {
 }
 
 .section-faq-home .faq-q:nth-child(4) {
-  width: 30%;
+  width: 22%;
 }
 
 .section-faq-home .faq-q:nth-child(2) {
-  width: 34%;
+  width: 26%;
 }
 
 .section-faq-home .faq-q:nth-child(5) {
-  width: 33%;
+  width: 25%;
 }
 
 .section-faq-home .faq-star-2 {

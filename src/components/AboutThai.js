@@ -14,6 +14,10 @@ import team_img_7 from "../assets/image/team_img_7.png";
 import team_img_8 from "../assets/image/team_img_8.png";
 import team_img_9 from "../assets/image/team_img_9.png";
 import team_img_10 from "../assets/image/team_img_10.png";
+import Suphanat_N from "../assets/image/Suphanat N.JPG";
+import Wasinee_M from  "../assets/image/Wasinee M.JPG";
+import Attapon_L from "../assets/image/Attapon L.JPG"
+
 import team_img_11 from "../assets/image/team_img_11.png";
 import { Link } from "react-router-dom";
 import TeamTextHighlight from "../iconComponents/TeamTextHighlight";
@@ -84,7 +88,7 @@ const AboutThai = () => {
           <div className='container'>
             <h2 className='primary-title'>
            
-            พบกับเรา <span className="circle-wrap-highlight">ทีม 
+            ทีมของเรา <span className="circle-wrap-highlight">ทีม 
                 <div className="circle-svg"><TeamTextHighlight /></div>
             </span>
             </h2>
@@ -113,50 +117,58 @@ const AboutThai = () => {
                   หัวหน้าทีม 
                     <br />
                   </p>
-                  <p className='quote'>
+                  {/* <p className='quote'>
                     โลกนี้ไม่มีที่ยืนของคนอ่อนแอ แต่ไม่เป็นไร งั้นเรานั่งก็ได้
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
               <div className='col-md-4'>
                 <div className='team-card bg-2'>
                   <div className='graphic'>
-                    <img src={team_img_9} alt='Team Member' />
+                    <img src={team_img_11} alt='Team Member' />
                   </div>
                   <h4 className='card-title'>ฐิตารีย์  </h4>
                   <p className='color-orange sub-title'>ที่ปรึกษาทีม  </p>
-                  <p className='quote'>เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p>
+                  {/* <p className='quote'>เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p> */}
                 </div>
               </div>
-              <div className='col-md-4'>
+              {/* <div className='col-md-4'>
                 <div className='team-card bg-1'>
                   <div className='graphic'>
-                    <img src={team_img_1} alt='Team Member' />
+                    <img src={team_img_11} alt='Team Member' />
                   </div>
                   <h4 className='card-title'>จันทมาศ ฉัตราภรณ์</h4>
                   <p className='color-blue sub-title'>นักพัฒนาธุรกิจ & เภสัชกร </p>
                   <p className='quote'>จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p>
                 </div>
-              </div>
+              </div> */}
               <div className='col-md-4'>
                 <div className='team-card bg-2'>
                   <div className='graphic'>
-                    <img src={team_img_2} alt='Team Member' />
+                    <img src={Suphanat_N} alt='Team Member'  style={{
+                        borderRadius: '50%',
+                        width: '140px',
+                        height: '140px',
+                      }} />
                   </div>
                   <h4 className='card-title'>ศุภณัฐ </h4>
                   <p className='color-orange sub-title'>ครีเอทีฟ </p>
-                  <p className='quote'>เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p>
+                  {/* <p className='quote'>เกิดมามีชีวิตเดียว อยากทำไรก็ทำไปเถอะ</p> */}
                 </div>
               </div>
               <div className='col-md-4'>
                 <div className='team-card bg-3'>
                   <div className='graphic'>
-                    <img src={team_img_3} alt='Team Member' />
+                    <img src={Attapon_L} alt='Team Member'  style={{
+                        borderRadius: '50%',
+                        width: '140px',
+                        height: '140px',
+                      }} />
                   </div>
                   <h4 className='card-title'>อรรถพล </h4>
                   <p className='color-blue sub-title'>ครีเอทีฟ </p>
-                  <p className='quote'>เชื่อมั่น & ทำความดีด้วยสติ ✨</p>
+                  {/* <p className='quote'>เชื่อมั่น & ทำความดีด้วยสติ ✨</p> */}
                 </div>
               </div>
 
@@ -167,60 +179,64 @@ const AboutThai = () => {
                   </div>
                   <h4 className='card-title'>วิเวียน</h4>
                   <p className='color-green sub-title'>ครีเอทีฟ </p>
-                  <p className='quote'>
+                  {/* <p className='quote'>
                     เงื่อนไขที่ว่า แก้งานได้ 2 ครั้งมีอยู่จริง คือ “ครั้งแล้ว”
                     และ “ครั้งเล่า”
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
               <div className='col-md-4'>
                 <div className='team-card bg-2'>
                   <div className='graphic'>
-                    <img src={team_img_4} alt='Team Member' />
+                    <img src={team_img_5} alt='Team Member' />
                   </div>
                   <h4 className='card-title'>สรัญญา </h4>
                   <p className='color-orange sub-title'>
                   ประสานงาน
                   </p>
-                  <p className='quote'>“ ทุกอย่างมีเวลาของมัน ”</p>
+                  {/* <p className='quote'>“ ทุกอย่างมีเวลาของมัน ”</p> */}
                 </div>
               </div>
               <div className='col-md-4'>
                 <div className='team-card bg-3'>
                   <div className='graphic'>
-                    <img src={team_img_5} alt='Team Member' />
+                    <img src={team_img_9} alt='Team Member' />
                   </div>
                   <h4 className='card-title'>อัญชิสา</h4>
                   <p className='color-green sub-title'>
                   คอนเทิ้น & แอดมิน
                   </p>
-                  <p className='quote'>
+                  {/* <p className='quote'>
                     เพื่อนกิน เพื่อนกัน เพื่อนกินไม่ทัน เพื่อนกันเอาไปกิน
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className='col-md-4'>
                 <div className='team-card bg-1'>
                   <div className='graphic'>
-                    <img src={team_img_6} alt='Team Member' />
+                    <img src={Wasinee_M} alt='Team Member'  style={{
+                        borderRadius: '50%',
+                        width: '140px',
+                        height: '140px',
+                      }}  />
                   </div>
                   <h4 className='card-title'>วาสินี </h4>
                   <p className='color-blue sub-title'>
                   คอนเทิ้น & แอดมิน
                   </p>
-                  <p className='quote'>จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p>
+                  {/* <p className='quote'>จงเติบโตเป็นผู้ใหญ่ที่แข็งแรง</p> */}
                 </div>
               </div>
 
               <div className='col-md-4'>
                 <div className='team-card bg-3'>
                   <div className='graphic'>
-                    <img src={team_img_7} alt='Team Member' />
+                    <img src={team_img_6} alt='Team Member' />
                   </div>
                   <h4 className='card-title'>โชษิตา</h4>
                   <p className='color-blue sub-title'>คอนเทิ้น & แอดมิน  </p>
-                  <p className='quote'>เชื่อมั่น & ทำความดีด้วยสติ ✨</p>
+                  {/* <p className='quote'>เชื่อมั่น & ทำความดีด้วยสติ ✨</p> */}
                 </div>
               </div>
               {/* <div className='col-md-4'>

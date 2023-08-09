@@ -171,15 +171,19 @@ const Home = () => {
           <img src={faq_text_img} alt='' className='faq-title' />
           <Link to='' className='faq-q'>
             <img src={faq_img_1} alt='' />
+            <h3 className="title" style={{color:'#e2559a'}}>What are key symptoms of STIs?</h3>
           </Link>
           <Link to='' className='faq-q'>
             <img src={faq_img_2} alt='' />
+            <h3 className="title" style={{color:'#fff410'}}>What are key symptoms of STIs?</h3>
           </Link>
           <Link to='' className='faq-q'>
             <img src={faq_img_3} alt='' />
+            <h3 className="title" style={{color:'#ebfdff'}}>What are key symptoms of STIs?</h3>
           </Link>
           <Link to='' className='faq-q'>
             <img src={faq_img_4} alt='' />
+            <h3 className="title" style={{color:'#6792ca'}}>What are key symptoms of STIs?</h3>
           </Link>
           <Link to='' className='faq-star-1'>
             <img src={faq_star_1} alt='' />
