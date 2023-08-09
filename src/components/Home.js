@@ -11,10 +11,10 @@ import blog_thumb_3 from "../assets/image/blog_thumb_3.jpg";
 import new_text from "../assets/image/new-text.png";
 import video from "../assets/image/video.jpg";
 import faq_text_img from "../assets/image/faq_text_img.png";
-import faq_img_1 from "../assets/image/faq_img_1.png";
-import faq_img_2 from "../assets/image/faq_img_2.png";
-import faq_img_3 from "../assets/image/faq_img_3.png";
-import faq_img_4 from "../assets/image/faq_img_4.png";
+import faq_img_1 from "../assets/image/Green.svg";
+import faq_img_2 from "../assets/image/Orange.svg";
+import faq_img_3 from "../assets/image/Blue.svg";
+import faq_img_4 from "../assets/image/Yellow.svg";
 import faq_star_1 from "../assets/image/faq_star_1.png";
 import faq_star_2 from "../assets/image/faq_star_2.png";
 import faq_star_3 from "../assets/image/faq_star_3.png";
@@ -22,9 +22,9 @@ import blog_thumb__1 from "../assets/image/blog_thumb_1.jpg";
 import blog_thumb__2 from "../assets/image/blog_thumb_2.jpg";
 import blog_thumb__4 from "../assets/image/blog_thumb_4.jpg";
 import blog_thumb__5 from "../assets/image/blog_thumb_5.jpg";
-import static_cont_img_1 from "../assets/image/static-cont-img-1.png";
-import static_cont_img_2 from "../assets/image/static-cont-img-2.png";
-import static_cont_img_3 from "../assets/image/static-cont-img-3.png";
+import static_cont_img_1 from "../assets/image/static-cont-img-1_en.png";
+import static_cont_img_2 from "../assets/image/static-cont-img-2_en.png";
+import static_cont_img_3 from "../assets/image/static-cont-img-3_en.png";
 import Blog_Highlight from "../assets/image/Blog-Highlight.png";
 import Home_vid_img from "../assets/image/home-vid-banner-eng.png";
 import { Link } from "react-router-dom";
@@ -157,7 +157,7 @@ const Home = () => {
             <img src={new_text} alt='' className='floated-img mb-2' />
             <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" 
             // src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
-            src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1" 
+            src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1&mute=1" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
              allowFullScreen autoplay="false"
             ></iframe></div>

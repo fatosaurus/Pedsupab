@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -18,14 +18,14 @@ const Knowledge = () => {
 
   return (
     <div className='site-wrap blog-page'>
-      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
+      <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
 
       <div className='knoledge-big-banner'>
         <h1 className='text-center'>
           <img src={knowlage_title} alt='' />
         </h1>
         <p className='page-sub-title text-center'>
-        Knowledge is Power 
+          Knowledge is Power
 
         </p>
         <div className='text-center mb-5'>
@@ -117,6 +117,7 @@ const Knowledge = () => {
           {/* <!-- posts --> */}
           <div className='posts'>
             <div className='post-article card'>
+            <Link to='/knowledge/blog/Can_No_Protection_Sex_Be_Safe' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={imag_blog2} alt='' className='image-fluid' />
@@ -127,6 +128,16 @@ const Knowledge = () => {
 
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023 </div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
                   <p>
 
                     Many people wonder if the &quot;skin-to-skin&quot; feeling is better than using actual
@@ -137,39 +148,41 @@ const Knowledge = () => {
                     The issue of protection through condom usage depends on the agreement of
                     both parties involved. Whether it is a woman or a man, it is important for both
                     parties to have mutual consent, whether they choose to use a condom or not.
-                    
+
                   </p>
 
-                  
-                  <Link to='/knowledge/blog/Can_No_Protection_Sex_Be_Safe' className='btn btn-pill-outline '>
+
+                  {/* <Link to='/knowledge/blog/Can_No_Protection_Sex_Be_Safe' className='btn btn-text-link'>
 
                     Read More
-                  </Link>
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #RELATIONSHIPS
-                    </Link>
-                  </div>
+                  </Link> */}
+                  
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
+            <Link to='/knowledge/blog/Debunking_Misconceptions_of_HPV' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={blog_img} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
-
                     Debunking Common Misconceptions about HPV
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
                   <p>
 
                     In this blog, we will address common misconceptions surrounding HPV (Human Papillomavirus) and HPV testing. By dispelling myths and providing accurate information, we aim to equip you with the knowledge needed to take control of your sexual health. Let's dive in! Understanding HPV and its Link to Cervical Cancer:
@@ -179,25 +192,18 @@ const Knowledge = () => {
 
                     While it is true that certain high-risk strains of HPV can increase the risk of developing cervical cancer, it's important to note that not all HPV infections lead to cancer. Most HPV infections clear up on their own without causing any long-term health issues.
                   </p> */}
-                  <Link to='/knowledge/blog/Debunking_Misconceptions_of_HPV' className='btn btn-pill-outline '>
+                  {/* 
 
                     Read More
-                  </Link>
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #RELATIONSHIPS
-                    </Link>
-                  </div>
+                  </Link> */}
+                  
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
+            <Link to='/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={blog_img} alt='' className='image-fluid' />
@@ -208,35 +214,38 @@ const Knowledge = () => {
                     E-Cigarettes and Cervical Cancer
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
                   <p>
 
                     How can smoking increase the risk of cervical cancer? You might be wondering, given that smoke only enters the lungs, not the uterus or the vagina… wouldn’t it cause other cancers like oral, throat, or lung cancer? Seems more logical, right? With how e-cigarettes are readily available, let’s consider this.
 
-                   </p>
+                  </p>
 
                   {/* <p>
 
                     Even though vaping doesn't create combustion like rolled cigarettes or contain harmful substances like gamma radiation, carbon monoxide, rat poison, etc., however, one substance: e-cigarettes contain nicotine, which is also a carcinogen. Toxicologically, nicotine is considered toxic compared to other substances. It also potentially causes Alzheimer's and Parkinson's diseases.
                   </p> */}
-                  <Link to='/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' className='btn btn-pill-outline '>
+                  {/* <Link to='/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' className='btn btn-text-link'>
 
                     Read More
-                  </Link>
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #RELATIONSHIPS
-                    </Link>
-                  </div>
+                  </Link> */}
+                 
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
+            <Link to='/knowledge/blog/The_Rise_of_HPV_Infections' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
                   <img src={blog_img} alt='' className='image-fluid' />
@@ -247,6 +256,16 @@ const Knowledge = () => {
                     The Rise of Cervical Cancer Infections
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
                   <p>
 
                     In more than 90% of individuals infected with HPV, their bodies can clear the infection on their own. However, according to the World Health Organization (WHO) survey in 2020, there were up to 60,400 new cases of cervical cancer and 34,200 deaths. Moreover, many cases remain untreated, with 90% of new infections and deaths occurring in low-income countries. Notably, over 90% of infections are attributed to sexual intercourse.
@@ -256,60 +275,58 @@ const Knowledge = () => {
 
                     It has also been found that individuals infected with HIV are up to 6 times more likely to develop cervical cancer than those without HIV.
                   </p> */}
-                  <Link to='/knowledge/blog/The_Rise_of_HPV_Infections' className='btn btn-pill-outline '>
+                  {/* 
 
                     Read More
-                  </Link>
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #RELATIONSHIPS
-                    </Link>
-                  </div>
+                  </Link> */}
+                  
                 </div>
               </div>
+            </Link>
             </div>
 
             <div className='post-article card'>
-              <div className='row'>
-                <div className='col-lg-7 graphic'>
-                  <img src={imag_blog3} alt='' className='image-fluid' />
-                </div>
-                <div className='col-lg-5 content'>
-                  <h2 className='post-title'>
+              <Link to='/knowledge/blog/Can_Sex_Cause_Stress' >
+                <div className='row'>
 
-                    Can Sexual Activity Cause Stress
-                  </h2>
-                  <div className='post-meta'>Pedsupab Team 17 July 2023</div>
-                  <p>
+                  <div className='col-lg-7 graphic'>
+                    <img src={imag_blog3} alt='' className='image-fluid' />
+                  </div>
+                  <div className='col-lg-5 content'>
+                    <h2 className='post-title'>
 
-                    Sexual intercourse includes masturbation. Both goals are inevitable to climax. or making the other person feel good But some couples feel bad, stressed, depressed, anxious, feeling not doing well enough. Aggressive arguing with a partner attitudes about sex Knot from being abused Post-coital tristesse (PCT) symptoms of sadness or loneliness that occur after sex Most people can experience these conditions. and often disappears on its own Or for some people it may be longer than normal, which is a condition in which brain chemistry is involved.
-                  </p>
+                      Can Sexual Activity Cause Stress
+                    </h2>
+                    <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                    <div className='post-tag-meta'>
+                      <Link to='' className='btn btn-text-link'>
 
-                  {/* <p>
+                        #BIRTHCONTROL
+                      </Link>
+                      <Link to='' className='btn btn-text-link'>
+
+                        #RELATIONSHIPS
+                      </Link>
+                    </div>
+                    <p>
+
+                      Sexual intercourse includes masturbation. Both goals are inevitable to climax. or making the other person feel good But some couples feel bad, stressed, depressed, anxious, feeling not doing well enough. Aggressive arguing with a partner attitudes about sex Knot from being abused Post-coital tristesse (PCT) symptoms of sadness or loneliness that occur after sex Most people can experience these conditions. and often disappears on its own Or for some people it may be longer than normal, which is a condition in which brain chemistry is involved.
+                    </p>
+
+                    {/* <p>
 
                     The main cause of Post-coital tristesse (PCT) is hormones in the body. at the climax The body will release hormones such as dopamine.and oxytocin If reaching orgasm, including other hormones will be released quickly. and rapidly decreasing This is what is known as the hormonal instability. This causes post-coital tristesse (PCT) symptoms.
                   </p> */}
-                  <Link to='/knowledge/blog/Can_Sex_Cause_Stress' className='btn btn-pill-outline '>
 
-                    Read More
-                  </Link>
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
 
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #RELATIONSHIPS
-                    </Link>
+                    {/* Read More
+                  </Link> */}
+                    
                   </div>
+
                 </div>
-              </div>
+              </Link>
+
             </div>
 
 

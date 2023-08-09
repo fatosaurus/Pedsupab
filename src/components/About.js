@@ -161,7 +161,8 @@ const About = () => {
               <div className='col-md-4'>
                 <div className='team-card bg-2'>
                   <div className='graphic'>
-                    <img src={Suphanat_N} alt='Team Member' style={{
+                    <img src={Suphanat_N} alt='Team Member' 
+                    style={{
           borderRadius: '50%',
           width: '140px',     
           height: '140px',    

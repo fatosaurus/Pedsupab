@@ -258,8 +258,9 @@ a:hover {
   display: grid;
   grid-template-columns: 92px 1fr;
   gap: 0 15px;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 15px;
+  align-content: flex-start;
 }
 
 .icon-card .graphic {
@@ -268,11 +269,16 @@ a:hover {
   background: #D9D9D9;
   border-radius: 999px;
   grid-row: 1/2 span;
+  margin-top: 43px;
 }
 
 .icon-card .card-title {
   font-size: 1.25em;
   font-family: var(--font-family-bold);
+  overflow: auto;
+  min-height: 36px;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
 }
 
 .icon-card p {
@@ -1069,6 +1075,7 @@ label {
 .post-article {
   margin: 0 0 55px 0;
 }
+.post-article a { color: inherit;}
 
 .post-article .graphic .image-fluid {
   width: 100%;
@@ -1476,6 +1483,7 @@ div#root .faq-sec .container {
   display: block;
   font-size: 22px;
   line-height: 1.3;
+  display: none;
 }
 
 .team-card p.quote:after {
@@ -1572,7 +1580,7 @@ img {
   max-width: 100%;
 }
 
-
+.blog-page  .btn.btn-pill-outline { border-color: #D2D2D2;}
 .blog-page  .btn.btn-pill-outline:hover, .blog-page .btn.btn-pill-outline.active { background: #4977C5 !important; border-color: #4977C5 !important; color: #fff;}
 
 .carousel-indicators [data-bs-target] { width: 19px; height: 3px; margin: 0 10px;}
@@ -1580,7 +1588,8 @@ img {
 
 .circle-wrap-highlight { position: relative; z-index: 1;}
 .circle-wrap-highlight .circle-svg { position: absolute; z-index: -1; top: -40px;
-  right: -38px;}
+  right: -24px;}
+  .circle-wrap-highlight .circle-svg svg { max-width: 160px;}
 
   .main-nav-menu .nav-menu li.has_submenu { position: relative;}
   .main-nav-menu .nav-menu li.has_submenu ul { position: absolute; top: 98%; left: 0; min-width: 180px; background-color: #fff; 
@@ -2667,7 +2676,7 @@ a.learn_more_btn {
   font-family: 'Sarabun', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 0.875em;
   line-height: 145%;
   /* or 35px */
 

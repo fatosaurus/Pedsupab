@@ -83,13 +83,12 @@ const SelfcollectKit = () => {
         </div>
 
         <h3 class='trinary-title-pink pt-5 text-center'>
-      
           Why Our Customers Love AVA
         </h3>
         <div class='row mb-5'>
           <div class='col-lg-4 icon-card'>
-            <div class='graphic'>
-              <img src='' alt='' class='avatar' />
+            <div class='graphic' style={{backgroundColor:'#32B3BE'}}>
+              
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
             <p>
@@ -97,8 +96,8 @@ const SelfcollectKit = () => {
             </p>
           </div>
           <div class='col-lg-4 icon-card'>
-            <div class='graphic'>
-              <img src='' alt='' class='avatar' />
+            <div class='graphic' style={{backgroundColor:'#DF6DAB'}}>
+              
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
             <p>
@@ -106,12 +105,11 @@ const SelfcollectKit = () => {
             </p>
           </div>
           <div class='col-lg-4 icon-card'>
-            <div class='graphic'>
-              <img src='' alt='' class='avatar' />
+            <div class='graphic' style={{backgroundColor:'#FEE986'}}>
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
             <p>
-            It's great! It's a self-testing kit for cervical cancer, and it's convenient that you can perform the test yourself. It's also reassuring that the kit respects your personal privacy by not requiring personal identification. Once you collect the sample, you can easily send it for testing and wait for the results conveniently. Wonderful!y
+            It's great! It's a self-testing kit for cervical cancer, and it's convenient that you can perform the test yourself. It's also reassuring that the kit respects your personal privacy by not requiring personal identification. 
             </p>
           </div>
         </div>
