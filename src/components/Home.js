@@ -173,19 +173,19 @@ const Home = () => {
       <div className='section-faq-home'>
         <div className='container'>
           <img src={faq_text_img} alt='' className='faq-title' />
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_1} alt='' />
             <h3 className="title" style={{color:'#e2559a'}}>What are key symptoms of STIs?</h3>
           </Link>
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_2} alt='' />
             <h3 className="title" style={{color:'#fff410'}}>Does everyone who has STI have symptoms?</h3>
           </Link>
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_3} alt='' />
             <h3 className="title" style={{color:'#ebfdff'}}>Do condoms protect from STIs? </h3>
           </Link>
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_4} alt='' />
             <h3 className="title" style={{color:'#6792ca'}}>If I test positive for HPV, do I have cancer?</h3>
           </Link>
