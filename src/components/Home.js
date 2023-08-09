@@ -161,7 +161,7 @@ const Home = () => {
             <img src={new_text} alt='' className='floated-img mb-2' />
             <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" 
             // src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
-            src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1&mute=1" 
+            src="https://www.youtube.com/embed/V4yyrI-48J0?autoPlay=1&mute=1" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
              allowFullScreen autoplay="false"
             ></iframe></div>
@@ -173,19 +173,19 @@ const Home = () => {
       <div className='section-faq-home'>
         <div className='container'>
           <img src={faq_text_img} alt='' className='faq-title' />
-          <Link to='/faqs' className='faq-q'>
+          <Link to={"/faqs"} state= {{check:"faq1"}} className='faq-q' >
             <img src={faq_img_1} alt='' />
             <h3 className="title" style={{color:'#e2559a'}}>What are key symptoms of STIs?</h3>
           </Link>
-          <Link to='/faqs' className='faq-q'>
+          <Link to={"/faqs"} state= {{check:"faq2"}} className='faq-q' >
             <img src={faq_img_2} alt='' />
             <h3 className="title" style={{color:'#fff410'}}>Does everyone who has STI have symptoms?</h3>
           </Link>
-          <Link to='/faqs' className='faq-q'>
+          <Link to={"/faqs"} state= {{check:"faq3"}} className='faq-q' >
             <img src={faq_img_3} alt='' />
             <h3 className="title" style={{color:'#ebfdff'}}>Do condoms protect from STIs? </h3>
           </Link>
-          <Link to='/faqs' className='faq-q'>
+          <Link to={"/faqs"} state= {{check:"faq4"}} className='faq-q'>
             <img src={faq_img_4} alt='' />
             <h3 className="title" style={{color:'#6792ca'}}>If I test positive for HPV, do I have cancer?</h3>
           </Link>
