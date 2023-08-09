@@ -169,16 +169,16 @@ const Home = () => {
       <div className='section-faq-home'>
         <div className='container'>
           <img src={faq_text_img} alt='' className='faq-title' />
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_1} alt='' />
           </Link>
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_2} alt='' />
           </Link>
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_3} alt='' />
           </Link>
-          <Link to='' className='faq-q'>
+          <Link to='/faqs' className='faq-q'>
             <img src={faq_img_4} alt='' />
           </Link>
           <Link to='' className='faq-star-1'>
