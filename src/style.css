@@ -377,8 +377,8 @@ a:hover {
   flex: 0 0 auto;
 }
 
-.custom-skatch-bullets li .icon {
-  flex: 0 0 auto;
+.custom-skatch-bullets li .icon svg {
+  width: 60px; height: 60px;
 }
 
 .kit-about-lab {
@@ -422,7 +422,7 @@ a:hover {
   align-items: center;
 }
 
-.kit-about-lab .extra-top-padd { padding-top: 10vw;}
+.kit-about-lab .extra-top-padd { padding-top: 7vw;}
 
 .main-nav-menu {
   display: flex;
@@ -715,7 +715,7 @@ html .home-static-content .flex-img-card {
 .cart-container-wrap {
   background: rgb(210, 233, 235) url("./assets/image/wave_bg.svg");
   background-size: 100%;
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 70px;
 }
 
@@ -1257,7 +1257,7 @@ label {
 
 .search-box {
   display: flex;
-  max-width: 770px;
+  max-width: 100%;
   margin: 38px auto;
   background: #FFFFFF;
   border: 3px solid #000000;
@@ -1282,12 +1282,10 @@ label {
 }
 
 .faq-flex-column {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
-div#root .faq-flex-column .container {
-  max-width: 930px; padding-left: 15px; padding-right: 15px;
-}
+
 
 .faq-flex-column .container .row {
   gap: 20px 0;
@@ -1314,14 +1312,12 @@ div#root .faq-flex-column .container {
 }
 
 .faq-flex-column .container .card .card-title {
-  font-size: 1em;
+  font-size: .8em;
   font-family: var(--font-family-500);
   color: #000000;
 }
 
-div#root .faq-sec .container {
-  max-width: 1170px;
-}
+
 
 .font-1 {
   font-family: var(--font-family-400);
@@ -1628,6 +1624,7 @@ img {
 
         .main-nav-menu .nav-menu li.has_submenu:hover > ul { opacity: 1; visibility: visible; margin-top: 0;}
 
+        .card.order-product-card .graphic{ flex: 0 0 100px;}
 
 @media only screen and (max-width: 992px) {
   .kit-about-lab .extra-top-padd { background-color: #fff; padding-top: 0; text-align: center;}
