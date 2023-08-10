@@ -63,7 +63,7 @@ const Home = () => {
         {/* caro bullets */}
         <div className="carousel-indicators">
           {bannerData.map((item, ind) => (
-          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to={ind} className={`${ind === 0 ? 'active' : ''}`} aria-label={"Slide "+(ind+1)}></button>
+          <button key={'ban_'+ind} type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to={ind} className={`${ind === 0 ? 'active' : ''}`} aria-label={"Slide "+(ind+1)}></button>
           ))}
           </div>
         {/* caro bullets ends */}
@@ -161,9 +161,9 @@ const Home = () => {
             <img src={new_text} alt='' className='floated-img mb-2' />
             <div className="embed-responsive embed-responsive-container"><iframe className="responsive-iframe" 
             // src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" 
-            src="https://www.youtube.com/embed/V4yyrI-48J0?autoPlay=1&mute=1" 
+            src="https://www.youtube.com/embed/V4yyrI-48J0?autoplay=1&mute=1" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-             allowFullScreen autoplay="false"
+             allowFullScreen
             ></iframe></div>
           </div>
           {/* // } */}

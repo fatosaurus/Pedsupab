@@ -21,29 +21,31 @@ const Faq = () => {
 
 
   useEffect(() => {
+    if(state.check !== '' && state.check != null){
+      console.log('helo---')
+      if(state.check == 'faq1'){
+        document.querySelectorAll('.all-faq')[0].classList.remove('collapsed');
+      }
+      if(state.check == 'faq2'){
+        document.querySelectorAll('.all-faq')[1].classList.remove('collapsed');
+      }
+      if(state.check == 'faq3'){
+        document.querySelectorAll('.all-faq')[4].classList.remove('collapsed');
+      }
+      if(state.check == 'faq4'){
+        console.log('entered');
+        HpvConnection()
+        document.querySelectorAll('.hpv')[6].classList.remove('collapsed');
+      }
+  
+    }else{
     allFaQ()
+    }
     
     
     
   });
-  if(state.check !== '' && state.check != null){
-    console.log('helo---')
-    if(state.check == 'faq1'){
-      document.querySelectorAll('.all-faq')[0].classList.remove('collapsed');
-    }
-    if(state.check == 'faq2'){
-      document.querySelectorAll('.all-faq')[1].classList.remove('collapsed');
-    }
-    if(state.check == 'faq3'){
-      document.querySelectorAll('.all-faq')[4].classList.remove('collapsed');
-    }
-    if(state.check == 'faq4'){
-      console.log('entered');
-      HpvConnection()
-      document.querySelectorAll('.hpv')[6].classList.remove('collapsed');
-    }
-
-  }
+  
   const allFaQ = () => {
     for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
       document.querySelectorAll('.all-faq')[i].style.display = "block";
@@ -162,7 +164,7 @@ const Faq = () => {
               <path
                 d='M27.0234 13.666C27.0234 20.3254 21.3707 25.8319 14.2617 25.8319C7.15264 25.8319 1.5 20.3254 1.5 13.666C1.5 7.00656 7.15264 1.5 14.2617 1.5C21.3707 1.5 27.0234 7.00656 27.0234 13.666Z'
                 stroke='black'
-                stroke-width='3'
+                strokeWidth='3'
               />
               <line
                 y1='-1.5'
@@ -170,7 +172,7 @@ const Faq = () => {
                 y2='-1.5'
                 transform='matrix(0.722026 0.691866 -0.722026 0.691866 22.2617 22.6672)'
                 stroke='black'
-                stroke-width='3'
+                strokeWidth='3'
               />
             </svg>
           </button>
