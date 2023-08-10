@@ -28,18 +28,29 @@ const Faq = () => {
       if(state.state?.check != '' && state.state?.check != null){
         console.log('helo---')
         if(state.state.check == 'faq1'){
-          document.querySelectorAll('.all-faq')[0].classList.remove('collapsed');
+
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.remove('collapsed');
+          document.querySelector('#faq_row_1').classList.add('show');
+          
         }
         if(state.state.check == 'faq2'){
-          document.querySelectorAll('.all-faq')[1].classList.remove('collapsed');
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.add('collapsed');
+          document.querySelector('#faq_row_1').classList.remove('show');
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[1].classList.remove('collapsed');
+          document.querySelector('#faq_row_6').classList.add('show');
         }
         if(state.state.check == 'faq3'){
-          document.querySelectorAll('.all-faq')[4].classList.remove('collapsed');
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.add('collapsed');
+          document.querySelector('#faq_row_1').classList.remove('show');
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[4].classList.remove('collapsed');
+          document.querySelector('#faq_row_9').classList.add('show');
         }
         if(state.state.check == 'faq4'){
           console.log('entered');
           HpvConnection()
-          document.querySelectorAll('.hpv')[6].classList.remove('collapsed');
+          document.querySelectorAll('.hpv .accordion-header .accordion-button')[6].classList.remove('collapsed');
+          document.querySelector('#faq_row_16').classList.add('show');
+          // document.querySelector('#faq_row_16').parent().children()classList.add('show');
         }
     
       }else{
