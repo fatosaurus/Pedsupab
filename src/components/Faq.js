@@ -25,26 +25,26 @@ const Faq = () => {
   useEffect(() => {
     console.log('hello');
     console.log(state.state.check)
-    // if(state.state.check != '' && state.state.check != null){
-    //   console.log('helo---')
-    //   if(state.state.check == 'faq1'){
-    //     document.querySelectorAll('.all-faq')[0].classList.remove('collapsed');
-    //   }
-    //   if(state.state.check == 'faq2'){
-    //     document.querySelectorAll('.all-faq')[1].classList.remove('collapsed');
-    //   }
-    //   if(state.state.check == 'faq3'){
-    //     document.querySelectorAll('.all-faq')[4].classList.remove('collapsed');
-    //   }
-    //   if(state.state.check == 'faq4'){
-    //     console.log('entered');
-    //     HpvConnection()
-    //     document.querySelectorAll('.hpv')[6].classList.remove('collapsed');
-    //   }
-  
-    // }else{
-    // allFaQ()
-    // }
+      if(state.state.check != '' && state.state.check != null){
+        console.log('helo---')
+        if(state.state.check == 'faq1'){
+          document.querySelectorAll('.all-faq')[0].classList.remove('collapsed');
+        }
+        if(state.state.check == 'faq2'){
+          document.querySelectorAll('.all-faq')[1].classList.remove('collapsed');
+        }
+        if(state.state.check == 'faq3'){
+          document.querySelectorAll('.all-faq')[4].classList.remove('collapsed');
+        }
+        if(state.state.check == 'faq4'){
+          console.log('entered');
+          HpvConnection()
+          document.querySelectorAll('.hpv')[6].classList.remove('collapsed');
+        }
+    
+      }else{
+      allFaQ()
+      }
     
     
     
