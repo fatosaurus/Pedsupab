@@ -28,18 +28,20 @@ const Faq = () => {
       if(state.state?.check != '' && state.state?.check != null){
         console.log('helo---')
         if(state.state.check == 'faq1'){
-
+          allFaQ()
           document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.remove('collapsed');
           document.querySelector('#faq_row_1').classList.add('show');
           
         }
         if(state.state.check == 'faq2'){
+          allFaQ()
           document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.add('collapsed');
           document.querySelector('#faq_row_1').classList.remove('show');
           document.querySelectorAll('.all-faq .accordion-header .accordion-button')[1].classList.remove('collapsed');
           document.querySelector('#faq_row_6').classList.add('show');
         }
         if(state.state.check == 'faq3'){
+          allFaQ()
           document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.add('collapsed');
           document.querySelector('#faq_row_1').classList.remove('show');
           document.querySelectorAll('.all-faq .accordion-header .accordion-button')[4].classList.remove('collapsed');
