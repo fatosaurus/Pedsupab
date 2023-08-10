@@ -256,7 +256,7 @@ a:hover {
 
 .icon-card {
   display: grid;
-  grid-template-columns: 92px 1fr;
+  grid-template-columns: 75px 1fr;
   gap: 0 15px;
   align-items: flex-start;
   margin-bottom: 15px;
@@ -264,8 +264,8 @@ a:hover {
 }
 
 .icon-card .graphic {
-  width: 92px;
-  height: 92px;
+  width: 75px;
+  height: 75px;
   background: #D9D9D9;
   border-radius: 999px;
   grid-row: 1/2 span;
@@ -289,7 +289,7 @@ a:hover {
 }
 
 .video-block {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -338,11 +338,11 @@ a:hover {
 }
 
 .list-section {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .list-section .section-title {
-  font-size: 3.4875em;
+  font-size: 3.0875em;
   color: #BD56BF;
   font-family: var(--font-family-300);
 }
@@ -377,8 +377,12 @@ a:hover {
   flex: 0 0 auto;
 }
 
+.custom-skatch-bullets li .icon {
+  flex: 0 0 auto;
+}
+
 .kit-about-lab {
-  padding: 150px 0px;
+  padding: 80px 0px;
   background-color: #FDFCF3;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -505,11 +509,11 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 113px;
+  gap: 80px;
 }
 
 .feature-three-blogs-w .item {
-  max-width: 280px; transition: all .3s; font-size: ;
+  max-width: 228px; transition: all .3s; font-size: ;
 }
 .feature-three-blogs-w .item .blog-title { font-size: 1.4375em;}
 
@@ -548,6 +552,7 @@ a:hover {
   position: absolute;
   z-index: 2;
   transition: all .3s;
+  transform: scale(.85);
 }
 
 .section-faq-home .faq-q:nth-child(2) {
@@ -586,6 +591,10 @@ a:hover {
   transform: rotate(-10deg) scale(1.1);
 }
 
+.section-faq-home .faq-q:hover { z-index: 99;}
+
+.section-faq-home .faq-star-1, .section-faq-home .faq-star-2, .section-faq-home .faq-star-3 { transform: scale(.85);}
+
 .section-faq-home .faq-star-1 {
   position: absolute;
   top: 68% !important;
@@ -623,18 +632,19 @@ a:hover {
 }
 
 .home-recent-blog .blogs-w {
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .home-recent-blog .item {
-  max-width: 250px;
+  max-width: 188px;
 }
+.blog-title { font-size: 1.3em;}
 
 .home-recent-blog .item .graphic img {
-  width: 250px;
-  height: 240px;
+  width: 188px;
+  height: 188px;
   object-fit: cover;
 }
 
@@ -856,21 +866,21 @@ label {
 }
 
 .affiliate-page-inner .content-sec {
-  max-width: 600px;
+  max-width: 410px;
   background: transparent;
-  margin: auto;
+  margin: auto 0;
 }
 
 .affiliate-page-inner .card-title {
   color: #199BA6;
   font-family: var(--font-family-500);
-  font-size: 2.5em;
-  text-align: center;
+  font-size: 1.9em;
+  text-align: left;
 }
 
 .affiliate-page-inner .card-text {
   color: #15666D;
-  text-align: center;
+  text-align: left;
   font-size: 1.1em;
   font-family: var(--font-family-400);
 }
@@ -901,7 +911,7 @@ label {
   color: #FFFFFF;
   letter-spacing: 0.01em;
   border: none;
-  min-width: 400px;
+  min-width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -1114,7 +1124,7 @@ label {
 
 /* secondary-title-light */
 .our-kit-sec {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .secondary-title-light {
@@ -1146,8 +1156,8 @@ label {
 .site-footer {
   --footer-bg-color: #DF6DAB;
   --footer-text-color: #fff;
-  --footer-font-size: 20px;
-  --footer-font-small: 18px;
+  --footer-font-size: 18px;
+  --footer-font-small: 16px;
   --footer-font-lh: 33px;
   --footer-title-size: 24px;
   --footer-title-m: 0 0 33px 0;
@@ -1170,7 +1180,7 @@ label {
 
 .site-footer ul li {
   font-size: var(--footer-font-size);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .site-footer .footer-col-1 {
@@ -1193,7 +1203,7 @@ label {
 
 .site-footer .social-links {
   display: flex;
-  gap: 10px 24px;
+  gap: 10px 16px;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
@@ -1242,7 +1252,7 @@ label {
 }
 
 .footer-top-sec img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .search-box {
@@ -1543,7 +1553,7 @@ div#root .faq-sec .container {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  font-size: clamp(7px, 2vw, 26px);
+  font-size: clamp(7px, 2vw, 22px);
 }
 
 
@@ -3314,7 +3324,7 @@ span.plus_icon:before {
 /* Sushanta end */
 
 
-.section-faq-home .container, .home-recent-blog .blogs-w, .home-static-content .flex-img-card, .home-spacific-blog .cover-card {
+ .home-static-content .flex-img-card {
   transform: scale(0.85);
 }
 
