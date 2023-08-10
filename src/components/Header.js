@@ -20,6 +20,10 @@ function Header({productscount}){
   const [url, setUrl] = useState(currentUrl);
   const [randonKey, setRandonKey] = useState(0);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    console.log("test");
+  }, [currentUrl]);
   console.log(currentUrl);
 
 

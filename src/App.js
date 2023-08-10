@@ -47,7 +47,6 @@ function App() {
   const language = localStorage.setItem("language", 'EN');
   console.log(language + "=====language app")
   return (
-
     <BrowserRouter>
 
       <Routes>
