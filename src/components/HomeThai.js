@@ -168,19 +168,19 @@ const HomeThai = () => {
       <div className='section-faq-home'>
         <div className='container'>
           <img src={faq_text_img} alt='' className='faq-title' />
-          <Link to='/th/faqs' className='faq-q'>
+          <Link to='/th/faqs' state= {{check:"faq1"}} className='faq-q'>
             <img src={faq_img_1} alt='' />
             <h3 className="title" style={{color:'#e2559a'}}>อาการของเอสทีไอมีอะไรบ้าง?</h3>
           </Link>
-          <Link to='/th/faqs' className='faq-q'>
+          <Link to='/th/faqs' state= {{check:"faq2"}} className='faq-q'>
           <h3 className="title" style={{color:'#fff410'}}>โรคติดต่อทางเพศสัมพันธ์มีอาการหรือไม่?</h3>
             <img src={faq_img_2} alt='' />
           </Link>
-          <Link to='/th/faqs' className='faq-q'>
+          <Link to='/th/faqs' state= {{check:"faq3"}} className='faq-q'>
             <img src={faq_img_3} alt='' />
             <h3 className="title" style={{color:'#ebfdff'}}>ถุงอย่างอนามัยสามารถป้องกันโรคติดต่อทางเพศสัมพันธ์ได้หรือไม่? </h3>
           </Link>
-          <Link to='/th/faqs' className='faq-q'>
+          <Link to='/th/faqs' state= {{check:"faq4"}} className='faq-q'>
             <img src={faq_img_4} alt='' />
             <h3 className="title" style={{color:'#6792ca'}}> ถ้าผลตรวจ HPV เป็นบวก หมายความว่าฉันเป็นมะเร็งหรือไม่? </h3>
           </Link>

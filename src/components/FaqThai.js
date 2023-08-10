@@ -5,17 +5,54 @@ import "../style.css";
 import faq_col_1 from "../assets/image/faq-col-1.jpg";
 import faq_col_2 from "../assets/image/faq-col-2.png";
 import faq_col_3 from "../assets/image/faq-col-3.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 const FaqThai = () => {
+  const  state  = useLocation();
+  // const check = useParams();
+  console.log("state value", state);
   const [reloadKey, setReloadKey] = useState(1)
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []);
 
   useEffect(() => {
-    allFaQ()
+    console.log('hello');
+    // console.log(state.state.check)
+      if(state.state?.check != '' && state.state?.check != null){
+        console.log('helo---')
+        if(state.state.check == 'faq1'){
+          allFaQ()
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.remove('collapsed');
+          document.querySelector('#faq_row_1').classList.add('show');
+          
+        }
+        if(state.state.check == 'faq2'){
+          allFaQ()
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.add('collapsed');
+          document.querySelector('#faq_row_1').classList.remove('show');
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[1].classList.remove('collapsed');
+          document.querySelector('#faq_row_6').classList.add('show');
+        }
+        if(state.state.check == 'faq3'){
+          allFaQ()
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[0].classList.add('collapsed');
+          document.querySelector('#faq_row_1').classList.remove('show');
+          document.querySelectorAll('.all-faq .accordion-header .accordion-button')[4].classList.remove('collapsed');
+          document.querySelector('#faq_row_9').classList.add('show');
+        }
+        if(state.state.check == 'faq4'){
+          console.log('entered');
+          HpvConnection()
+          document.querySelectorAll('.hpv .accordion-header .accordion-button')[6].classList.remove('collapsed');
+          document.querySelector('#faq_row_16').classList.add('show');
+          // document.querySelector('#faq_row_16').parent().children()classList.add('show');
+        }
+    
+      }else{
+      allFaQ()
+      }
     
     
-  });
+  },[state.check]);
   const allFaQ = () => {
     for(var i = 0; i < document.querySelectorAll('.all-faq').length; i++) {
       document.querySelectorAll('.all-faq')[i].style.display = "block";
