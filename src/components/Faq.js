@@ -24,8 +24,8 @@ const Faq = () => {
 
   useEffect(() => {
     console.log('hello');
-    console.log(state.state.check)
-      if(state.state.check != '' && state.state.check != null){
+    // console.log(state.state.check)
+      if(state.state?.check != '' && state.state?.check != null){
         console.log('helo---')
         if(state.state.check == 'faq1'){
           document.querySelectorAll('.all-faq')[0].classList.remove('collapsed');
