@@ -242,7 +242,7 @@ const MyCart = () => {
         <div className='container'>
           <form onSubmit={handleSubmit} method='post'>
             <div className='row'>
-              <div className='col-lg-7'>
+              <div className='col-lg-6'>
 
                 <div className='card card-shipping-address'>
                   <div className='card-header'>My Shipping Address</div>
@@ -453,7 +453,7 @@ const MyCart = () => {
                 </div>
 
               </div>
-              <div className='col-lg-5'>
+              <div className='col-lg-6'>
                 <div className='card bg-primary order-card-sec'>
                   <div className='card-header'>รายการ</div>
                   <div className='card-body'>
