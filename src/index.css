@@ -17,6 +17,7 @@ div#root .container {
   max-width: 1048px;
   padding-left:100px; padding-right: 100px;
 }
+div#root .my-cart-page-w .container { max-width: 1300px; }
 .post-tag-meta { flex-wrap: wrap;}
 .post-article .post-tag-meta { margin-bottom: 15px;}
 a.btn.btn-text-link {

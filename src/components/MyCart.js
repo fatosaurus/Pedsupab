@@ -265,7 +265,7 @@ const MyCart = () => {
   });
 
   return (
-    <div className='site-wrap'>
+    <div className='site-wrap my-cart-page-w'>
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
       <div className='cart-page-inner-banner'>
         <div className='container'>

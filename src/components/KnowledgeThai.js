@@ -127,6 +127,16 @@ const KnowledgeThai = () => {
 
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023 </div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #RELATIONSHIPS
+                    </Link>
+                  </div>
                   <p>
 
                     หลายคนสงสัยว่าความรู้สึกแบบเนื้อแนบเนื้อมันดีกว่าใส่ถุงยางป้องกันจริงๆหรอ
@@ -149,16 +159,7 @@ const KnowledgeThai = () => {
 
                     Read More
                   </Link> */}
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #RELATIONSHIPS
-                    </Link>
-                  </div>
+                  
                 </div>
               </div>
             </Link>
@@ -176,6 +177,16 @@ const KnowledgeThai = () => {
                     เรื่องมักเข้าใจผิด กับเอชพีวี และความสำคัญของการตรวจคัดกรอง
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link'>
+
+                      #BIRTHCONTROL
+                    </Link>
+                  </div>
                   <p>
 
                     ในบล็อกนี้ เราจะข้อแก้อกไขความเข้าใจผิดเกี่ยวกับ HPV (Human Papillomavirus) และการตรวจ HPV โดยการปฏิเสธความเชื่อที่ผิดและให้ข้อมูลที่ถูกต้อง เราหวังว่าจะจัดหาความรู้ที่จำเป็นให้คุณเพื่อที่คุณจะสามารถควบคุมสุขภาพเพศสัมพันธ์ของตัวเองได้ มาเริ่มกันเถอะ!
@@ -191,16 +202,7 @@ const KnowledgeThai = () => {
 
                     Read More
                   </Link> */}
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                  </div>
+                  
                 </div>
               </div>
             </Link>
@@ -218,6 +220,16 @@ const KnowledgeThai = () => {
                     สูบบุหรี่เสี่ยงเป็นมะเร็งปากมดลูกอย่างไร
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                  </div>
                   <p>
 
                     สำหรับสาวพ้นควันทั้งหลายที่ยังคงสับสนงุนงงว่าการสูบบุหรี่เสี่ยงเป็นมะเร็งปากมดลูกได้อย่างไรในเมื่อเราสูบควันลงไปแค่ปอดไม่ได้ลงไม่ถึงมดลูกหรือช่องคลอดเสียหน่อย ต้องเป็นมะเร็งจำพวก มะเร็งปาก มะเร็งช่องคอ มะเร็งปอด อะไรพวกนั้นสิถึงจะดูสมเหตุสมผลกว่า
@@ -235,16 +247,7 @@ const KnowledgeThai = () => {
 
                     Read More
                   </Link> */}
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                  </div>
+                  
                 </div>
               </div>
             </Link>
@@ -262,6 +265,16 @@ const KnowledgeThai = () => {
                     อัตรามะเร็งปากมดลูกที่สูงขึ้น และความจำเป็นของการตรวจคัดกรองในไทย -
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                  </div>
                   <p>
 
                     ผู้ที่ได้รับเชื้อ HPV กว่า 90% ร่างกายสามารถกำจัดเชื้อออกไปได้เอง แต่จากผลสำรวจขององค์การอนามัยโลก (WHO) ในปี 2020 มีผู้ที่เป็นมะเร็งปากมดลูกรายใหม่ ถึง 60,400 ราย และมีผู้เสียชีวิตถึง 34,200 ราย ทั้งยังมีผู้ที่ป่วยอยู่แล้วและยังไม่ได้เข้ารับการรักษาอีกด้วย ที่น่าเป็นห่วงคือ 90% ของผู้ติดเชื้อรายใหม่และผู้เสียชีวิตมาจากประเทศที่มีรายได้น้อย ที่สำคัญการมีติดเชื้อกว่า 90% มาจากการมีเพศสัมพันธ์
@@ -279,16 +292,7 @@ const KnowledgeThai = () => {
 
                     Read More
                   </Link> */}
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                  </div>
+                  
                 </div>
               </div>
             </Link>
@@ -305,6 +309,16 @@ const KnowledgeThai = () => {
                   กิจกรรมทางเพศทำให้เกิดความเครียดได้
                   </h2>
                   <div className='post-meta'>Pedsupab Team 17 July 2023</div>
+                  <div className='post-tag-meta'>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                    <Link to='' className='btn btn-text-link '>
+
+                      #BIRTHCONTROL
+                    </Link>
+                  </div>
                   <p>
 
                   การมีเพศสัมพันธ์รวมไปถึงการช่วยตัวเอง เป้าหมายทั้งสองอย่างคงหนีไม่พ้นการถึงจุดสุดยอด หรือการทำให้อีกฝ่ายรู้สึกดี แต่บางคู่กับรู้สึกแย่ เครียด ซึมเศร้า วิตกกังวล รู้สึกทำได้ไม่ดีพอ ก้าวร้าวทะเลาะกับคู่นอน ทัศนคติเกี่ยวกับSEX ปมจากการโดนล่วงละเมิด หลังจบกิจกรรมบนเตียงภาวะเหล่านี้ถ้าเป็นได้บ่อยๆ คือภาวะ Post-coital tristesse(PCT) หมายถึงอาการความเศร้าหรือความเหงาที่เกิดขึ้นหลังจากการมีเพศสัมพันธ์ ภาวะเหล่านี้คนส่วนใหญ่สามารถพบเจอได้ และมักจะหายไปเอง หรือบางคนอาจจะเป็นนานกว่าปกตินั้นคือภาวะที่เคมีในสมองมีส่วนเข้ามาเกี่ยวข้อง สาเหตุหลักภาวะ Post-coital tristesse(PCT) คือฮอร์โมนในร่างกาย เมื่อถึงจุดสุดยอด ร่างกายจะปล่อยฮอร์โมนออกมาไม่ว่าจะเป็น โดปามีน และออกซิโทซิน ถ้าถึงจุดสุดยอดรวมถึงฮอร์โมนอื่นจะปล่อยออกมาอย่างรวดเร็ว และลดระดับลงอย่างรวดเร็ว ตรงนี้คือช่วงที่เรียกได้ว่าเป็นจุดที่ฮอร์โมนไม่คงที่ จึงทำให้เกิดอาการ Post-coital tristesse(PCT)
@@ -313,16 +327,7 @@ const KnowledgeThai = () => {
 
                     Read More
                   </Link> */}
-                  <div className='post-tag-meta'>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                    <Link to='' className='btn btn-pill-outline '>
-
-                      #BIRTHCONTROL
-                    </Link>
-                  </div>
+                  
                 </div>
               </div>
             </Link>
