@@ -11,7 +11,7 @@ function Header({productscount}){
 
 
 
-  const [language, setLanguage] = useState('EN');
+  const [language, setLanguage] = useState('');
   // const history = useHistory();
   const location = useLocation();
   const navigate = useNavigate();
