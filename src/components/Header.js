@@ -79,6 +79,10 @@ function Header({productscount}){
     // let url = isSubstringExist && lang === 'EN' ? currentUrl.replace('/th', '') : '/th' + currentUrl
     console.log(currentUrl);
     setUrl(url)
+    // if(currentUrl == '/th'){
+    //   setLanguage('TH');
+    //   localStorage.setItem('language','TH');
+    // }
     // const language = localStorage.getItem('language')
     // setLanguage(localStorage.getItem('language'))
     
