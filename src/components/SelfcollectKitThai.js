@@ -28,7 +28,7 @@ const SelfcollectKitThai = () => {
         <div class='row'>
           <div class='col-lg-6 d-flex justify-content-center'>
             <div class='kit-card'>
-              <Link to='/selfcollectkit/hpv'>
+              <Link to='/th/selfcollectkit/hpv'>
 
                 <img src={ava_hpv} alt='' />
               </Link>
@@ -37,7 +37,7 @@ const SelfcollectKitThai = () => {
           </div>
           <div class='col-lg-6 d-flex justify-content-center'>
             <div class='kit-card'>
-              <Link to='/selfcollectkit/sti_open'>
+              <Link to='/th/selfcollectkit/sti_open'>
 
                 <img src={ava_sti} alt='' />
               </Link>
@@ -72,7 +72,7 @@ const SelfcollectKitThai = () => {
                 </li>
               </ul>
               <p class='action'>
-                <Link to='/selfcollectkit/sti/kit' class='btn btn-pink'>
+                <Link to='/th/selfcollectkit/sti/kit' class='btn btn-pink'>
                   {/* <Link to='' class='btn btn-pink'> */}
 
                   ซื้อชุดตรวจ
@@ -88,7 +88,7 @@ const SelfcollectKitThai = () => {
         </h3>
         <div class='row mb-5'>
           <div class='col-lg-4 icon-card'>
-            <div class='graphic'>
+            <div class='graphic' style={{backgroundColor:'#32B3BE'}}>
               <img src='' alt='' class='avatar' />
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
@@ -97,7 +97,7 @@ const SelfcollectKitThai = () => {
             </p>
           </div>
           <div class='col-lg-4 icon-card'>
-            <div class='graphic'>
+            <div class='graphic' style={{backgroundColor:'#DF6DAB'}}>
               <img src='' alt='' class='avatar' />
             </div>
             <h3 class='card-title'>Sarisa G. </h3>
@@ -106,7 +106,7 @@ const SelfcollectKitThai = () => {
             </p>
           </div>
           <div class='col-lg-4 icon-card'>
-            <div class='graphic'>
+            <div class='graphic' style={{backgroundColor:'#FEE986'}}>
               <img src='' alt='' class='avatar' />
             </div>
             <h3 class='card-title'>Sarisa G. </h3>

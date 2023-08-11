@@ -106,11 +106,11 @@ const SelfCollectKitsSTIKitThai = () => {
                       {/* <Link to=''>Home</Link>{" "} */}
                     </li>
                     <li>
-                      <Link to='/selfcollectkit'>Self Collect Kits</Link>{" "}
+                      <Link to='/th/selfcollectkit'>Self Collect Kits</Link>{" "}
                       {/* <Link to=''>Self Collect Kits</Link>{" "} */}
                     </li>
                     <li>
-                      <Link to='/selfcollectkit/sti_open' >STI Kits</Link>{" "}
+                      <Link to='/th/selfcollectkit/sti_open' >STI Kits</Link>{" "}
                       {/* <Link to='' >STI Kits</Link>{" "} */}
                     </li>
                     <li class='selected'>

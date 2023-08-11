@@ -30,7 +30,7 @@ const About = () => {
     <div className='site-wrap'>
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
       <div className='about-page-wrap'>
-        <div className='top-border'></div>
+        {/* <div className='top-border'></div> */}
         {/* <div className='language-chooser'>
           <div className='container'>
             <Link to='/aboutus' className='active'>

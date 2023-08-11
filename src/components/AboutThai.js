@@ -29,7 +29,7 @@ const AboutThai = () => {
     <div className='site-wrap'>
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''} />
       <div className='about-page-wrap'>
-        <div className='top-border'></div>
+        {/* <div className='top-border'></div> */}
         {/* <div className='language-chooser'>
           <div className='container'>
             <Link to='/aboutus' >
@@ -88,7 +88,7 @@ const AboutThai = () => {
           <div className='container'>
             <h2 className='primary-title'>
             <span className="circle-wrap-highlight-w">
-            ทีมของเรา <span className="circle-wrap-highlight">ทีม 
+            <span className="circle-wrap-highlight"> ทีมของเรา 
                 <div className="circle-svg"><TeamTextHighlight /></div>
             </span>
             </span>

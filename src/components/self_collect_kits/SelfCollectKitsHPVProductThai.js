@@ -112,11 +112,11 @@ const SelfCollectKitsHPVProductThai = () => {
                       {/* <Link to=''>Home</Link>{" "} */}
                     </li>
                     <li>
-                      <Link to='/selfcollectkit'>ชุดเก็บตัวอย่างด้วยตัวเอง</Link>{" "}
+                      <Link to='/th/selfcollectkit'>ชุดเก็บตัวอย่างด้วยตัวเอง</Link>{" "}
                       {/* <Link to=''>Self Collect Kits</Link>{" "} */}
                     </li>
                     <li>
-                      <Link to='/selfcollectkit/hpv'>HPV Kits</Link>{" "}
+                      <Link to='/th/selfcollectkit/hpv'>HPV Kits</Link>{" "}
                       {/* <Link to=''>HPV Kits</Link>{" "} */}
                     </li>
                     <li className='selected'>

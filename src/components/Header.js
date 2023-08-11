@@ -124,12 +124,12 @@ function Header({productscount}){
                 <li>
                   <NavLink to={language == 'TH' ? '/th/knowledge' : '/knowledge'} onClick={handleMenuClose}>
 
-                    KNOWLEDGE
+                  {language == 'TH' ? 'บทความ' : 'KNOWLEDGE'}
                   </NavLink>
                 </li>
                 <li className="has_submenu">
                   <NavLink to={language == 'TH' ? '/th/selfcollectkit' : '/selfcollectkit'} className="" onClick={handleMenuClose}>
-                    SELF COLLECT KITS
+                  {language == 'TH' ? 'ชุดสะสมด้วยตนเอง' : 'SELF COLLECT KITS' }
                   </NavLink>
                   <ul>
                     <li><NavLink to={language == 'TH' ? '/th/selfcollectkit/hpv' : '/selfcollectkit/hpv'} onClick={handleMenuClose}>HPV</NavLink></li>
@@ -139,19 +139,19 @@ function Header({productscount}){
                 <li >
                   <NavLink to={language == 'TH' ? '/th/faqs' : '/faqs'} className="" onClick={handleMenuClose}>
 
-                    FAQs
+                  {language == 'TH' ? 'คำถามที่พบบ่อย' : 'FAQs'}
                   </NavLink>
                 </li>
                 <li >
                   <NavLink to={language == 'TH' ? '/th/aboutus' : '/aboutus'} className="" onClick={handleMenuClose}>
 
-                    ABOUT US
+                  {language == 'TH' ?  'เกี่ยวกับเรา' :  ' ABOUT US'}
                   </NavLink>
                 </li>
                 <li >
                   <NavLink to={language == 'TH' ? '/th/affiliates' : '/affiliates'} className="" onClick={handleMenuClose}>
 
-                    AFFILIATES
+                  {language == 'TH' ? 'พันธมิตร' :'AFFILIATES' }
                   </NavLink>
                 </li>
                 <li key={randonKey}>
