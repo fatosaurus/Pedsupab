@@ -26,7 +26,7 @@ const SelfCollectKitsHPV = () => {
   return (
     <div class='site-wrap'>
       <Header key={reloadKey} productscount={cart?.length > 0 ? cart?.length : ''}/>
-      <div class='inner-small-banner innerbanner d-none'>
+      <div class='inner-small-banner innerbanner'>
         <div class='text-center'>
           <img src={innerbanner1} alt='' class='img-fluid' />
           <div class='banner_text'>

@@ -88,8 +88,8 @@ const AboutThai = () => {
           <div className='container'>
             <h2 className='primary-title'>
             <span className="circle-wrap-highlight-w">
-            <span className="circle-wrap-highlight"> ทีมของเรา 
-                <div className="circle-svg"><TeamTextHighlight /></div>
+            <span className="circle-wrap-highlight circle_first"><div className="circle-svg"><TeamTextHighlight /></div>ทีมของเรา 
+                
             </span>
             </span>
             </h2>
