@@ -8,6 +8,12 @@ import Blog_Highlight from "../assets/image/Blog-Highlight.png";
 import blog_img from "../assets/image/blog-img.png";
 import imag_blog2 from "../assets/image/image_blog2.jpg";
 import imag_blog3 from "../assets/image/img_blog3.jpg";
+import imageSafeCondom from "../assets/image/isn't it safe to wear a condom_front.png"
+import imagecervialCancer from "../assets/image/The Rise of Cervical Cancer Infections_front.png"
+import imageEcigarettte from "../assets/image/E-Cigarettes and Cervical Cancer_front.png"
+import imageDEBunking from "../assets/image/Debunking Common Misconceptions about HPV and HPV Testing_front.png"
+
+import imageSexualactivity from "../assets/image/Can Sexual Activity Cause Stress_front.png"
 
 
 
@@ -119,7 +125,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe'>
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={imag_blog2} alt='' className='image-fluid' />
+                  <img src={imageSafeCondom} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -137,7 +143,7 @@ const KnowledgeThai = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     หลายคนสงสัยว่าความรู้สึกแบบเนื้อแนบเนื้อมันดีกว่าใส่ถุงยางป้องกันจริงๆหรอ
                     แล้วถ้าเนื้อแนบเนื้อบ่อยๆจะเสี่ยงติดโรคติดต่อทางเพศสัมพันธ์ได้ทันทีเลยไหม วันนี้เราจะมาพูดคุยถึงหัวข้อนี้กัน
@@ -169,7 +175,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/Debunking_Misconceptions_of_HPV' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imageDEBunking} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -187,7 +193,7 @@ const KnowledgeThai = () => {
                       #BIRTHCONTROL
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     ในบล็อกนี้ เราจะข้อแก้อกไขความเข้าใจผิดเกี่ยวกับ HPV (Human Papillomavirus) และการตรวจ HPV โดยการปฏิเสธความเชื่อที่ผิดและให้ข้อมูลที่ถูกต้อง เราหวังว่าจะจัดหาความรู้ที่จำเป็นให้คุณเพื่อที่คุณจะสามารถควบคุมสุขภาพเพศสัมพันธ์ของตัวเองได้ มาเริ่มกันเถอะ!
                   </p>
@@ -212,7 +218,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imageEcigarettte} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -230,7 +236,7 @@ const KnowledgeThai = () => {
                       #BIRTHCONTROL
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     สำหรับสาวพ้นควันทั้งหลายที่ยังคงสับสนงุนงงว่าการสูบบุหรี่เสี่ยงเป็นมะเร็งปากมดลูกได้อย่างไรในเมื่อเราสูบควันลงไปแค่ปอดไม่ได้ลงไม่ถึงมดลูกหรือช่องคลอดเสียหน่อย ต้องเป็นมะเร็งจำพวก มะเร็งปาก มะเร็งช่องคอ มะเร็งปอด อะไรพวกนั้นสิถึงจะดูสมเหตุสมผลกว่า
 
@@ -257,7 +263,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/The_Rise_of_HPV_Infections' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imagecervialCancer} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -275,7 +281,7 @@ const KnowledgeThai = () => {
                       #BIRTHCONTROL
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     ผู้ที่ได้รับเชื้อ HPV กว่า 90% ร่างกายสามารถกำจัดเชื้อออกไปได้เอง แต่จากผลสำรวจขององค์การอนามัยโลก (WHO) ในปี 2020 มีผู้ที่เป็นมะเร็งปากมดลูกรายใหม่ ถึง 60,400 ราย และมีผู้เสียชีวิตถึง 34,200 ราย ทั้งยังมีผู้ที่ป่วยอยู่แล้วและยังไม่ได้เข้ารับการรักษาอีกด้วย ที่น่าเป็นห่วงคือ 90% ของผู้ติดเชื้อรายใหม่และผู้เสียชีวิตมาจากประเทศที่มีรายได้น้อย ที่สำคัญการมีติดเชื้อกว่า 90% มาจากการมีเพศสัมพันธ์
 
@@ -302,7 +308,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/Can_Sex_Cause_Stress' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={imag_blog3} alt='' className='image-fluid' />
+                  <img src={imageSexualactivity} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -319,7 +325,7 @@ const KnowledgeThai = () => {
                       #BIRTHCONTROL
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                   การมีเพศสัมพันธ์รวมไปถึงการช่วยตัวเอง เป้าหมายทั้งสองอย่างคงหนีไม่พ้นการถึงจุดสุดยอด หรือการทำให้อีกฝ่ายรู้สึกดี แต่บางคู่กับรู้สึกแย่ เครียด ซึมเศร้า วิตกกังวล รู้สึกทำได้ไม่ดีพอ ก้าวร้าวทะเลาะกับคู่นอน ทัศนคติเกี่ยวกับSEX ปมจากการโดนล่วงละเมิด หลังจบกิจกรรมบนเตียงภาวะเหล่านี้ถ้าเป็นได้บ่อยๆ คือภาวะ Post-coital tristesse(PCT) หมายถึงอาการความเศร้าหรือความเหงาที่เกิดขึ้นหลังจากการมีเพศสัมพันธ์ ภาวะเหล่านี้คนส่วนใหญ่สามารถพบเจอได้ และมักจะหายไปเอง หรือบางคนอาจจะเป็นนานกว่าปกตินั้นคือภาวะที่เคมีในสมองมีส่วนเข้ามาเกี่ยวข้อง สาเหตุหลักภาวะ Post-coital tristesse(PCT) คือฮอร์โมนในร่างกาย เมื่อถึงจุดสุดยอด ร่างกายจะปล่อยฮอร์โมนออกมาไม่ว่าจะเป็น โดปามีน และออกซิโทซิน ถ้าถึงจุดสุดยอดรวมถึงฮอร์โมนอื่นจะปล่อยออกมาอย่างรวดเร็ว และลดระดับลงอย่างรวดเร็ว ตรงนี้คือช่วงที่เรียกได้ว่าเป็นจุดที่ฮอร์โมนไม่คงที่ จึงทำให้เกิดอาการ Post-coital tristesse(PCT)
                   </p>

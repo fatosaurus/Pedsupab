@@ -11,6 +11,7 @@ import blog_pic1 from "../assets/image/blog_pic1.png";
 import blog_pic2 from "../assets/image/blog_pic2.png";
 import blog_pic3 from "../assets/image/blog_pic3.png";
 import imag_blog2 from "../assets/image/image_blog2.jpg";
+import imageSafeCondom from "../assets/image/isn't it safe to wear a condom_front.png"
 
 const Blog2 = () => {
   const [reloadKey, setReloadKey] = useState(1)
@@ -107,7 +108,7 @@ const Blog2 = () => {
               <div className="col-lg-12">
                 <div className="inner_maincont">
                   <div className='blog-middle-img mb-5'>
-                    <img src={imag_blog2} alt='' className='img-fluid' />
+                    <img src={imageSafeCondom} alt='' className='img-fluid' />
                   </div>
                   <div className="inner_cont_des_view">
                     {/* <h2>เซ็กซ์คือการเมือง</h2>

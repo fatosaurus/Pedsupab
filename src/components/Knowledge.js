@@ -8,7 +8,12 @@ import Blog_Highlight from "../assets/image/Blog-Highlight.png";
 import blog_img from "../assets/image/blog-img.png";
 import imag_blog2 from "../assets/image/image_blog2.jpg";
 import imag_blog3 from "../assets/image/img_blog3.jpg";
+import imageSafeCondom from "../assets/image/isn't it safe to wear a condom_front.png"
+import imagecervialCancer from "../assets/image/The Rise of Cervical Cancer Infections_front.png"
+import imageEcigarettte from "../assets/image/E-Cigarettes and Cervical Cancer_front.png"
+import imageDEBunking from "../assets/image/Debunking Common Misconceptions about HPV and HPV Testing_front.png"
 
+import imageSexualactivity from "../assets/image/Can Sexual Activity Cause Stress_front.png"
 
 
 const Knowledge = () => {
@@ -120,7 +125,7 @@ const Knowledge = () => {
             <Link to='/knowledge/blog/Can_No_Protection_Sex_Be_Safe' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={imag_blog2} alt='' className='image-fluid' />
+                  <img src={imageSafeCondom} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -138,7 +143,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     Many people wonder if the &quot;skin-to-skin&quot; feeling is better than using actual
                     condoms for protection. And if there is frequent &quot;skin-to-skin&quot; contact, does it
@@ -167,7 +172,7 @@ const Knowledge = () => {
             <Link to='/knowledge/blog/Debunking_Misconceptions_of_HPV' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imageDEBunking} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -184,7 +189,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     In this blog, we will address common misconceptions surrounding HPV (Human Papillomavirus) and HPV testing. By dispelling myths and providing accurate information, we aim to equip you with the knowledge needed to take control of your sexual health. Let's dive in! Understanding HPV and its Link to Cervical Cancer:
                   </p>
@@ -208,7 +213,7 @@ const Knowledge = () => {
             <Link to='/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imageEcigarettte} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -226,7 +231,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     How can smoking increase the risk of cervical cancer? You might be wondering, given that smoke only enters the lungs, not the uterus or the vagina… wouldn’t it cause other cancers like oral, throat, or lung cancer? Seems more logical, right? With how e-cigarettes are readily available, let’s consider this.
 
@@ -251,7 +256,7 @@ const Knowledge = () => {
             <Link to='/knowledge/blog/The_Rise_of_HPV_Infections' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imagecervialCancer} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -269,7 +274,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     In more than 90% of individuals infected with HPV, their bodies can clear the infection on their own. However, according to the World Health Organization (WHO) survey in 2020, there were up to 60,400 new cases of cervical cancer and 34,200 deaths. Moreover, many cases remain untreated, with 90% of new infections and deaths occurring in low-income countries. Notably, over 90% of infections are attributed to sexual intercourse.
                   </p>
@@ -294,7 +299,7 @@ const Knowledge = () => {
                 <div className='row'>
 
                   <div className='col-lg-7 graphic'>
-                    <img src={imag_blog3} alt='' className='image-fluid' />
+                    <img src={imageSexualactivity} alt='' className='image-fluid' />
                   </div>
                   <div className='col-lg-5 content'>
                     <h2 className='post-title'>
@@ -312,7 +317,7 @@ const Knowledge = () => {
                         #RELATIONSHIPS
                       </Link>
                     </div>
-                    <p>
+                    <p className="blog-quick-desc">
 
                       Sexual intercourse includes masturbation. Both goals are inevitable to climax. or making the other person feel good But some couples feel bad, stressed, depressed, anxious, feeling not doing well enough. Aggressive arguing with a partner attitudes about sex Knot from being abused Post-coital tristesse (PCT) symptoms of sadness or loneliness that occur after sex Most people can experience these conditions. and often disappears on its own Or for some people it may be longer than normal, which is a condition in which brain chemistry is involved.
                     </p>
