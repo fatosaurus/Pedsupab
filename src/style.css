@@ -513,7 +513,7 @@ a:hover {
 }
 
 .feature-three-blogs-w .item {
-  max-width: 228px; transition: all .3s; font-size: ;
+  max-width: 228px; transition: all .3s; 
 }
 .feature-three-blogs-w .item .blog-title { font-size: 1.4375em;}
 
@@ -2464,7 +2464,7 @@ a.learn_more_btn {
   padding-top: 20px;
 }
 
-.modf_prod .prod_view_des {}
+/* .modf_prod .prod_view_des {} */
 
 .modf_prod .kit_hpv_pic_opt .prod_add {
   text-align: center;
