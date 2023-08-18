@@ -1006,7 +1006,7 @@ label {
 .about-team .primary-title {
   text-align: center;
   font-size: 2.5em;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .team-card {
@@ -1016,7 +1016,7 @@ label {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 15px;
-  min-height: 342px;
+  min-height: 230px;
 }
 
 .team-card .graphic {
@@ -1122,7 +1122,7 @@ label {
 
 .post-pagination .page-link {
   border: none;
-  font-size: 32px;
+  font-size: 18px;
   line-height: 137%;
   color: rgba(91, 127, 189, 0.29);
   padding: 5px 15px;
@@ -1451,7 +1451,7 @@ label {
 .about-team .primary-title {
   text-align: center;
   font-size: 48px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .about-team .container {
@@ -1483,7 +1483,7 @@ label {
 
 .team-card {
   padding: 0 20px 15px;
-  margin-bottom: 180px;
+  margin-bottom: 140px;
 }
 
 .team-card.bg-1 {
@@ -3361,4 +3361,12 @@ input#quantity {
 input#quantity::-webkit-inner-spin-button , input#quantity::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* fixed */
+p.blog-quick-desc {
+  height: 140px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }

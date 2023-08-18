@@ -143,7 +143,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     Many people wonder if the &quot;skin-to-skin&quot; feeling is better than using actual
                     condoms for protection. And if there is frequent &quot;skin-to-skin&quot; contact, does it
@@ -189,7 +189,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     In this blog, we will address common misconceptions surrounding HPV (Human Papillomavirus) and HPV testing. By dispelling myths and providing accurate information, we aim to equip you with the knowledge needed to take control of your sexual health. Let's dive in! Understanding HPV and its Link to Cervical Cancer:
                   </p>
@@ -231,7 +231,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     How can smoking increase the risk of cervical cancer? You might be wondering, given that smoke only enters the lungs, not the uterus or the vagina… wouldn’t it cause other cancers like oral, throat, or lung cancer? Seems more logical, right? With how e-cigarettes are readily available, let’s consider this.
 
@@ -274,7 +274,7 @@ const Knowledge = () => {
                       #RELATIONSHIPS
                     </Link>
                   </div>
-                  <p>
+                  <p className="blog-quick-desc">
 
                     In more than 90% of individuals infected with HPV, their bodies can clear the infection on their own. However, according to the World Health Organization (WHO) survey in 2020, there were up to 60,400 new cases of cervical cancer and 34,200 deaths. Moreover, many cases remain untreated, with 90% of new infections and deaths occurring in low-income countries. Notably, over 90% of infections are attributed to sexual intercourse.
                   </p>
@@ -317,7 +317,7 @@ const Knowledge = () => {
                         #RELATIONSHIPS
                       </Link>
                     </div>
-                    <p>
+                    <p className="blog-quick-desc">
 
                       Sexual intercourse includes masturbation. Both goals are inevitable to climax. or making the other person feel good But some couples feel bad, stressed, depressed, anxious, feeling not doing well enough. Aggressive arguing with a partner attitudes about sex Knot from being abused Post-coital tristesse (PCT) symptoms of sadness or loneliness that occur after sex Most people can experience these conditions. and often disappears on its own Or for some people it may be longer than normal, which is a condition in which brain chemistry is involved.
                     </p>
