@@ -115,7 +115,7 @@ const SelfcollectKitThai = () => {
             </p>
           </div>
         </div>
-        <h3 class='trinary-title-pink text-center'>
+        {/* <h3 class='trinary-title-pink text-center'>
 
         ขั้นตอนการใช้ เอวา 
         </h3>
@@ -125,7 +125,7 @@ const SelfcollectKitThai = () => {
             src='https://www.youtube.com/embed/zpOULjyy-n8?rel=0'
             allowfullscreen
           ></iframe>
-        </div>
+        </div> */}
 
         <p class='actions text-center pt-5'>
           <Link to='' class='btn btn-pink-custom-bg'>

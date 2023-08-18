@@ -113,7 +113,7 @@ const SelfcollectKit = () => {
             </p>
           </div>
         </div>
-        <h3 class='trinary-title-pink text-center'>
+        {/* <h3 class='trinary-title-pink text-center'>
          
           How AVA works
         </h3>
@@ -123,7 +123,7 @@ const SelfcollectKit = () => {
             src='https://www.youtube.com/embed/zpOULjyy-n8?rel=0'
             allowfullscreen
           ></iframe>
-        </div>
+        </div> */}
 
         <p class='actions text-center pt-5'>
           <Link to='' class='btn btn-pink-custom-bg'>

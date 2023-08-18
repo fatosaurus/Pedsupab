@@ -11,6 +11,7 @@ import blog_pic1 from "../assets/image/blog_pic1.png";
 import blog_pic2 from "../assets/image/blog_pic2.png";
 import blog_pic3 from "../assets/image/blog_pic3.png";
 import imag_blog1 from "../assets/image/image_blog1.png"
+import imageDEBunking from "../assets/image/Debunking Common Misconceptions about HPV and HPV Testing_front.png"
 
 const Blog4 = () => {
     const [reloadKey, setReloadKey] = useState(1)
@@ -111,9 +112,9 @@ const Blog4 = () => {
                         <div className='row'>
                             <div className='col-lg-12'>
                                 <div className='inner_maincont'>
-                                    {/* <div className='blog-middle-img mb-5'>
-                                        <img src={imag_blog1} alt='' className='img-fluid' />
-                                    </div> */}
+                                    <div className='blog-middle-img mb-5'>
+                                        <img src={imageDEBunking} alt='' className='img-fluid' />
+                                    </div>
                                     <div className='inner_cont_des_view'>
                                         {/* <h2>เซ็กซ์คือการเมือง</h2>
                                         <p>

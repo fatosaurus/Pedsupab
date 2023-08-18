@@ -8,6 +8,12 @@ import Blog_Highlight from "../assets/image/Blog-Highlight.png";
 import blog_img from "../assets/image/blog-img.png";
 import imag_blog2 from "../assets/image/image_blog2.jpg";
 import imag_blog3 from "../assets/image/img_blog3.jpg";
+import imageSafeCondom from "../assets/image/isn't it safe to wear a condom_front.png"
+import imagecervialCancer from "../assets/image/The Rise of Cervical Cancer Infections_front.png"
+import imageEcigarettte from "../assets/image/E-Cigarettes and Cervical Cancer_front.png"
+import imageDEBunking from "../assets/image/Debunking Common Misconceptions about HPV and HPV Testing_front.png"
+
+import imageSexualactivity from "../assets/image/Can Sexual Activity Cause Stress_front.png"
 
 
 
@@ -119,7 +125,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/Can_No_Protection_Sex_Be_Safe'>
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={imag_blog2} alt='' className='image-fluid' />
+                  <img src={imageSafeCondom} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -169,7 +175,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/Debunking_Misconceptions_of_HPV' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imageDEBunking} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -212,7 +218,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/E-Ciggarettes_and_Cervical_Cancer' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imageEcigarettte} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -257,7 +263,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/The_Rise_of_HPV_Infections' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={blog_img} alt='' className='image-fluid' />
+                  <img src={imagecervialCancer} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
@@ -302,7 +308,7 @@ const KnowledgeThai = () => {
             <Link to='/th/knowledge/blog/Can_Sex_Cause_Stress' >
               <div className='row'>
                 <div className='col-lg-7 graphic'>
-                  <img src={imag_blog3} alt='' className='image-fluid' />
+                  <img src={imageSexualactivity} alt='' className='image-fluid' />
                 </div>
                 <div className='col-lg-5 content'>
                   <h2 className='post-title'>
