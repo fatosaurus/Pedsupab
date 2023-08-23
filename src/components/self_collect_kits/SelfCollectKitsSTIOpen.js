@@ -105,9 +105,9 @@ const SelfCollectKitsSTIOpen = () => {
                       activeOption === 0 ? "activeprod" : ""
                     }`}
                     onClick={() => handelOptionHover(0)}
-                    // onMouseLeave={() => setActiveOption(null)}
+                    onMouseLeave={() => setActiveOption(null)}
                     onMouseEnter={() => handleOptionClick(0)}
-                    onDoubleClick={() => setActiveOption(null)}
+                    // onDoubleClick={() => setActiveOption(null)}
                   >
                     <div class="prod_view_des">
                       <div class="prod_add">
@@ -121,10 +121,10 @@ const SelfCollectKitsSTIOpen = () => {
                       class={`kit_hpv_pic_opt ${
                         activeOption === 1 ? "activeprod" : ""
                       }`}
-                      // onMouseLeave={() => setActiveOption(null)}
+                      onMouseLeave={() => setActiveOption(null)}
                       onMouseOver={() => handleOptionClick(1)}
                       onClick={() => handelOptionHover(1)}
-                      onDoubleClick={() => setActiveOption(null)}
+                      // onDoubleClick={() => setActiveOption(null)}
                     >
                       <div class="prod_add">
                         <h3>FUNGUS </h3>
@@ -136,10 +136,10 @@ const SelfCollectKitsSTIOpen = () => {
                     class={`kit_hpv_pic_opt ${
                       activeOption === 2 ? "activeprod" : ""
                     }`}
-                    // onMouseLeave={() => setActiveOption(null)}
+                    onMouseLeave={() => setActiveOption(null)}
                     onMouseOver={() => handleOptionClick(2)}
                     onClick={() => handelOptionHover(2)}
-                    onDoubleClick={() => setActiveOption(null)}
+                    // onDoubleClick={() => setActiveOption(null)}
                   >
                     <div class="prod_view_des">
                       <div class="prod_add">
@@ -152,10 +152,10 @@ const SelfCollectKitsSTIOpen = () => {
                     class={`kit_hpv_pic_opt ${
                       activeOption === 3 ? "activeprod" : ""
                     }`}
-                    // onMouseLeave={() => setActiveOption(null)}
+                    onMouseLeave={() => setActiveOption(null)}
                     onClick={() => handelOptionHover(3)}
                     onMouseOver={() => handleOptionClick(3)}
-                    onDoubleClick={() => setActiveOption(null)}
+                    // onDoubleClick={() => setActiveOption(null)}
                   >
                     <div class="prod_view_des">
                       <div class="prod_add">
